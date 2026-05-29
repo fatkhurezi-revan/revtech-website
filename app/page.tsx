@@ -73,9 +73,8 @@ export default function Home() {
                                 alt="Laptop Mockup"
                               />
 
-                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Berada Presisi di Dalam Frame Hitam) */}
-                              {/* Koordinat ini dikalibrasi akurat dari rasio piksel asli macbook-mockup.png */}
-                              <div className="absolute top-[19.7%] bottom-[11.7%] left-[11.4%] right-[11.4%] z-20 overflow-hidden rounded-[6px]">
+                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Terkunci Sempurna di Dalam Kaca MacBook) */}
+                              <div className="absolute top-[11.8%] bottom-[18.2%] left-[13.4%] right-[13.4%] z-20 overflow-hidden rounded-[2px]">
                                 {/* Elemen animasi berganti gambar template Web & Undangan secara otomatis (Crossfade) */}
                                 <div className="relative w-full h-full bg-black">
                                       {heroImages.map((src, index) => (
@@ -83,7 +82,7 @@ export default function Home() {
                                               key={index}
                                               src={src} 
                                               alt={`Slide ${index + 1}`}
-                                              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
+                                              className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
                                           />
                                       ))}
                                 </div>
