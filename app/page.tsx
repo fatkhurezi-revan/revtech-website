@@ -73,8 +73,9 @@ export default function Home() {
                                 alt="Laptop Mockup"
                               />
 
-                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Presisi di Dalam Bezel Hitam Macbook) */}
-                              <div className="absolute top-[11.2%] bottom-[17.5%] left-[14.2%] right-[14.2%] z-20 overflow-hidden rounded-[4px]">
+                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Berada Presisi di Dalam Frame Hitam) */}
+                              {/* Koordinat ini dikalibrasi akurat dari rasio piksel asli macbook-mockup.png */}
+                              <div className="absolute top-[19.7%] bottom-[11.7%] left-[11.4%] right-[11.4%] z-20 overflow-hidden rounded-[6px]">
                                 {/* Elemen animasi berganti gambar template Web & Undangan secara otomatis (Crossfade) */}
                                 <div className="relative w-full h-full bg-black">
                                       {heroImages.map((src, index) => (
@@ -91,7 +92,7 @@ export default function Home() {
                           </div>
 
                           {/* 4. Efek Bayangan Lantai di Luar Kontainer Melayang (Statis di Bawah) */}
-                          <div className="w-[80%] h-4 bg-slate-900/15 blur-xl rounded-full mx-auto mt-6 pointer-events-none"></div>
+                          <div className="w-[70%] h-6 bg-black/30 blur-2xl rounded-full mx-auto mt-2 pointer-events-none"></div>
                       </div>
                   </div>
               </div>
