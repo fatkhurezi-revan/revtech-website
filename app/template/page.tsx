@@ -342,106 +342,62 @@ function TemplateContent() {
                 {activeTab === 'undangan' && (
                     <div className="animate-fade-in space-y-20">
                         
-                        {/* Paket Silver */}
-                        <section className="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-sm border border-gray-100">
-                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-100">
-                                <div>
-                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-600 font-bold text-xs uppercase tracking-wider mb-3">Paket Basic</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Basic</h2>
-                                    <p className="text-gray-500 mt-2 font-medium">Solusi praktis dan cepat. Undangan digital elegan dengan fitur esensial.</p>
-                                </div>
-                                <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Mulai</p>
-                                    <div className="flex items-baseline md:justify-end gap-1">
-                                        <span className="text-lg font-bold text-gray-900">Rp</span>
-                                        <span className="text-3xl font-extrabold text-[#8A2BE2] tracking-tight leading-none">50<span className="text-xl font-bold">Rb</span></span>
+                        {/* BAGIAN 1: Grid Template (Basic & Premium) */}
+                        <section className="mb-20">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                                {/* Card 1: Paket Basic */}
+                                <div className="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-xl border border-gray-100 flex flex-col group hover:-translate-y-2 transition-all duration-500">
+                                    <div className="relative aspect-[9/16] w-full max-w-sm mx-auto rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-8 border-gray-100 mb-8">
+                                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-5 bg-gray-100 rounded-b-xl z-10"></div> {/* Notch mockup */}
+                                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Minimalist Elegance" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute top-6 left-4 z-10">
+                                            <span className="bg-white/95 backdrop-blur-sm text-gray-800 text-xs font-bold px-4 py-1.5 rounded-full shadow-sm">Paket Basic</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex-1 text-center">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-2">Minimalist Elegance</h3>
+                                        <p className="text-gray-500 text-sm mb-8">Desain bersih berlatar putih dengan tipografi klasik yang romantis.</p>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row items-center gap-3 w-full">
+                                        <Link href="/portofolio?tab=undangan" className="w-full sm:flex-1 text-center py-3.5 rounded-xl border-2 border-gray-200 text-gray-700 font-bold hover:border-gray-900 hover:text-gray-900 transition-colors">Lihat Demo</Link>
+                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20desain%20Minimalist%20Elegance." target="_blank" rel="noreferrer" className="w-full sm:flex-1 text-center py-3.5 rounded-xl bg-gray-900 text-white font-bold hover:bg-black transition-colors shadow-lg">Pesan Desain Ini</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <TemplateCard 
-                                    title="Classic White" 
-                                    category="Silver Template" 
-                                    image="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                    desc="Desain bersih berlatar putih dengan tipografi klasik yang romantis."
-                                    isMobile
-                                />
-                                <TemplateCard 
-                                    title="Rustic Brown" 
-                                    category="Silver Template" 
-                                    image="https://images.unsplash.com/photo-1505932794465-147d1f1bce20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                    desc="Nuansa bumi (earth tone) yang hangat untuk tema pernikahan rustic."
-                                    isMobile
-                                />
+
+                                {/* Card 2: Paket Premium */}
+                                <div className="bg-gradient-to-br from-purple-50 to-white rounded-[2.5rem] p-6 md:p-8 shadow-xl border border-purple-100 flex flex-col group hover:-translate-y-2 transition-all duration-500">
+                                    <div className="relative aspect-[9/16] w-full max-w-sm mx-auto rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(138,43,226,0.15)] border-8 border-white mb-8">
+                                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-5 bg-white rounded-b-xl z-10"></div> {/* Notch mockup */}
+                                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Royal Blossom" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute top-6 left-4 z-10">
+                                            <span className="bg-gradient-to-r from-amber-300 to-yellow-500 text-yellow-900 text-xs font-extrabold px-4 py-1.5 rounded-full shadow-md uppercase tracking-wider">Paket Premium</span>
+                                        </div>
+                                    </div>
+                                    <div className="flex-1 text-center">
+                                        <h3 className="text-2xl font-bold text-gray-900 mb-2">Royal Blossom</h3>
+                                        <p className="text-gray-500 text-sm mb-8">Sentuhan mewah dengan animasi elemen bunga dan galeri interaktif.</p>
+                                    </div>
+                                    <div className="flex flex-col sm:flex-row items-center gap-3 w-full">
+                                        <Link href="/portofolio?tab=undangan" className="w-full sm:flex-1 text-center py-3.5 rounded-xl border-2 border-purple-200 text-[#8A2BE2] font-bold hover:border-[#8A2BE2] transition-colors">Lihat Demo</Link>
+                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20desain%20Royal%20Blossom." target="_blank" rel="noreferrer" className="w-full sm:flex-1 text-center py-3.5 rounded-xl bg-[#8A2BE2] text-white font-bold hover:bg-purple-700 shadow-lg shadow-purple-500/30 transition-all hover:shadow-purple-500/50">Pesan Desain Ini</a>
+                                    </div>
+                                </div>
                             </div>
                         </section>
 
-                        {/* Paket Gold */}
-                        <section className="bg-gradient-to-br from-purple-900 to-[#8A2BE2] p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden text-white">
-                            <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2"></div>
-                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-white/10 relative z-10">
-                                <div>
-                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider mb-3 backdrop-blur-sm">Paling Populer</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Premium</h2>
-                                    <p className="text-gray-200 mt-2 font-medium">Undangan interaktif yang disesuaikan dengan nuansa warna hari bahagia Anda.</p>
-                                </div>
-                                <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-200 font-bold uppercase tracking-wide mb-1">Mulai</p>
-                                    <div className="flex items-baseline md:justify-end gap-1">
-                                        <span className="text-lg font-bold text-white">Rp</span>
-                                        <span className="text-3xl font-extrabold text-white tracking-tight leading-none">100<span className="text-xl font-bold">Rb</span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-                                <TemplateCard 
-                                    title="Luxury Gold" 
-                                    category="Gold Template" 
-                                    image="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                    desc="Sentuhan warna emas dengan animasi kelopak bunga jatuh yang mewah."
-                                    dark
-                                    isMobile
-                                />
-                                <TemplateCard 
-                                    title="Floral Watercolor" 
-                                    category="Gold Template" 
-                                    image="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                    desc="Elemen cat air bunga yang mekar perlahan saat halaman digulir."
-                                    dark
-                                    isMobile
-                                />
-                            </div>
-                        </section>
-
-                        {/* Paket Platinum */}
-                        <section className="bg-[#111] p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden text-white border border-gray-800">
-                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-800">
-                                <div>
-                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-200 to-yellow-400 text-yellow-900 font-bold text-xs uppercase tracking-wider mb-3">Custom Design</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Eksklusif</h2>
-                                    <p className="text-gray-400 mt-2 font-medium">Undangan premium tanpa batas kreasi. Desain tata letak khusus sesuai keinginan.</p>
-                                </div>
-                                <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-400 font-bold uppercase tracking-wide mb-1">Mulai</p>
-                                    <div className="flex items-baseline md:justify-end gap-1">
-                                        <span className="text-lg font-bold text-white">Rp</span>
-                                        <span className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500 tracking-tight leading-none">250<span className="text-xl font-bold">Ribu</span></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="grid grid-cols-1 gap-8">
-                                <div className="group relative rounded-3xl overflow-hidden shadow-lg bg-gray-900 transition-all duration-500 hover:shadow-[0_0_30px_rgba(251,191,36,0.15)] border border-gray-800">
-                                    <div className="aspect-[21/9] overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Platinum Template" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80" />
-                                    </div>
-                                    <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/95 via-black/60 to-transparent">
-                                        <h3 className="text-white text-3xl font-bold mb-2">Bespoke Wedding Experience</h3>
-                                        <p className="text-gray-300 text-sm mb-6 max-w-2xl font-normal">Tidak ada batasan template. Kami akan merancang undangan digital yang merepresentasikan tema spesifik pernikahan Anda, lengkap dengan aset visual custom 3D atau ilustrasi.</p>
-                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20dengan%20Paket%20Platinum%20Undangan." target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-yellow-900 font-bold px-6 py-3 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                            Konsultasi Tema Custom
-                                        </a>
-                                    </div>
-                                </div>
+                        {/* BAGIAN 2: Banner Custom (Paket Eksklusif) */}
+                        <section className="bg-[#111] rounded-[3rem] p-8 md:p-14 shadow-2xl relative overflow-hidden text-white border border-gray-800">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl translate-y-1/2 translate-x-1/4"></div>
+                            <div className="relative z-10 max-w-4xl mx-auto text-center">
+                                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-800 text-gray-300 font-bold text-xs uppercase tracking-wider mb-6 border border-gray-700">Paket Eksklusif</div>
+                                <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Punya Konsep Pernikahan Impian Sendiri?</h2>
+                                <p className="text-gray-400 text-base md:text-lg mb-10 max-w-3xl mx-auto leading-relaxed">
+                                    Pilih Paket Eksklusif untuk pembuatan desain undangan digital kustom dari nol. Bebas tentukan tata letak, animasi transisi, hingga integrasi custom domain (nama-mempelai.com) agar momen spesial Anda tampil beda.
+                                </p>
+                                <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20dengan%20Paket%20Eksklusif%20Undangan%20Custom." target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-yellow-900 font-extrabold px-8 py-4 rounded-xl hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] transform hover:-translate-y-1 transition-all duration-300 text-lg w-full sm:w-auto">
+                                    Konsultasi Desain Custom
+                                    <span className="material-symbols-outlined font-bold">arrow_forward</span>
+                                </a>
                             </div>
                         </section>
 
