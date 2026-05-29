@@ -66,44 +66,43 @@ export default function Home() {
                           {/* 1. Kontainer Utama (Melayang di Udara) */}
                           <div className="relative animate-bounce-slow w-full max-w-2xl drop-shadow-2xl"> 
                               
-                              {/* 2. MacBook CSS Frame (Anti-Bocor 100%) */}
+                              {/* 2. Modern Ultra-Thin Laptop CSS Frame (Anti-Bocor 100%) */}
                               <div className="relative w-full">
-                                  {/* Lid (Bezel Hitam) */}
-                                  <div className="relative bg-black rounded-t-[1.5rem] md:rounded-t-[2.5rem] p-[3.5%] pb-[6%] shadow-[0_0_0_2px_rgba(255,255,255,0.1)_inset,0_0_20px_rgba(0,0,0,0.5)] aspect-[16/10]">
+                                  {/* Lid (Bezel Hitam Modern & Tipis) */}
+                                  <div className="relative bg-[#0d0d0d] rounded-t-[1rem] md:rounded-t-[1.5rem] p-[2%] pb-[3%] shadow-[0_0_0_1px_rgba(255,255,255,0.15)_inset,0_10px_25px_rgba(0,0,0,0.5)] aspect-[16/10]">
                                       
-                                      {/* Webcam */}
-                                      <div className="absolute top-[2%] left-1/2 -translate-x-1/2 w-1.5 h-1.5 md:w-2 md:h-2 bg-gray-800 rounded-full flex items-center justify-center border border-[#333]"></div>
+                                      {/* Micro Webcam (Sangat Kecil & Modern) */}
+                                      <div className="absolute top-[1%] left-1/2 -translate-x-1/2 w-1 h-1 md:w-1.5 md:h-1.5 bg-gray-900 rounded-full flex items-center justify-center shadow-inner">
+                                          <div className="w-[2px] h-[2px] bg-blue-500/20 rounded-full"></div>
+                                      </div>
 
-                                      {/* Logo MacBook Pro text */}
-                                      <div className="absolute bottom-[2%] left-1/2 -translate-x-1/2 text-[6px] md:text-[9px] text-gray-500 font-sans tracking-widest">MacBook Pro</div>
-
-                                      {/* 3. Area Dalam Layar Kaca (Terkunci Sempurna oleh Bezel HTML) */}
-                                      <div className="relative w-full h-full bg-[#0a0a0a] rounded-sm md:rounded-md overflow-hidden z-20 shadow-[0_0_10px_rgba(0,0,0,0.8)_inset]">
+                                      {/* 3. Area Dalam Layar Kaca (Bezel-less Vibe) */}
+                                      <div className="relative w-full h-full bg-[#050505] rounded-sm md:rounded-[4px] overflow-hidden z-20 shadow-[0_0_8px_rgba(0,0,0,0.9)_inset]">
                                           {heroImages.map((src, index) => (
                                               <img 
                                                   key={index}
                                                   src={src} 
                                                   alt={`Slide ${index + 1}`}
-                                                  className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
+                                                  className={`absolute inset-0 w-full h-full object-cover object-top transition-transform transition-opacity duration-1000 ease-out ${index === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`} 
                                               />
                                           ))}
                                       </div>
                                       
-                                      {/* Glossy Overlay (Efek Pantulan Kaca) */}
-                                      <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-white/10 to-transparent rounded-t-[1.5rem] md:rounded-t-[2.5rem] pointer-events-none z-30"></div>
+                                      {/* Glossy Overlay (Pantulan Kaca Halus) */}
+                                      <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-transparent rounded-t-[1rem] md:rounded-t-[1.5rem] pointer-events-none z-30"></div>
                                   </div>
 
-                                  {/* Base Laptop (Bagian Bawah Silver) */}
-                                  <div className="relative bg-gradient-to-b from-[#e5e7eb] to-[#9ca3af] h-[3%] aspect-[16/0.5] w-[105%] -left-[2.5%] rounded-b-[2rem] shadow-2xl flex justify-center items-start border-t border-gray-300 z-40">
-                                      {/* Thumb indent (Cekungan pembuka layar) */}
-                                      <div className="w-[15%] h-[30%] bg-[#6b7280] rounded-b-md shadow-inner"></div>
+                                  {/* Base Laptop (Bagian Bawah Silver Tipis & Elegan) */}
+                                  <div className="relative bg-gradient-to-b from-[#e2e4e9] to-[#a3a8b2] h-[10px] md:h-[14px] w-[104%] -left-[2%] rounded-b-xl md:rounded-b-2xl shadow-xl flex justify-center items-start border-t border-gray-300 z-40">
+                                      {/* Thumb indent (Cekungan Halus) */}
+                                      <div className="w-[12%] h-[40%] bg-[#8b919d] rounded-b-md shadow-inner opacity-80"></div>
                                   </div>
                               </div>
 
                           </div>
 
-                          {/* 4. Efek Bayangan Lantai di Luar Kontainer Melayang (Statis di Bawah) */}
-                          <div className="w-[70%] h-6 bg-black/30 blur-2xl rounded-full mx-auto mt-2 pointer-events-none"></div>
+                          {/* 4. Efek Bayangan Lantai Super Realistis (Lebih Gelap & Menyebar) */}
+                          <div className="w-[85%] h-8 bg-black/40 blur-[20px] rounded-[100%] mx-auto mt-6 pointer-events-none transform -translate-y-4 -z-10"></div>
                       </div>
                   </div>
               </div>
