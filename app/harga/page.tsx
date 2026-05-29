@@ -78,7 +78,7 @@ function HargaContent() {
                             </div>
 
                             {/* Populer */}
-                            <div className="glass-card rounded-3xl p-8 bg-primary text-white transform md:-translate-y-4 shadow-xl shadow-primary/30 relative flex flex-col">
+                            <div className="rounded-3xl p-8 bg-primary text-white transform md:-translate-y-4 shadow-2xl shadow-primary/40 relative flex flex-col border-2 border-blue-400 ring-4 ring-primary/20">
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-white text-primary text-xs font-bold px-4 py-1 rounded-b-lg tracking-wider">PALING POPULER</div>
                                 <h4 className="text-xl font-bold mb-2 mt-4">Paket Populer</h4>
                                 <p className="text-blue-100 text-sm mb-6">Sempurna untuk profil bisnis dan UMKM.</p>
@@ -137,7 +137,7 @@ function HargaContent() {
                             </div>
 
                             {/* Elegant */}
-                            <div className="glass-card rounded-3xl p-8 bg-[#8A2BE2] text-white transform md:-translate-y-4 shadow-xl shadow-[#8A2BE2]/30 relative flex flex-col">
+                            <div className="rounded-3xl p-8 bg-[#8A2BE2] text-white transform md:-translate-y-4 shadow-2xl shadow-[#8A2BE2]/40 relative flex flex-col border-2 border-purple-400 ring-4 ring-[#8A2BE2]/20">
                                 <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-white text-[#8A2BE2] text-xs font-bold px-4 py-1 rounded-b-lg tracking-wider">REKOMENDASI</div>
                                 <h4 className="text-xl font-bold mb-2 mt-4">Paket Elegant</h4>
                                 <p className="text-purple-100 text-sm mb-6">Fitur lengkap untuk momen spesial Anda.</p>

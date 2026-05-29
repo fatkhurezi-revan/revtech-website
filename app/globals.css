@@ -4,7 +4,7 @@
   --color-primary: #0052ff;
   
   /* I'll use next/font for font, so standard sans is fine, but I can override it */
-  --font-sans: var(--font-hanken-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   
   --animate-float: float 6s ease-in-out infinite;
   --animate-blob: blob 7s infinite;

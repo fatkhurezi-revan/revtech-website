@@ -1,7 +1,19 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  const getLinkClass = (path: string) => {
+    const isActive = pathname === path;
+    return isActive 
+      ? "text-sm font-semibold text-primary px-4 py-2 rounded-full bg-primary/10 transition-all"
+      : "text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all";
+  };
+
   return (
     <nav className="fixed top-0 w-full z-50 glass-nav transition-all duration-300" id="navbar">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -10,11 +22,11 @@ export default function Navbar() {
             </Link>
 
             <div className="hidden md:flex items-center space-x-1 bg-white/50 px-4 py-2 rounded-full border border-white/60 shadow-sm">
-                <Link className="text-sm font-semibold text-primary px-4 py-2 rounded-full bg-primary/10 transition-all" href="/">Beranda</Link>
-                <Link className="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="/layanan">Layanan</Link>
-                <Link className="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="/harga">Harga</Link>
-                <Link className="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="/portofolio">Portofolio</Link>
-                <Link className="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="/faq">FAQ</Link>
+                <Link className={getLinkClass('/')} href="/">Beranda</Link>
+                <Link className={getLinkClass('/layanan')} href="/layanan">Layanan</Link>
+                <Link className={getLinkClass('/harga')} href="/harga">Harga</Link>
+                <Link className={getLinkClass('/portofolio')} href="/portofolio">Portofolio</Link>
+                <Link className={getLinkClass('/faq')} href="/faq">FAQ</Link>
             </div>
 
             <div className="hidden md:flex">
