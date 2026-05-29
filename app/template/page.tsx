@@ -257,16 +257,16 @@ function TemplateContent() {
                                 {/* Custom 1 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aplikasi Web & Sistem Informasi" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Slicing UI to Code" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Aplikasi Web & Sistem Informasi</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Slicing UI to Code</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
-                                            Pembuatan sistem digital dari nol sesuai SOP bisnis Anda. Meliputi sistem inventori, HRIS, hingga CRM. Pilihan mutlak untuk pabrik, perusahaan logistik, dan korporat.
+                                            Konversi desain antarmuka milik Anda menjadi website interaktif yang pixel-perfect. Dibangun dengan kode yang bersih.
                                         </p>
                                         <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20konsultasi%20pembuatan%20sistem%20custom." target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-2 rounded-lg text-sm hover:bg-green-600 hover:text-white transition-colors duration-300">
-                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Custom
+                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Fitur
                                         </a>
                                     </div>
                                 </div>
@@ -274,16 +274,16 @@ function TemplateContent() {
                                 {/* Custom 2 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Platform E-Commerce Premium" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Custom Web Development" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Platform E-Commerce Premium</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Custom Web Development</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
-                                            Toko online custom dengan fungsionalitas tingkat lanjut. Mendukung fitur payment gateway terintegrasi, perhitungan ongkir otomatis, dan sistem membership.
+                                            Pengembangan aplikasi web khusus berdasarkan spesifikasi dan alur kerja (flow) yang Anda sediakan. Saya berfokus pada penulisan kode yang efisien dan responsif.
                                         </p>
                                         <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20konsultasi%20pembuatan%20sistem%20custom." target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-2 rounded-lg text-sm hover:bg-green-600 hover:text-white transition-colors duration-300">
-                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Custom
+                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Fitur
                                         </a>
                                     </div>
                                 </div>
@@ -291,16 +291,16 @@ function TemplateContent() {
                                 {/* Custom 3 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portal Berita & Media Digital" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="API & Database Integration" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Portal Berita & Media Digital</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">API & Database Integration</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
-                                            Platform media dengan arsitektur khusus untuk menangani trafik masif. Dilengkapi CMS kustom, manajemen ruang iklan, dan optimasi struktur SEO.
+                                            Menghubungkan website front-end Anda dengan sistem database eksternal atau integrasi layanan pihak ketiga (Third-Party API) sesuai dengan dokumentasi teknis yang dibutuhkan.
                                         </p>
                                         <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20konsultasi%20pembuatan%20sistem%20custom." target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-2 rounded-lg text-sm hover:bg-green-600 hover:text-white transition-colors duration-300">
-                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Custom
+                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Fitur
                                         </a>
                                     </div>
                                 </div>
@@ -308,16 +308,16 @@ function TemplateContent() {
                                 {/* Custom 4 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sistem Reservasi & Booking" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Revamp & Optimasi Performa" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Sistem Reservasi & Booking</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Web Revamp & Optimasi Performa</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
-                                            Aplikasi penjadwalan kustom terintegrasi secara real-time. Memiliki kalender ketersediaan, manajemen antrean, dan sistem notifikasi otomatis.
+                                            Penulisan ulang (rewrite) kode website lama Anda menggunakan tumpukan teknologi modern. Berfokus penuh pada peningkatan kecepatan loading dan skor Core Web Vitals.
                                         </p>
                                         <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20konsultasi%20pembuatan%20sistem%20custom." target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-2 rounded-lg text-sm hover:bg-green-600 hover:text-white transition-colors duration-300">
-                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Custom
+                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Fitur
                                         </a>
                                     </div>
                                 </div>
