@@ -348,8 +348,7 @@ function TemplateContent() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                 {/* Card 1: Paket Basic */}
                                 <div className="bg-white rounded-[2.5rem] p-6 md:p-8 shadow-xl border border-gray-100 flex flex-col group hover:-translate-y-2 transition-all duration-500">
-                                    <div className="relative aspect-[9/16] w-full max-w-sm mx-auto rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border-8 border-gray-100 mb-8">
-                                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-5 bg-gray-100 rounded-b-xl z-10"></div> {/* Notch mockup */}
+                                    <div className="relative aspect-[9/16] w-full max-w-sm mx-auto rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-200 mb-8">
                                         <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Minimalist Elegance" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute top-6 left-4 z-10">
                                             <span className="bg-white/95 backdrop-blur-sm text-gray-800 text-xs font-bold px-4 py-1.5 rounded-full shadow-sm">Paket Basic</span>
@@ -361,14 +360,13 @@ function TemplateContent() {
                                     </div>
                                     <div className="flex flex-col sm:flex-row items-center gap-3 w-full">
                                         <Link href="/portofolio?tab=undangan" className="w-full sm:flex-1 text-center py-3.5 rounded-xl border-2 border-gray-200 text-gray-700 font-bold hover:border-gray-900 hover:text-gray-900 transition-colors">Lihat Demo</Link>
-                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20desain%20Minimalist%20Elegance." target="_blank" rel="noreferrer" className="w-full sm:flex-1 text-center py-3.5 rounded-xl bg-gray-900 text-white font-bold hover:bg-black transition-colors shadow-lg">Pesan Desain Ini</a>
+                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20desain%20Minimalist%20Elegance." target="_blank" rel="noreferrer" className="w-full sm:flex-1 text-center py-3.5 rounded-xl bg-primary text-white font-bold hover:bg-blue-600 transition-colors shadow-lg">Pesan Desain Ini</a>
                                     </div>
                                 </div>
 
                                 {/* Card 2: Paket Premium */}
                                 <div className="bg-gradient-to-br from-purple-50 to-white rounded-[2.5rem] p-6 md:p-8 shadow-xl border border-purple-100 flex flex-col group hover:-translate-y-2 transition-all duration-500">
-                                    <div className="relative aspect-[9/16] w-full max-w-sm mx-auto rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(138,43,226,0.15)] border-8 border-white mb-8">
-                                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-5 bg-white rounded-b-xl z-10"></div> {/* Notch mockup */}
+                                    <div className="relative aspect-[9/16] w-full max-w-sm mx-auto rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(138,43,226,0.15)] border border-purple-200 mb-8">
                                         <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Royal Blossom" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute top-6 left-4 z-10">
                                             <span className="bg-gradient-to-r from-amber-300 to-yellow-500 text-yellow-900 text-xs font-extrabold px-4 py-1.5 rounded-full shadow-md uppercase tracking-wider">Paket Premium</span>
@@ -387,18 +385,102 @@ function TemplateContent() {
                         </section>
 
                         {/* BAGIAN 2: Banner Custom (Paket Eksklusif) */}
-                        <section className="bg-[#111] rounded-[3rem] p-8 md:p-14 shadow-2xl relative overflow-hidden text-white border border-gray-800">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl translate-y-1/2 translate-x-1/4"></div>
-                            <div className="relative z-10 max-w-4xl mx-auto text-center">
-                                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-800 text-gray-300 font-bold text-xs uppercase tracking-wider mb-6 border border-gray-700">Paket Eksklusif</div>
-                                <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Punya Konsep Pernikahan Impian Sendiri?</h2>
-                                <p className="text-gray-400 text-base md:text-lg mb-10 max-w-3xl mx-auto leading-relaxed">
-                                    Pilih Paket Eksklusif untuk pembuatan desain undangan digital kustom dari nol. Bebas tentukan tata letak, animasi transisi, hingga integrasi custom domain (nama-mempelai.com) agar momen spesial Anda tampil beda.
-                                </p>
-                                <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20dengan%20Paket%20Eksklusif%20Undangan%20Custom." target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-yellow-900 font-extrabold px-8 py-4 rounded-xl hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] transform hover:-translate-y-1 transition-all duration-300 text-lg w-full sm:w-auto">
-                                    Konsultasi Desain Custom
-                                    <span className="material-symbols-outlined font-bold">arrow_forward</span>
-                                </a>
+                        <section className="bg-[#111] p-8 md:p-12 lg:p-16 rounded-[3rem] shadow-2xl border border-gray-800 text-white relative overflow-hidden mt-8">
+                            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-yellow-500/10 rounded-full blur-[100px] -mr-40 -mt-40"></div>
+                            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-amber-900/20 rounded-full blur-[80px] -ml-20 -mb-20"></div>
+                            
+                            <div className="relative z-10 flex flex-col lg:flex-row gap-12 items-center justify-between">
+                                <div className="flex-1 max-w-3xl">
+                                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-800 text-gray-300 font-bold text-xs uppercase tracking-wider mb-6 border border-gray-700">Paket Eksklusif</div>
+                                    <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Punya Konsep Pernikahan Impian Sendiri?</h2>
+                                    <p className="text-gray-400 mb-10 font-normal leading-relaxed text-lg">
+                                        Pilih Paket Eksklusif untuk pembuatan desain undangan digital kustom dari nol. Bebas tentukan tata letak, animasi transisi, hingga integrasi custom domain (nama-mempelai.com) agar momen spesial Anda tampil beda.
+                                    </p>
+                                    
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                                        <div className="group flex items-center gap-3 bg-gray-800/50 p-4 rounded-2xl border border-gray-700/50 backdrop-blur-sm hover:bg-gray-800 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transform hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                            <div className="bg-amber-500/20 p-2 rounded-xl text-amber-500 flex-shrink-0 group-hover:bg-amber-500 group-hover:text-yellow-900 transition-colors duration-300">
+                                                <span className="material-symbols-outlined text-xl transform group-hover:scale-110 transition-transform duration-300">design_services</span>
+                                            </div>
+                                            <span className="text-gray-200 font-semibold text-sm group-hover:text-white transition-colors duration-300">Desain Visual Eksklusif 100% Custom</span>
+                                        </div>
+                                        <div className="group flex items-center gap-3 bg-gray-800/50 p-4 rounded-2xl border border-gray-700/50 backdrop-blur-sm hover:bg-gray-800 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transform hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                            <div className="bg-amber-500/20 p-2 rounded-xl text-amber-500 flex-shrink-0 group-hover:bg-amber-500 group-hover:text-yellow-900 transition-colors duration-300">
+                                                <span className="material-symbols-outlined text-xl transform group-hover:scale-110 transition-transform duration-300">language</span>
+                                            </div>
+                                            <span className="text-gray-200 font-semibold text-sm group-hover:text-white transition-colors duration-300">Custom Domain nama.com</span>
+                                        </div>
+                                        <div className="group flex items-center gap-3 bg-gray-800/50 p-4 rounded-2xl border border-gray-700/50 backdrop-blur-sm hover:bg-gray-800 hover:border-amber-500/50 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)] transform hover:-translate-y-1 transition-all duration-300 cursor-default md:col-span-2">
+                                            <div className="bg-amber-500/20 p-2 rounded-xl text-amber-500 flex-shrink-0 group-hover:bg-amber-500 group-hover:text-yellow-900 transition-colors duration-300">
+                                                <span className="material-symbols-outlined text-xl transform group-hover:scale-110 transition-transform duration-300">motion_photos_auto</span>
+                                            </div>
+                                            <span className="text-gray-200 font-semibold text-sm group-hover:text-white transition-colors duration-300">Animasi & Fitur Spesial (Filter IG, Live Stream)</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20dengan%20Paket%20Eksklusif%20Undangan%20Custom." target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-amber-200 to-yellow-500 text-yellow-900 font-extrabold px-8 py-4 rounded-xl hover:shadow-[0_0_30px_rgba(251,191,36,0.3)] transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto">
+                                        Konsultasi Desain Custom
+                                        <span className="material-symbols-outlined font-bold">arrow_forward</span>
+                                    </a>
+                                </div>
+                                
+                                <div className="hidden lg:block relative w-80 h-80" style={{ perspective: '1000px' }}>
+                                    {/* Layer 1: Code/Design Window */}
+                                    <div className="absolute inset-0 bg-gray-900/90 backdrop-blur-md rounded-2xl border border-gray-700 shadow-2xl transition-all duration-700 group overflow-hidden" style={{ transform: 'rotateY(-15deg) rotateX(10deg)', transformStyle: 'preserve-3d' }}
+                                        onMouseEnter={(e) => { e.currentTarget.style.transform = 'rotateY(0deg) rotateX(0deg)'; }}
+                                        onMouseLeave={(e) => { e.currentTarget.style.transform = 'rotateY(-15deg) rotateX(10deg)'; }}
+                                    >
+                                        {/* Browser / Terminal Header */}
+                                        <div className="bg-gray-800/80 px-4 py-3 border-b border-gray-700 flex items-center gap-2">
+                                            <div className="w-3 h-3 rounded-full bg-red-500 shadow-[0_0_5px_rgba(239,68,68,0.5)]"></div>
+                                            <div className="w-3 h-3 rounded-full bg-yellow-500 shadow-[0_0_5px_rgba(234,179,8,0.5)]"></div>
+                                            <div className="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]"></div>
+                                        </div>
+                                        {/* Fake Code Lines */}
+                                        <div className="p-5 font-mono text-xs md:text-sm text-gray-400 space-y-4">
+                                            <div className="flex items-center gap-2">
+                                                <span className="text-amber-500 font-bold">~</span>
+                                                <span className="text-gray-300">npx create-wedding-app --premium</span>
+                                            </div>
+                                            <div className="space-y-2">
+                                                <div className="flex items-center gap-2">
+                                                    <span className="material-symbols-outlined text-xs text-gray-600 animate-spin">refresh</span>
+                                                    <span>Generating custom 3D assets...</span>
+                                                </div>
+                                                <div className="flex items-center gap-2">
+                                                    <span className="material-symbols-outlined text-xs text-gray-600 animate-spin">refresh</span>
+                                                    <span>Configuring private domain...</span>
+                                                </div>
+                                                <div className="w-full bg-gray-800 rounded-full h-1 mt-2">
+                                                    <div className="bg-amber-500 h-1 rounded-full animate-pulse w-3/4"></div>
+                                                </div>
+                                            </div>
+                                            <div className="flex items-center gap-2 text-green-400 pt-2">
+                                                <span className="material-symbols-outlined text-sm">check_circle</span>
+                                                <span className="font-bold">Wedding App Deployed!</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    {/* Layer 2: Floating Custom Domain Card */}
+                                    <div className="absolute -bottom-8 -left-8 bg-white/10 backdrop-blur-xl rounded-2xl p-4 shadow-2xl border border-white/20 transform hover:-translate-y-2 hover:scale-105 transition-all duration-500 z-20 flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
+                                        <div className="w-12 h-12 rounded-full bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+                                            <span className="material-symbols-outlined text-2xl">diamond</span>
+                                        </div>
+                                        <div>
+                                            <p className="text-xs text-gray-300 font-bold uppercase tracking-wider">Domain</p>
+                                            <p className="text-sm font-bold text-white">mempelai.com</p>
+                                        </div>
+                                    </div>
+
+                                    {/* Layer 3: Floating Design Card */}
+                                    <div className="absolute -top-6 -right-6 bg-gray-900/40 backdrop-blur-xl rounded-xl p-3 shadow-2xl border border-amber-500/30 transform hover:-translate-y-2 hover:scale-105 transition-all duration-500 z-20 flex items-center gap-3 animate-pulse">
+                                        <div className="bg-amber-500/20 p-2 rounded-lg flex items-center justify-center">
+                                            <span className="material-symbols-outlined text-amber-400 text-lg">auto_awesome</span>
+                                        </div>
+                                        <span className="text-sm font-bold text-gray-100 pr-2">Premium Design</span>
+                                    </div>
+                                </div>
                             </div>
                         </section>
 
