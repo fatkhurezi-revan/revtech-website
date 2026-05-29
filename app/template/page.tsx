@@ -166,20 +166,73 @@ function TemplateContent() {
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-                                <TemplateCard 
-                                    title="Modern E-Commerce" 
-                                    category="Bisnis Template" 
-                                    image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                    desc="Katalog produk dinamis dengan integrasi keranjang belanja dan checkout WhatsApp."
-                                    dark
-                                />
-                                <TemplateCard 
-                                    title="Corporate Dashboard" 
-                                    category="Bisnis Template" 
-                                    image="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                    desc="Tampilan dashboard profesional untuk manajemen data internal perusahaan."
-                                    dark
-                                />
+                                {/* Kategori 1 */}
+                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                                    <div className="aspect-video overflow-hidden relative">
+                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Company Profile Korporat" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                    </div>
+                                    <div className="p-6 md:p-8">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Company Profile Korporat</h3>
+                                        <p className="text-sm text-slate-600 leading-relaxed">
+                                            Desain eksklusif multi-halaman untuk membangun citra profesional bisnis Anda. Dilengkapi halaman Tentang Kami, Galeri Fasilitas, Layanan, dan Klien. Sangat ideal untuk perusahaan manufaktur, pabrik, kontraktor besar, hingga firma hukum.
+                                        </p>
+                                        <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
+                                            <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo Web
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* Kategori 2 */}
+                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                                    <div className="aspect-video overflow-hidden relative">
+                                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Instansi Publik & Edukasi" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                    </div>
+                                    <div className="p-6 md:p-8">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Instansi Publik & Edukasi</h3>
+                                        <p className="text-sm text-slate-600 leading-relaxed">
+                                            Portal informasi resmi yang terstruktur, transparan, dan mudah diakses publik. Dilengkapi fitur Berita, Pengumuman, Profil Institusi, hingga Layanan Masyarakat/PPDB. Pilihan utama untuk website Desa, Dinas Pemerintahan, Sekolah, dan Yayasan.
+                                        </p>
+                                        <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
+                                            <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo Web
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* Kategori 3 */}
+                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                                    <div className="aspect-video overflow-hidden relative">
+                                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori E-Commerce & Retail" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                    </div>
+                                    <div className="p-6 md:p-8">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori E-Commerce & Retail</h3>
+                                        <p className="text-sm text-slate-600 leading-relaxed">
+                                            Toko online berskala besar dengan sistem navigasi belanja yang terintegrasi. Dilengkapi fitur keranjang belanja, filter produk, dan halaman detail barang. Cocok untuk distributor, toko grosir, brand fashion, dan bisnis retail.
+                                        </p>
+                                        <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
+                                            <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo Web
+                                        </a>
+                                    </div>
+                                </div>
+
+                                {/* Kategori 4 */}
+                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                                    <div className="aspect-video overflow-hidden relative">
+                                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Properti & Pariwisata" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                    </div>
+                                    <div className="p-6 md:p-8">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Properti & Pariwisata</h3>
+                                        <p className="text-sm text-slate-600 leading-relaxed">
+                                            Tampilan visual memukau dan elegan dengan dukungan galeri beresolusi tinggi. Sempurna untuk developer perumahan, penyewaan villa/hotel, agen perjalanan, atau promosi destinasi wisata lokal.
+                                        </p>
+                                        <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
+                                            <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo Web
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </section>
 
