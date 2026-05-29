@@ -64,20 +64,20 @@ export default function Home() {
                       <div className="w-full max-w-3xl mx-auto relative pt-4 pb-12 flex flex-col items-center">
                           
                           {/* 1. Kontainer Utama (Melayang di Udara) */}
-                          <div className="relative animate-levitate w-full drop-shadow-2xl"> 
+                          <div className="relative animate-bounce-slow w-full drop-shadow-2xl"> 
                               
-                              {/* 2. Base Laptop Menghadap Depan (Frame Utama HP) */}
+                              {/* 2. Base Laptop Menghadap Depan (Frame Utama) */}
                               <img 
                                 src="/hp-laptop-mockup.png" 
                                 className="w-full h-auto object-contain relative z-10" 
                                 alt="Laptop Mockup"
                               />
 
-                              {/* 3. Area Dalam Layar Kaca (Berada di Dalam Frame Hitam HP) */}
-                              {/* Koordinat ini sudah disesuaikan agar pas 100% dengan frame HP */}
-                              <div className="absolute top-[8%] left-[12%] w-[76%] h-[76%] z-20 overflow-hidden rounded-[4px]">
-                                {/* Elemen animasi berganti gambar template (Crossfade) */}
-                                <div className="relative w-full h-full bg-black">
+                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Harus Berada di Dalam Frame Hitam) */}
+                              {/* Sesuaikan persentase top, left, width, dan height di bawah ini agar pas di dalam bezel hitam laptop */}
+                              <div className="absolute top-[8%] left-[12%] w-[76%] h-[76%] z-20 overflow-hidden rounded-[2px]">
+                                {/* Elemen animasi berganti gambar template Web & Undangan secara otomatis (Crossfade) */}
+                                <div className="relative w-full h-full bg-white">
                                       {heroImages.map((src, index) => (
                                           <img 
                                               key={index}
@@ -88,10 +88,11 @@ export default function Home() {
                                       ))}
                                 </div>
                               </div>
+
                           </div>
 
                           {/* 4. Efek Bayangan Lantai di Luar Kontainer Melayang (Statis di Bawah) */}
-                          <div className="w-[80%] h-[20px] bg-slate-900/25 blur-xl rounded-full mx-auto mt-4 pointer-events-none"></div>
+                          <div className="w-[80%] h-4 bg-slate-900/15 blur-xl rounded-full mx-auto mt-6 pointer-events-none"></div>
                       </div>
                   </div>
               </div>
