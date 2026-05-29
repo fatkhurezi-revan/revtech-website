@@ -69,7 +69,7 @@ function TemplateContent() {
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Mulai Dari</p>
-                                    <p className="text-3xl font-extrabold text-primary">Rp 1.5M<span className="text-base text-gray-400 font-medium">/projek</span></p>
+                                    <p className="text-3xl font-extrabold text-primary">Rp 300k<span className="text-base text-gray-400 font-medium">/projek</span></p>
                                 </div>
                             </div>
 
@@ -100,7 +100,7 @@ function TemplateContent() {
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-300 font-bold uppercase tracking-wide">Mulai Dari</p>
-                                    <p className="text-3xl font-extrabold text-white">Rp 3.5M<span className="text-base text-gray-400 font-medium">/projek</span></p>
+                                    <p className="text-3xl font-extrabold text-white">Rp 1.5M<span className="text-base text-gray-400 font-medium">/projek</span></p>
                                 </div>
                             </div>
 
@@ -169,7 +169,7 @@ function TemplateContent() {
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Harga</p>
-                                    <p className="text-3xl font-extrabold text-[#8A2BE2]">Rp 150k</p>
+                                    <p className="text-3xl font-extrabold text-[#8A2BE2]">Rp 50k</p>
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -199,7 +199,7 @@ function TemplateContent() {
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-200 font-bold uppercase tracking-wide">Harga</p>
-                                    <p className="text-3xl font-extrabold text-white">Rp 250k</p>
+                                    <p className="text-3xl font-extrabold text-white">Rp 100k</p>
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
@@ -230,7 +230,7 @@ function TemplateContent() {
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-400 font-bold uppercase tracking-wide">Mulai Dari</p>
-                                    <p className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500">Rp 500k</p>
+                                    <p className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500">Rp 150k</p>
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 gap-8">
