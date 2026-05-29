@@ -275,14 +275,61 @@ function TemplateContent() {
                                     </a>
                                 </div>
                                 
-                                <div className="hidden lg:block w-72 h-72">
-                                    <div className="relative w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 rounded-[2rem] border border-slate-700 shadow-2xl flex items-center justify-center p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
-                                        <div className="absolute top-4 left-4 flex gap-1.5">
-                                            <div className="w-3 h-3 rounded-full bg-slate-600"></div>
-                                            <div className="w-3 h-3 rounded-full bg-slate-600"></div>
-                                            <div className="w-3 h-3 rounded-full bg-slate-600"></div>
+                                <div className="hidden lg:block relative w-80 h-80" style={{ perspective: '1000px' }}>
+                                    {/* Layer 1: Code Window */}
+                                    <div className="absolute inset-0 bg-slate-900/90 backdrop-blur-md rounded-2xl border border-slate-700 shadow-2xl transition-all duration-700 group overflow-hidden" style={{ transform: 'rotateY(-15deg) rotateX(10deg)', transformStyle: 'preserve-3d' }}
+                                        onMouseEnter={(e) => { e.currentTarget.style.transform = 'rotateY(0deg) rotateX(0deg)'; }}
+                                        onMouseLeave={(e) => { e.currentTarget.style.transform = 'rotateY(-15deg) rotateX(10deg)'; }}
+                                    >
+                                        {/* Browser / Terminal Header */}
+                                        <div className="bg-slate-800/80 px-4 py-3 border-b border-slate-700 flex items-center gap-2">
+                                            <div className="w-3 h-3 rounded-full bg-red-500 shadow-[0_0_5px_rgba(239,68,68,0.5)]"></div>
+                                            <div className="w-3 h-3 rounded-full bg-yellow-500 shadow-[0_0_5px_rgba(234,179,8,0.5)]"></div>
+                                            <div className="w-3 h-3 rounded-full bg-green-500 shadow-[0_0_5px_rgba(34,197,94,0.5)]"></div>
                                         </div>
-                                        <span className="material-symbols-outlined text-9xl text-slate-700">developer_mode</span>
+                                        {/* Fake Code Lines */}
+                                        <div className="p-5 font-mono text-xs md:text-sm text-slate-400 space-y-4">
+                                            <div className="flex items-center gap-2">
+                                                <span className="text-primary font-bold">~</span>
+                                                <span className="text-blue-400">npm run build --production</span>
+                                            </div>
+                                            <div className="space-y-2">
+                                                <div className="flex items-center gap-2">
+                                                    <span className="material-symbols-outlined text-xs text-slate-600 animate-spin">refresh</span>
+                                                    <span>Compiling React components...</span>
+                                                </div>
+                                                <div className="flex items-center gap-2">
+                                                    <span className="material-symbols-outlined text-xs text-slate-600 animate-spin">refresh</span>
+                                                    <span>Optimizing Core Web Vitals...</span>
+                                                </div>
+                                                <div className="w-full bg-slate-800 rounded-full h-1 mt-2">
+                                                    <div className="bg-primary h-1 rounded-full animate-pulse w-3/4"></div>
+                                                </div>
+                                            </div>
+                                            <div className="flex items-center gap-2 text-green-400 pt-2">
+                                                <span className="material-symbols-outlined text-sm">check_circle</span>
+                                                <span className="font-bold">Build Successful in 1.2s</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    {/* Layer 2: Floating Performance Card */}
+                                    <div className="absolute -bottom-8 -left-8 bg-white/10 backdrop-blur-xl rounded-2xl p-4 shadow-2xl border border-white/20 transform hover:-translate-y-2 hover:scale-105 transition-all duration-500 z-20 flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
+                                        <div className="w-14 h-14 rounded-full bg-green-500/20 border border-green-500/30 flex items-center justify-center text-green-400 font-extrabold text-2xl shadow-[0_0_15px_rgba(34,197,94,0.2)]">
+                                            99
+                                        </div>
+                                        <div>
+                                            <p className="text-xs text-slate-300 font-bold uppercase tracking-wider">Performance</p>
+                                            <p className="text-sm font-bold text-white">Lighthouse Score</p>
+                                        </div>
+                                    </div>
+
+                                    {/* Layer 3: Floating Security Card */}
+                                    <div className="absolute -top-6 -right-6 bg-blue-900/40 backdrop-blur-xl rounded-xl p-3 shadow-2xl border border-blue-500/30 transform hover:-translate-y-2 hover:scale-105 transition-all duration-500 z-20 flex items-center gap-3 animate-pulse">
+                                        <div className="bg-blue-500/20 p-2 rounded-lg flex items-center justify-center">
+                                            <span className="material-symbols-outlined text-blue-400 text-lg">shield_locked</span>
+                                        </div>
+                                        <span className="text-sm font-bold text-slate-100 pr-2">Enterprise Security</span>
                                     </div>
                                 </div>
                             </div>
