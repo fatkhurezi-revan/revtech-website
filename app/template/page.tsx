@@ -103,7 +103,7 @@ function TemplateContent() {
                                     <div className="p-6 md:p-8">
                                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Kuliner & Resto</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
-                                            Tampilan visual yang menggugah selera untuk menu andalan Anda. Ideal untuk kafe, rumah makan, franchise minuman, atau bisnis katering.
+                                            Tampilan visual yang menggugah selera untuk menu andalan Anda. Ideal untuk kafe, rumah makan, warung tenda, franchise minuman, hingga bisnis katering harian.
                                         </p>
                                         <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
                                             <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo
@@ -137,7 +137,7 @@ function TemplateContent() {
                                     <div className="p-6 md:p-8">
                                         <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Katalog Produk</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
-                                            Fokus menonjolkan keunggulan barang jualan Anda. Didesain khusus untuk meningkatkan penjualan produk seperti pakaian, kosmetik, herbal, atau gadget.
+                                            Fokus menonjolkan keunggulan barang jualan Anda. Didesain khusus untuk jualan produk fisik, mulai dari pakaian, kosmetik, hasil bumi, hingga penjualan hewan ternak.
                                         </p>
                                         <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
                                             <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo
