@@ -195,6 +195,10 @@ export default function Home() {
                       <p className="text-gray-600 text-sm font-normal">Ya! Tema, warna, foto, font, dan musik bisa disesuaikan sepenuhnya sesuai dengan selera Anda.</p>
                   </div>
                   <div className="border border-gray-200 rounded-xl p-6 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+                      <h4 className="font-bold text-gray-900 mb-2">Berapa lama pengerjaan undangan digital?</h4>
+                      <p className="text-gray-600 text-sm font-normal">Proses pengerjaan Undangan Digital sangat cepat. Untuk Paket Basic dan Premium, undangan Anda akan selesai dalam 1-2 hari kerja setelah seluruh data (teks & foto) kami terima. Sedangkan untuk Paket Eksklusif (Custom Design), waktu pengerjaannya berkisar antara 3-7 hari kerja tergantung tingkat kustomisasi desain yang diminta.</p>
+                  </div>
+                  <div className="border border-gray-200 rounded-xl p-6 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
                       <h4 className="font-bold text-gray-900 mb-2">Bagaimana sistem pembayarannya?</h4>
                       <p className="text-gray-600 text-sm font-normal">Pembayaran dilakukan dengan sistem DP 50% di awal dan pelunasan 50% setelah proyek selesai.</p>
                   </div>

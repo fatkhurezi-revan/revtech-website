@@ -76,6 +76,10 @@ export default function FAQ() {
                             title="Bagaimana sistem pembuatan custom nama tamu?" 
                             content="Kami menggunakan sistem parameter link (contoh: domain.com/?to=Nama+Tamu). Anda cukup membagikan link tersebut via WhatsApp, dan nama tamu akan otomatis tercetak di cover depan undangan digital Anda. Kami juga bisa membuatkan generator link khusus jika diperlukan."
                         />
+                        <AccordionItem 
+                            title="Berapa lama pengerjaan undangan digital ini?" 
+                            content="Proses pengerjaan Undangan Digital sangat cepat. Untuk Paket Basic dan Premium, undangan Anda akan selesai dalam 1-2 hari kerja setelah seluruh data (teks & foto) kami terima. Sedangkan untuk Paket Eksklusif (Custom Design), waktu pengerjaannya berkisar antara 3-7 hari kerja tergantung tingkat kustomisasi desain yang diminta."
+                        />
                     </div>
                 </div>
 

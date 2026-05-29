@@ -360,7 +360,7 @@ function TemplateContent() {
                                     </div>
                                     <div className="flex flex-col sm:flex-row items-center gap-3 w-full">
                                         <Link href="/portofolio?tab=undangan" className="w-full sm:flex-1 text-center py-3.5 rounded-xl border-2 border-gray-200 text-gray-700 font-bold hover:border-gray-900 hover:text-gray-900 transition-colors">Lihat Demo</Link>
-                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20desain%20Minimalist%20Elegance." target="_blank" rel="noreferrer" className="w-full sm:flex-1 text-center py-3.5 rounded-xl bg-primary text-white font-bold hover:bg-blue-600 transition-colors shadow-lg">Pesan Desain Ini</a>
+                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20desain%20Minimalist%20Elegance." target="_blank" rel="noreferrer" className="w-full sm:flex-1 text-center py-3.5 rounded-xl bg-[#8A2BE2] text-white font-bold hover:bg-purple-700 transition-colors shadow-lg">Pesan Desain Ini</a>
                                     </div>
                                 </div>
 
@@ -414,7 +414,7 @@ function TemplateContent() {
                                             <div className="bg-amber-500/20 p-2 rounded-xl text-amber-500 flex-shrink-0 group-hover:bg-amber-500 group-hover:text-yellow-900 transition-colors duration-300">
                                                 <span className="material-symbols-outlined text-xl transform group-hover:scale-110 transition-transform duration-300">motion_photos_auto</span>
                                             </div>
-                                            <span className="text-gray-200 font-semibold text-sm group-hover:text-white transition-colors duration-300">Animasi & Fitur Spesial (Filter IG, Live Stream)</span>
+                                            <span className="text-gray-200 font-semibold text-sm group-hover:text-white transition-colors duration-300">Animasi & Fitur Spesial</span>
                                         </div>
                                     </div>
                                     
