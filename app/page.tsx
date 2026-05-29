@@ -73,8 +73,8 @@ export default function Home() {
                                 alt="Laptop Mockup"
                               />
 
-                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Terkunci Sempurna di Dalam Kaca MacBook) */}
-                              <div className="absolute top-[11.8%] bottom-[18.2%] left-[13.4%] right-[13.4%] z-20 overflow-hidden rounded-[2px]">
+                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Terkunci Pas di Dalam Kaca MacBook) */}
+                              <div className="absolute top-[12.2%] bottom-[18.5%] left-[13.8%] right-[13.8%] z-20 overflow-hidden rounded-[2px]">
                                 {/* Elemen animasi berganti gambar template Web & Undangan secara otomatis (Crossfade) */}
                                 <div className="relative w-full h-full bg-black">
                                       {heroImages.map((src, index) => (
