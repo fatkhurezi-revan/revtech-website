@@ -129,63 +129,76 @@ function HargaContent() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {/* Basic */}
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
-                                <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Basic</h4>
-                                <p className="text-gray-500 text-sm mb-6 font-normal">Desain simpel, elegan, dan praktis.</p>
+                                <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Basic <span className="text-sm text-gray-500 font-normal">(Entry Level)</span></h4>
+                                <p className="text-gray-500 text-sm mb-6 font-normal">Solusi praktis dan cepat. Undangan digital elegan dengan fitur esensial.</p>
                                 <div className="mb-6 flex items-baseline flex-wrap gap-1">
+                                    <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1 w-full">Mulai</span>
                                     <span className="text-lg font-bold text-gray-900">Rp</span>
-                                    <span className="text-3xl xl:text-4xl font-extrabold text-gray-900 tracking-tight leading-none">50<span className="text-xl font-bold">Rb</span> - 100<span className="text-xl font-bold">Rb</span></span>
+                                    <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">50<span className="text-2xl font-bold">Rb</span></span>
+                                </div>
+                                <div className="bg-orange-50 border border-orange-100 rounded-xl p-3 mb-6">
+                                    <p className="text-xs font-bold text-orange-800 mb-1">PENTING (Strictly Template):</p>
+                                    <p className="text-xs text-orange-700">Hanya ganti data teks & foto utama, tidak bisa ubah warna/tema/layout.</p>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> 1 Pilihan Tema Standar</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Info Acara & Mempelai</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Link Google Maps</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-gray-300 text-sm">close</span> Tanpa Galeri Foto</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Info Mempelai</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Hitung Mundur (Countdown)</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Navigasi Peta (Google Maps)</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Form RSVP Standar</li>
                                 </ul>
                                 <Link href="/portofolio?tab=undangan" className="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</Link>
                                 <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Basic%20Undangan." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl border-2 border-[#8A2BE2] text-[#8A2BE2] font-bold hover:bg-purple-700 hover:text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Paket Basic</a>
                             </div>
 
-                            {/* Elegant */}
+                            {/* Premium */}
                             <div className="rounded-3xl p-[3px] bg-gradient-to-br from-purple-400 via-[#8A2BE2] to-fuchsia-600 transform md:-translate-y-4 hover:-translate-y-6 transition-all duration-500 glow-pulse-purple relative flex flex-col">
-                                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#8A2BE2] text-xs font-bold px-4 py-1 rounded-full shadow-md tracking-wider z-10 border border-purple-100">REKOMENDASI</div>
+                                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#8A2BE2] text-xs font-bold px-4 py-1 rounded-full shadow-md tracking-wider z-10 border border-purple-100 uppercase">Paling Populer</div>
                                 <div className="rounded-[22px] p-8 bg-[#8A2BE2] text-white h-full flex flex-col">
-                                    <h4 className="text-xl font-bold mb-2 mt-2">Paket Elegant</h4>
-                                    <p className="text-purple-100 text-sm mb-6 font-normal">Fitur lengkap untuk momen spesial Anda.</p>
+                                    <h4 className="text-xl font-bold mb-2 mt-2">Paket Premium</h4>
+                                    <p className="text-purple-100 text-sm mb-6 font-normal">Undangan interaktif yang disesuaikan dengan nuansa warna hari bahagia Anda.</p>
                                     <div className="mb-6 flex items-baseline flex-wrap gap-1">
+                                        <span className="text-sm font-bold text-purple-200 uppercase tracking-widest mb-1 w-full">Mulai</span>
                                         <span className="text-lg font-bold text-white">Rp</span>
-                                        <span className="text-3xl xl:text-4xl font-extrabold text-white tracking-tight leading-none">150<span className="text-xl font-bold">Rb</span> - 250<span className="text-xl font-bold">Rb</span></span>
+                                        <span className="text-4xl font-extrabold text-white tracking-tight leading-none">100<span className="text-2xl font-bold">Rb</span></span>
+                                    </div>
+                                    <div className="bg-purple-800/50 border border-purple-400/30 rounded-xl p-3 mb-6 backdrop-blur-sm">
+                                        <p className="text-xs font-bold text-purple-100 mb-1">Minor Customization:</p>
+                                        <p className="text-xs text-purple-200">Bebas ubah warna tema dasar dan pilihan font agar senada dengan konsep acara.</p>
                                     </div>
                                     <ul className="space-y-4 mb-8 text-purple-50 flex-1">
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Semua Fitur Basic</li>
-                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Tema Premium & Kustom Warna</li>
-                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Galeri Foto Pre-Wedding (10 Foto)</li>
-                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Fitur RSVP & Buku Tamu</li>
-                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Backsound Musik Pilihan</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Galeri Foto Prewedding</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Autoplay Musik Latar</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Kisah Cinta (Love Story)</li>
                                     </ul>
                                     <Link href="/portofolio?tab=undangan" className="w-full text-center py-3 rounded-xl bg-purple-700 border border-purple-500 text-white font-semibold hover:bg-purple-800 transition-colors mb-3">Lihat Contoh Desain</Link>
-                                    <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Elegant%20Undangan." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-white text-[#8A2BE2] font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Elegant</a>
+                                    <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Premium%20Undangan." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-white text-[#8A2BE2] font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Premium</a>
                                 </div>
                             </div>
 
-                            {/* Custom Premium */}
+                            {/* Eksklusif */}
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-purple-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
-                                <h4 className="text-xl font-bold text-gray-900 mb-2">Custom Premium</h4>
-                                <p className="text-gray-500 text-sm mb-6 font-normal">Desain 100% eksklusif hanya untuk Anda.</p>
+                                <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Eksklusif <span className="text-sm text-gray-500 font-normal">(Custom)</span></h4>
+                                <p className="text-gray-500 text-sm mb-6 font-normal">Undangan premium tanpa batas kreasi. Desain tata letak khusus sesuai keinginan.</p>
                                 <div className="mb-6 flex flex-col">
                                     <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1">Mulai</span>
                                     <div className="flex items-baseline gap-1">
                                         <span className="text-lg font-bold text-gray-900">Rp</span>
-                                        <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">350<span className="text-2xl font-bold">Ribu</span></span>
+                                        <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">250<span className="text-2xl font-bold">Rb</span></span>
                                     </div>
                                 </div>
+                                <div className="bg-green-50 border border-green-100 rounded-xl p-3 mb-6">
+                                    <p className="text-xs font-bold text-green-800 mb-1">Full Custom:</p>
+                                    <p className="text-xs text-green-700">Bebas rombak tata letak, request animasi khusus, dan penambahan fitur.</p>
+                                </div>
                                 <ul className="space-y-4 mb-8 flex-1">
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Semua Fitur Elegant</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Desain Layout 100% Custom</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Integrasi Video / Live Streaming</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Custom Nama & Filter Filter IG</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Kustomisasi Penuh</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Integrasi Filter Instagram</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Custom Domain (nama.com)</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Broadcast Nama Tamu Otomatis</li>
                                 </ul>
                                 <Link href="/portofolio?tab=undangan" className="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</Link>
-                                <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Custom%20Premium%20Undangan." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-gray-900 text-white font-bold hover:bg-black hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Custom Premium</a>
+                                <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Eksklusif%20Undangan." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-gray-900 text-white font-bold hover:bg-black hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Paket Eksklusif</a>
                             </div>
                         </div>
                     </div>

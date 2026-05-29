@@ -348,13 +348,13 @@ function TemplateContent() {
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-600 font-bold text-xs uppercase tracking-wider mb-3">Paket Basic</div>
                                     <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Basic</h2>
-                                    <p className="text-gray-500 mt-2 font-medium">Desain undangan satu halaman yang simpel, elegan, dan padat informasi untuk momen bahagia Anda.</p>
+                                    <p className="text-gray-500 mt-2 font-medium">Solusi praktis dan cepat. Undangan digital elegan dengan fitur esensial.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Harga</p>
+                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Mulai</p>
                                     <div className="flex items-baseline md:justify-end gap-1">
                                         <span className="text-lg font-bold text-gray-900">Rp</span>
-                                        <span className="text-3xl font-extrabold text-[#8A2BE2] tracking-tight leading-none">50<span className="text-xl font-bold">Rb</span> - 100<span className="text-xl font-bold">Rb</span></span>
+                                        <span className="text-3xl font-extrabold text-[#8A2BE2] tracking-tight leading-none">50<span className="text-xl font-bold">Rb</span></span>
                                     </div>
                                 </div>
                             </div>
@@ -381,15 +381,15 @@ function TemplateContent() {
                             <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2"></div>
                             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-white/10 relative z-10">
                                 <div>
-                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider mb-3 backdrop-blur-sm">Terlaris</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Elegant</h2>
-                                    <p className="text-gray-200 mt-2 font-medium">Tema undangan mewah dengan animasi dinamis, galeri foto memukau, dan fitur buku tamu yang interaktif.</p>
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider mb-3 backdrop-blur-sm">Paling Populer</div>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Premium</h2>
+                                    <p className="text-gray-200 mt-2 font-medium">Undangan interaktif yang disesuaikan dengan nuansa warna hari bahagia Anda.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-200 font-bold uppercase tracking-wide mb-1">Harga</p>
+                                    <p className="text-sm text-gray-200 font-bold uppercase tracking-wide mb-1">Mulai</p>
                                     <div className="flex items-baseline md:justify-end gap-1">
                                         <span className="text-lg font-bold text-white">Rp</span>
-                                        <span className="text-3xl font-extrabold text-white tracking-tight leading-none">150<span className="text-xl font-bold">Rb</span> - 250<span className="text-xl font-bold">Rb</span></span>
+                                        <span className="text-3xl font-extrabold text-white tracking-tight leading-none">100<span className="text-xl font-bold">Rb</span></span>
                                     </div>
                                 </div>
                             </div>
@@ -417,15 +417,15 @@ function TemplateContent() {
                         <section className="bg-[#111] p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden text-white border border-gray-800">
                             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-800">
                                 <div>
-                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-200 to-yellow-400 text-yellow-900 font-bold text-xs uppercase tracking-wider mb-3">Premium VIP</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Custom Premium</h2>
-                                    <p className="text-gray-400 mt-2 font-medium">Desain undangan tanpa batas dengan eksplorasi tema visual custom, elemen 3D, atau ilustrasi personal yang unik.</p>
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-200 to-yellow-400 text-yellow-900 font-bold text-xs uppercase tracking-wider mb-3">Custom Design</div>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Eksklusif</h2>
+                                    <p className="text-gray-400 mt-2 font-medium">Undangan premium tanpa batas kreasi. Desain tata letak khusus sesuai keinginan.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-400 font-bold uppercase tracking-wide mb-1">Mulai</p>
                                     <div className="flex items-baseline md:justify-end gap-1">
                                         <span className="text-lg font-bold text-white">Rp</span>
-                                        <span className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500 tracking-tight leading-none">350<span className="text-xl font-bold">Ribu</span></span>
+                                        <span className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500 tracking-tight leading-none">250<span className="text-xl font-bold">Ribu</span></span>
                                     </div>
                                 </div>
                             </div>
