@@ -161,7 +161,7 @@ function TemplateContent() {
                                     <p className="text-sm text-gray-300 font-bold uppercase tracking-wide mb-1">Harga</p>
                                     <div className="flex items-baseline md:justify-end gap-1">
                                         <span className="text-lg font-bold text-white">Rp</span>
-                                        <span className="text-3xl font-extrabold text-white tracking-tight leading-none">700<span className="text-xl font-bold">Rb</span> - 1.2<span className="text-xl font-bold">Juta</span></span>
+                                        <span className="text-3xl font-extrabold text-white tracking-tight leading-none">700<span className="text-xl font-bold">Rb</span> - 1.2<span className="text-xl font-bold">Jt</span></span>
                                     </div>
                                 </div>
                             </div>
@@ -244,7 +244,14 @@ function TemplateContent() {
                             
                             <div className="relative z-10 flex flex-col lg:flex-row gap-12 items-center justify-between">
                                 <div className="flex-1 max-w-3xl">
-                                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/80 text-slate-300 font-bold text-xs uppercase tracking-wider mb-6 border border-slate-700 backdrop-blur-sm">Paket Eksklusif</div>
+                                    <div className="flex items-center gap-4 mb-6">
+                                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/80 text-slate-300 font-bold text-xs uppercase tracking-wider border border-slate-700 backdrop-blur-sm">Paket Eksklusif</div>
+                                        <div className="inline-flex items-baseline gap-1">
+                                            <span className="text-sm font-bold text-slate-400 uppercase tracking-widest mr-1">Mulai</span>
+                                            <span className="text-primary font-bold text-lg">Rp</span>
+                                            <span className="text-white font-extrabold text-2xl tracking-tight">1.5<span className="text-sm font-bold ml-1">Jt</span></span>
+                                        </div>
+                                    </div>
                                     <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Layanan Custom Web Development</h2>
                                     <p className="text-slate-300 mb-10 font-normal leading-relaxed text-lg">
                                         Paket Eksklusif tidak menggunakan template siap pakai. Ini adalah layanan pengembangan website kustom dari nol (Slicing Design to Code) yang dirancang khusus untuk kebutuhan bisnis tingkat lanjut Anda. Ideal untuk Sistem Informasi (ERP/HRIS), E-Commerce kompleks, dan Portal Berita berkinerja tinggi.
@@ -391,7 +398,14 @@ function TemplateContent() {
                             
                             <div className="relative z-10 flex flex-col lg:flex-row gap-12 items-center justify-between">
                                 <div className="flex-1 max-w-3xl">
-                                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-800 text-gray-300 font-bold text-xs uppercase tracking-wider mb-6 border border-gray-700">Paket Eksklusif</div>
+                                    <div className="flex items-center gap-4 mb-6">
+                                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-800 text-gray-300 font-bold text-xs uppercase tracking-wider border border-gray-700">Paket Eksklusif</div>
+                                        <div className="inline-flex items-baseline gap-1">
+                                            <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mr-1">Mulai</span>
+                                            <span className="text-amber-500 font-bold text-lg">Rp</span>
+                                            <span className="text-white font-extrabold text-2xl tracking-tight">250<span className="text-sm font-bold ml-1">Rb</span></span>
+                                        </div>
+                                    </div>
                                     <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Punya Konsep Pernikahan Impian Sendiri?</h2>
                                     <p className="text-gray-400 mb-10 font-normal leading-relaxed text-lg">
                                         Pilih Paket Eksklusif untuk pembuatan desain undangan digital kustom dari nol. Bebas tentukan tata letak, animasi transisi, hingga integrasi custom domain (nama-mempelai.com) agar momen spesial Anda tampil beda.

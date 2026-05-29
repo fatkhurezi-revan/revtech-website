@@ -107,7 +107,7 @@ function HargaContent() {
                                     <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1">Mulai</span>
                                     <div className="flex items-baseline gap-1">
                                         <span className="text-lg font-bold text-gray-900">Rp</span>
-                                        <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">1.5<span className="text-2xl font-bold">Juta</span></span>
+                                        <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">1.5<span className="text-2xl font-bold">Jt</span></span>
                                     </div>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
