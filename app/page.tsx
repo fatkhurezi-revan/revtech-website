@@ -70,7 +70,7 @@ export default function Home() {
                               
                               {/* Layar Laptop Overlay */}
                               {/* TIPS: Sesuaikan nilai persentase ini agar konten pas di dalam bezel/frame laptop */}
-                              <div className="absolute z-20 bg-black overflow-hidden rounded-[2%]" style={{ top: '11%', bottom: '17%', left: '14%', right: '14%' }}>
+                              <div className="absolute z-20 bg-black overflow-hidden" style={{ top: '15%', bottom: '21%', left: '19.5%', right: '19.5%' }}>
                                   {heroImages.map((src, index) => (
                                       <img 
                                           key={index}
