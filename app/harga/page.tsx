@@ -64,8 +64,9 @@ function HargaContent() {
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Hemat</h4>
                                 <p className="text-gray-500 text-sm mb-6 font-normal">Cocok untuk landing page atau portofolio personal.</p>
-                                <div className="mb-6">
-                                    <span className="text-3xl font-extrabold text-gray-900">Rp 300.000 - Rp 500.000</span>
+                                <div className="mb-6 flex items-baseline flex-wrap gap-1">
+                                    <span className="text-lg font-bold text-gray-900">Rp</span>
+                                    <span className="text-3xl xl:text-4xl font-extrabold text-gray-900 tracking-tight leading-none">300<span className="text-xl font-bold">Rb</span> - 500<span className="text-xl font-bold">Rb</span></span>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Single Page (Landing Page)</li>
@@ -83,8 +84,9 @@ function HargaContent() {
                                 <div className="rounded-[22px] p-8 bg-primary text-white h-full flex flex-col">
                                     <h4 className="text-xl font-bold mb-2 mt-2">Paket Populer</h4>
                                     <p className="text-blue-100 text-sm mb-6 font-normal">Sempurna untuk profil bisnis dan UMKM.</p>
-                                    <div className="mb-6">
-                                        <span className="text-3xl font-extrabold">Rp 700.000 - Rp 1.200.000</span>
+                                    <div className="mb-6 flex items-baseline flex-wrap gap-1">
+                                        <span className="text-lg font-bold text-white">Rp</span>
+                                        <span className="text-3xl xl:text-4xl font-extrabold text-white tracking-tight leading-none">700<span className="text-xl font-bold">Rb</span> - 1.2<span className="text-xl font-bold">Jt</span></span>
                                     </div>
                                     <ul className="space-y-4 mb-8 text-blue-50 flex-1">
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Multi-halaman (Maks 5 Hal)</li>
@@ -101,8 +103,12 @@ function HargaContent() {
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-gray-900/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Eksklusif</h4>
                                 <p className="text-gray-500 text-sm mb-6 font-normal">Website tingkat lanjut dengan fitur kompleks.</p>
-                                <div className="mb-6">
-                                    <span className="text-3xl font-extrabold text-gray-900">Mulai Rp 1.500.000</span>
+                                <div className="mb-6 flex flex-col">
+                                    <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1">Mulai</span>
+                                    <div className="flex items-baseline gap-1">
+                                        <span className="text-lg font-bold text-gray-900">Rp</span>
+                                        <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">1.5<span className="text-2xl font-bold">Juta</span></span>
+                                    </div>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Unlimited Halaman</li>
@@ -125,8 +131,9 @@ function HargaContent() {
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Basic</h4>
                                 <p className="text-gray-500 text-sm mb-6 font-normal">Desain simpel, elegan, dan praktis.</p>
-                                <div className="mb-6">
-                                    <span className="text-3xl font-extrabold text-gray-900">Rp 50.000 - Rp 100.000</span>
+                                <div className="mb-6 flex items-baseline flex-wrap gap-1">
+                                    <span className="text-lg font-bold text-gray-900">Rp</span>
+                                    <span className="text-3xl xl:text-4xl font-extrabold text-gray-900 tracking-tight leading-none">50<span className="text-xl font-bold">Rb</span> - 100<span className="text-xl font-bold">Rb</span></span>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> 1 Pilihan Tema Standar</li>
@@ -144,8 +151,9 @@ function HargaContent() {
                                 <div className="rounded-[22px] p-8 bg-[#8A2BE2] text-white h-full flex flex-col">
                                     <h4 className="text-xl font-bold mb-2 mt-2">Paket Elegant</h4>
                                     <p className="text-purple-100 text-sm mb-6 font-normal">Fitur lengkap untuk momen spesial Anda.</p>
-                                    <div className="mb-6">
-                                        <span className="text-3xl font-extrabold">Rp 150.000 - Rp 250.000</span>
+                                    <div className="mb-6 flex items-baseline flex-wrap gap-1">
+                                        <span className="text-lg font-bold text-white">Rp</span>
+                                        <span className="text-3xl xl:text-4xl font-extrabold text-white tracking-tight leading-none">150<span className="text-xl font-bold">Rb</span> - 250<span className="text-xl font-bold">Rb</span></span>
                                     </div>
                                     <ul className="space-y-4 mb-8 text-purple-50 flex-1">
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Semua Fitur Basic</li>
@@ -163,8 +171,12 @@ function HargaContent() {
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-purple-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Custom Premium</h4>
                                 <p className="text-gray-500 text-sm mb-6 font-normal">Desain 100% eksklusif hanya untuk Anda.</p>
-                                <div className="mb-6">
-                                    <span className="text-3xl font-extrabold text-gray-900">Mulai Rp 350.000</span>
+                                <div className="mb-6 flex flex-col">
+                                    <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1">Mulai</span>
+                                    <div className="flex items-baseline gap-1">
+                                        <span className="text-lg font-bold text-gray-900">Rp</span>
+                                        <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">350<span className="text-2xl font-bold">Ribu</span></span>
+                                    </div>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Semua Fitur Elegant</li>

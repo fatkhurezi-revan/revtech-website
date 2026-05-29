@@ -1,7 +1,24 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
+
+const heroImages = [
+    "https://lh3.googleusercontent.com/aida-public/AB6AXuACbYskflWJ0Mk1rKdZMAyVxFdt1jYFeLf0sxnFIIM3cz4eSYOc3nrHNrNp0VRt_seDlZ-LUhNvP8RdhfY6oPg-ZuZ-N6ePjRJBwUB9fp55xwDgMmpbxgMHXLhNrvsvA2Ykt5z0NKVGxtRQY24IWFNDveTBTd1alR_pv8W7UENXd8nB0vjVqmSPumCO59OZKAjUM_nM0QXsxGwxyDMW8tiPjq0ChKQ51E2HcdgLNHWJLzCFsy2vkW3vUpUN497ROqleN7aK0genRrg",
+    "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+];
 
 export default function Home() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+      const interval = setInterval(() => {
+          setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+      }, 4000);
+      return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
       <div className="fixed inset-0 z-[-2] bg-[#f8fafc] pointer-events-none"></div>
@@ -40,9 +57,27 @@ export default function Home() {
                       </div>
                   </div>
 
-                  <div className="relative lg:h-[600px] flex items-center justify-center">
+                  <div className="relative flex items-center justify-center pt-8 lg:pt-0">
                       <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
-                      <img alt="Modern Web Development" className="relative z-10 w-full h-auto object-cover rounded-2xl shadow-2xl animate-float border border-white/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACbYskflWJ0Mk1rKdZMAyVxFdt1jYFeLf0sxnFIIM3cz4eSYOc3nrHNrNp0VRt_seDlZ-LUhNvP8RdhfY6oPg-ZuZ-N6ePjRJBwUB9fp55xwDgMmpbxgMHXLhNrvsvA2Ykt5z0NKVGxtRQY24IWFNDveTBTd1alR_pv8W7UENXd8nB0vjVqmSPumCO59OZKAjUM_nM0QXsxGwxyDMW8tiPjq0ChKQ51E2HcdgLNHWJLzCFsy2vkW3vUpUN497ROqleN7aK0genRrg" />
+                      
+                      {/* Mockup Laptop Interaktif */}
+                      <div className="w-full max-w-2xl mx-auto drop-shadow-2xl animate-float">
+                          <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-2xl aspect-[16/10] max-w-[600px] w-full">
+                              <div className="rounded-lg overflow-hidden h-full w-full bg-white relative">
+                                  {heroImages.map((src, index) => (
+                                      <img 
+                                          key={index}
+                                          src={src} 
+                                          alt={`Slide ${index + 1}`}
+                                          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
+                                      />
+                                  ))}
+                              </div>
+                          </div>
+                          <div className="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-2xl rounded-t-sm h-[20px] md:h-[24px] max-w-[680px] w-full">
+                              <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[80px] h-[6px] md:w-[120px] md:h-[8px] bg-gray-800"></div>
+                          </div>
+                      </div>
                   </div>
               </div>
           </div>

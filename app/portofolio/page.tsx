@@ -8,24 +8,18 @@ function PortofolioContent() {
     const searchParams = useSearchParams();
     const router = useRouter();
     const [activeTab, setActiveTab] = useState('web');
-    const [subFilter, setSubFilter] = useState('Semua');
 
     useEffect(() => {
         const tab = searchParams.get('tab');
         if (tab === 'web' || tab === 'undangan') {
             setActiveTab(tab);
-            setSubFilter('Semua');
         }
     }, [searchParams]);
 
     const handleTabClick = (tab: string) => {
         setActiveTab(tab);
-        setSubFilter('Semua');
         router.push(`/portofolio?tab=${tab}`, { scroll: false });
     };
-
-    const webFilters = ['Semua', 'Paket Hemat', 'Paket Populer', 'Paket Eksklusif'];
-    const undanganFilters = ['Semua', 'Paket Basic', 'Paket Elegant', 'Custom Premium'];
 
     return (
         <div className="pt-12 pb-24 bg-gray-50/50 min-h-screen">
@@ -37,7 +31,7 @@ function PortofolioContent() {
                 </div>
 
                 {/* Tab Switcher */}
-                <div className="flex justify-center mb-10">
+                <div className="flex justify-center mb-16">
                     <div className="bg-gray-100/80 p-1.5 rounded-2xl inline-flex relative shadow-inner backdrop-blur-sm border border-gray-200/50">
                         <button 
                             onClick={() => handleTabClick('web')}
@@ -64,119 +58,144 @@ function PortofolioContent() {
 
                 {/* Tab Content: Web Development */}
                 {activeTab === 'web' && (
-                    <div className="animate-fade-in">
-                        <div className="flex flex-wrap justify-center gap-2 mb-10">
-                            {webFilters.map(filter => (
-                                <button 
-                                    key={filter} 
-                                    onClick={() => setSubFilter(filter)} 
-                                    className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${subFilter === filter ? 'bg-primary text-white shadow-md' : 'bg-white text-gray-600 hover:bg-primary/10 border border-gray-200'}`}
-                                >
-                                    {filter}
-                                </button>
-                            ))}
-                        </div>
+                    <div className="animate-fade-in space-y-24">
+                        
+                        {/* Section 1: Hasil Karya Kami */}
+                        <section>
+                            <div className="mb-10 border-b border-gray-200 pb-4">
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Hasil Karya Kami</h2>
+                                <p className="text-gray-500 mt-2">Proyek nyata yang telah kami selesaikan untuk klien.</p>
+                            </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            
-                            {/* Proyek 1: Learniverse */}
-                            {(subFilter === 'Semua' || subFilter === 'Paket Eksklusif') && (
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                 <div className="group relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
                                     <div className="aspect-video overflow-hidden">
                                         <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Learniverse Mockup" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                     </div>
                                     <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100">
                                         <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                            <span className="bg-primary/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Paket Eksklusif</span>
-                                            <h3 className="text-white text-3xl font-bold mb-2">Learniverse Website</h3>
-                                            <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Asisten akademis AI dengan fitur integrasi chatbot dan manajemen kelas interaktif.</p>
+                                            <span className="bg-primary/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Klien Asli</span>
+                                            <h3 className="text-white text-3xl font-bold mb-2">Learniverse Platform</h3>
+                                            <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Platform e-learning untuk bimbingan belajar dengan sistem manajemen kelas.</p>
                                             <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-gray-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                                <span className="material-symbols-outlined">launch</span> Kunjungi Website
+                                                <span className="material-symbols-outlined text-sm">launch</span> Kunjungi Website
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                            )}
+                            </div>
+                        </section>
 
-                            {/* Proyek 2: Personal Digital Hub */}
-                            {(subFilter === 'Semua' || subFilter === 'Paket Hemat') && (
+                        {/* Section 2: Eksplorasi Konsep & Template */}
+                        <section>
+                            <div className="mb-10 border-b border-gray-200 pb-4">
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Eksplorasi Konsep & Template</h2>
+                                <p className="text-gray-500 mt-2">Desain konsep dan template siap pakai untuk inspirasi bisnis Anda.</p>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                 <div className="group relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
                                     <div className="aspect-video overflow-hidden">
                                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Digital Hub Mockup" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                     </div>
                                     <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100">
                                         <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                            <span className="bg-green-500/20 text-green-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Paket Hemat</span>
-                                            <h3 className="text-white text-3xl font-bold mb-2">Personal Digital Hub</h3>
-                                            <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Website profil untuk profesional kreatif, menampilkan karya, resume, dan form kontak terintegrasi.</p>
-                                            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-gray-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                                <span className="material-symbols-outlined">launch</span> Kunjungi Website
+                                            <span className="bg-gray-500/50 text-gray-100 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Template Profil</span>
+                                            <h3 className="text-white text-3xl font-bold mb-2">Creative Portfolio</h3>
+                                            <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Konsep website profil untuk profesional kreatif dengan tampilan modern.</p>
+                                            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-primary text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                                <span className="material-symbols-outlined text-sm">visibility</span> Lihat Demo Live
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                            )}
-                            
-                        </div>
+                            </div>
+                        </section>
+
                     </div>
                 )}
 
                 {/* Tab Content: Undangan Digital */}
                 {activeTab === 'undangan' && (
-                    <div className="animate-fade-in">
-                        <div className="flex flex-wrap justify-center gap-2 mb-10">
-                            {undanganFilters.map(filter => (
-                                <button 
-                                    key={filter} 
-                                    onClick={() => setSubFilter(filter)} 
-                                    className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${subFilter === filter ? 'bg-[#8A2BE2] text-white shadow-md' : 'bg-white text-gray-600 hover:bg-[#8A2BE2]/10 border border-gray-200'}`}
-                                >
-                                    {filter}
-                                </button>
-                            ))}
-                        </div>
+                    <div className="animate-fade-in space-y-24">
+                        
+                        {/* Section 1: Katalog Contoh Template */}
+                        <section>
+                            <div className="mb-10 text-center">
+                                <h2 className="text-3xl font-bold text-gray-900 mb-4">Katalog Contoh Template</h2>
+                                <p className="text-gray-500">Pilih tema undangan yang paling sesuai dengan gaya acara Anda.</p>
+                            </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                            
-                            {/* Tema Elegant Modern */}
-                            {(subFilter === 'Semua' || subFilter === 'Paket Elegant') && (
-                                <div className="group relative rounded-3xl overflow-hidden shadow-lg border border-purple-100 bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
-                                    <div className="aspect-[4/5] overflow-hidden bg-purple-50">
-                                        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant Modern Mockup" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                                    </div>
-                                    <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100">
-                                        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                            <span className="bg-[#8A2BE2]/20 text-purple-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Paket Elegant</span>
-                                            <h3 className="text-white text-3xl font-bold mb-2">Elegant Modern</h3>
-                                            <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Desain mewah dengan nuansa gelap (dark mode), tipografi elegan, dan efek partikel emas interaktif.</p>
-                                            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[#8A2BE2] text-white font-bold px-6 py-3 rounded-xl hover:bg-purple-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                                <span className="material-symbols-outlined">visibility</span> Lihat Demo Undangan
-                                            </a>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                                
+                                {/* Tema Elegant */}
+                                <div className="flex flex-col items-center">
+                                    <div className="relative w-[280px] h-[580px] bg-gray-900 rounded-[3rem] p-3 shadow-2xl border-4 border-gray-800 transform hover:-translate-y-4 transition-transform duration-500">
+                                        <div className="absolute top-0 inset-x-0 h-6 bg-gray-900 rounded-t-[2.5rem] z-20 flex justify-center">
+                                            <div className="w-20 h-4 bg-black rounded-b-xl mt-1"></div>
+                                        </div>
+                                        <div className="w-full h-full bg-purple-900 rounded-[2rem] overflow-hidden relative group">
+                                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant Theme" className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-1000" />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                                                <div className="text-center">
+                                                    <h3 className="text-white text-2xl font-serif font-bold mb-1">Romeo & Juliet</h3>
+                                                    <p className="text-purple-200 text-xs tracking-widest uppercase">Tema Elegant</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <a href="#" className="mt-8 bg-[#8A2BE2] text-white font-bold px-8 py-3 rounded-full hover:bg-purple-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                        Lihat Demo
+                                    </a>
                                 </div>
-                            )}
 
-                            {/* Tema Rustic Minimalist */}
-                            {(subFilter === 'Semua' || subFilter === 'Paket Basic') && (
-                                <div className="group relative rounded-3xl overflow-hidden shadow-lg border border-amber-100 bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
-                                    <div className="aspect-[4/5] overflow-hidden bg-amber-50">
-                                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rustic Minimalist Mockup" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                                    </div>
-                                    <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100">
-                                        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                            <span className="bg-amber-500/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Paket Basic</span>
-                                            <h3 className="text-white text-3xl font-bold mb-2">Rustic Minimalist</h3>
-                                            <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Konsep bumi (earth tone) dengan ornamen daun kering, warna hangat, dan tipografi kaligrafi natural.</p>
-                                            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-[#8A2BE2] text-white font-bold px-6 py-3 rounded-xl hover:bg-purple-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                                <span className="material-symbols-outlined">visibility</span> Lihat Demo Undangan
-                                            </a>
+                                {/* Tema Rustic */}
+                                <div className="flex flex-col items-center">
+                                    <div className="relative w-[280px] h-[580px] bg-gray-900 rounded-[3rem] p-3 shadow-2xl border-4 border-gray-800 transform hover:-translate-y-4 transition-transform duration-500">
+                                        <div className="absolute top-0 inset-x-0 h-6 bg-gray-900 rounded-t-[2.5rem] z-20 flex justify-center">
+                                            <div className="w-20 h-4 bg-black rounded-b-xl mt-1"></div>
+                                        </div>
+                                        <div className="w-full h-full bg-amber-900 rounded-[2rem] overflow-hidden relative group">
+                                            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rustic Theme" className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-1000" />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                                                <div className="text-center">
+                                                    <h3 className="text-white text-2xl font-serif font-bold mb-1">Andi & Rina</h3>
+                                                    <p className="text-amber-200 text-xs tracking-widest uppercase">Tema Rustic</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <a href="#" className="mt-8 bg-[#8A2BE2] text-white font-bold px-8 py-3 rounded-full hover:bg-purple-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                        Lihat Demo
+                                    </a>
                                 </div>
-                            )}
-                            
-                        </div>
+
+                            </div>
+                        </section>
+
+                        {/* Section 2: Klien yang Mempercayai Kami */}
+                        <section className="bg-white rounded-3xl p-10 border border-purple-100 shadow-sm">
+                            <div className="mb-8 text-center border-b border-gray-100 pb-6">
+                                <h2 className="text-xl md:text-2xl font-bold text-gray-900">Klien yang Mempercayai Kami</h2>
+                                <p className="text-gray-500 text-sm mt-2">Momen bahagia yang telah kami abadikan secara digital.</p>
+                            </div>
+
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                <div className="rounded-xl overflow-hidden aspect-[3/4] shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Client 1" className="w-full h-full object-cover" />
+                                </div>
+                                <div className="rounded-xl overflow-hidden aspect-[3/4] shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                    <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Client 2" className="w-full h-full object-cover" />
+                                </div>
+                                <div className="rounded-xl overflow-hidden aspect-[3/4] shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                    <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Client 3" className="w-full h-full object-cover" />
+                                </div>
+                                <div className="rounded-xl overflow-hidden aspect-[3/4] shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Client 4" className="w-full h-full object-cover" />
+                                </div>
+                            </div>
+                        </section>
+
                     </div>
                 )}
             </div>
