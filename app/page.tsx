@@ -61,29 +61,29 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
                       
                       {/* Mockup Container Utama */}
-                      <div className="w-full max-w-3xl mx-auto relative pt-4 pb-12">
+                      <div className="w-full max-w-3xl mx-auto relative pt-4 pb-16">
                           
-                          {/* Laptop Wrapper dengan Animasi Melayang */}
-                          <div className="relative z-10 animate-float drop-shadow-2xl">
-                              {/* Gambar Laptop Asli (HP/Windows Style) */}
-                              <img src="/hp-laptop-mockup.png" alt="Laptop Realistis" className="w-full h-auto relative z-10" />
+                          {/* Laptop Wrapper dengan Animasi Melayang (Smooth Levitation) */}
+                          <div className="relative z-10 animate-levitate drop-shadow-2xl -translate-y-4">
+                              {/* Gambar Laptop Asli (Asus Vivobook) */}
+                              <img src="/asus-vivobook-mockup.png" alt="Laptop Realistis" className="w-full h-auto relative z-10" />
                               
                               {/* Layar Laptop Overlay */}
-                              {/* Catatan: Persentase ini disesuaikan dengan area layar pada mockup laptop Anda */}
-                              <div className="absolute z-20 bg-black overflow-hidden rounded-[2%]" style={{ top: '8%', bottom: '16%', left: '12%', right: '12%' }}>
+                              {/* Catatan: Persentase disesuaikan untuk layar laptop yang menghadap depan lurus */}
+                              <div className="absolute z-20 bg-black overflow-hidden rounded-[1%]" style={{ top: '6%', bottom: '14%', left: '11%', right: '11%' }}>
                                   {heroImages.map((src, index) => (
                                       <img 
                                           key={index}
                                           src={src} 
                                           alt={`Slide ${index + 1}`}
-                                          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
+                                          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
                                       />
                                   ))}
                               </div>
                           </div>
 
                           {/* Bayangan Lantai (Static Floor Drop Shadow) */}
-                          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[70%] h-[20px] bg-gray-900/30 blur-2xl rounded-[100%] z-0"></div>
+                          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[80%] h-[30px] bg-gray-900/15 blur-xl rounded-[100%] z-0 pointer-events-none"></div>
                       </div>
                   </div>
               </div>
