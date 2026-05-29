@@ -57,7 +57,7 @@ export default function FAQ() {
                         />
                         <AccordionItem 
                             title="Apakah saya akan mendapatkan domain .com gratis?" 
-                            content="Ya! Mulai dari Paket Hemat, Anda sudah mendapatkan domain (.com / .net / .id sesuai ketersediaan) secara gratis untuk tahun pertama. Biaya perpanjangan di tahun berikutnya akan dikenakan sesuai tarif normal registrar domain."
+                            content="Ya! Khusus untuk klien Paket Populer dan Paket Eksklusif, Anda otomatis mendapatkan gratis pendaftaran domain profesional (.com / .net / .id) untuk 1 tahun pertama. Sedangkan untuk Paket Hemat, website Anda akan di-hosting menggunakan subdomain gratis berkinerja tinggi dari Vercel (contoh: namabisnis.vercel.app), atau Anda juga bisa menghubungkannya dengan domain yang sudah Anda beli sendiri."
                         />
                     </div>
                 </div>
