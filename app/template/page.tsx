@@ -237,88 +237,52 @@ function TemplateContent() {
                         </section>
 
                         {/* Paket Enterprise */}
-                        <section className="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-sm border border-gray-100">
-                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-100">
-                                <div>
-                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-700 font-bold text-xs uppercase tracking-wider mb-3">Custom Build</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Eksklusif</h2>
-                                    <p className="text-gray-500 mt-2 font-medium">Pengembangan sistem skala penuh secara custom dengan antarmuka UI/UX eksklusif yang dirancang khusus untuk korporasi besar.</p>
+                        <section className="bg-slate-900 p-8 md:p-12 lg:p-16 rounded-[3rem] shadow-2xl border border-slate-800 text-white relative overflow-hidden mt-8">
+                            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[100px] -mr-40 -mt-40"></div>
+                            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-900/30 rounded-full blur-[80px] -ml-20 -mb-20"></div>
+                            
+                            <div className="relative z-10 flex flex-col lg:flex-row gap-12 items-center justify-between">
+                                <div className="flex-1 max-w-3xl">
+                                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/80 text-slate-300 font-bold text-xs uppercase tracking-wider mb-6 border border-slate-700 backdrop-blur-sm">Paket Eksklusif</div>
+                                    <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Layanan Custom Web Development</h2>
+                                    <p className="text-slate-300 mb-10 font-normal leading-relaxed text-lg">
+                                        Paket Eksklusif tidak menggunakan template siap pakai. Ini adalah layanan pengembangan website kustom dari nol (Slicing Figma to Next.js) yang dirancang khusus untuk kebutuhan bisnis tingkat lanjut Anda. Ideal untuk Sistem Informasi (ERP/HRIS), E-Commerce kompleks, dan Portal Berita berkinerja tinggi.
+                                    </p>
+                                    
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                                        <div className="flex items-center gap-3 bg-slate-800/50 p-4 rounded-2xl border border-slate-700/50 backdrop-blur-sm">
+                                            <div className="bg-primary/20 p-2 rounded-xl text-primary flex-shrink-0">
+                                                <span className="material-symbols-outlined text-xl">architecture</span>
+                                            </div>
+                                            <span className="text-slate-200 font-semibold text-sm">Arsitektur kode modern & terukur</span>
+                                        </div>
+                                        <div className="flex items-center gap-3 bg-slate-800/50 p-4 rounded-2xl border border-slate-700/50 backdrop-blur-sm">
+                                            <div className="bg-primary/20 p-2 rounded-xl text-primary flex-shrink-0">
+                                                <span className="material-symbols-outlined text-xl">database</span>
+                                            </div>
+                                            <span className="text-slate-200 font-semibold text-sm">Integrasi API & Database khusus</span>
+                                        </div>
+                                        <div className="flex items-center gap-3 bg-slate-800/50 p-4 rounded-2xl border border-slate-700/50 backdrop-blur-sm md:col-span-2">
+                                            <div className="bg-primary/20 p-2 rounded-xl text-primary flex-shrink-0">
+                                                <span className="material-symbols-outlined text-xl">speed</span>
+                                            </div>
+                                            <span className="text-slate-200 font-semibold text-sm">Optimasi Core Web Vitals tingkat lanjut</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20konsultasi%20spesifikasi%20sistem%20untuk%20layanan%20custom." target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 bg-primary text-white font-bold px-8 py-4 rounded-xl hover:bg-blue-600 hover:shadow-[0_0_30px_-5px_rgba(37,99,235,0.5)] transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto justify-center">
+                                        <span className="material-symbols-outlined">forum</span> Konsultasi Spesifikasi Sistem
+                                    </a>
                                 </div>
-                                <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Mulai</p>
-                                    <div className="flex items-baseline md:justify-end gap-1">
-                                        <span className="text-lg font-bold text-gray-900">Rp</span>
-                                        <span className="text-3xl font-extrabold text-gray-900 tracking-tight leading-none">1.5<span className="text-2xl font-bold">Juta</span></span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-                                {/* Custom 1 */}
-                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                                    <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Slicing UI to Code" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
-                                    </div>
-                                    <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Slicing UI to Code</h3>
-                                        <p className="text-sm text-slate-600 leading-relaxed">
-                                            Konversi desain antarmuka milik Anda menjadi website interaktif yang pixel-perfect. Dibangun dengan kode yang bersih.
-                                        </p>
-                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20konsultasi%20pembuatan%20sistem%20custom." target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-2 rounded-lg text-sm hover:bg-green-600 hover:text-white transition-colors duration-300">
-                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Fitur
-                                        </a>
-                                    </div>
-                                </div>
-
-                                {/* Custom 2 */}
-                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                                    <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Custom Web Development" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
-                                    </div>
-                                    <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Custom Web Development</h3>
-                                        <p className="text-sm text-slate-600 leading-relaxed">
-                                            Pengembangan aplikasi web khusus berdasarkan spesifikasi dan alur kerja (flow) yang Anda sediakan. Saya berfokus pada penulisan kode yang efisien dan responsif.
-                                        </p>
-                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20konsultasi%20pembuatan%20sistem%20custom." target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-2 rounded-lg text-sm hover:bg-green-600 hover:text-white transition-colors duration-300">
-                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Fitur
-                                        </a>
-                                    </div>
-                                </div>
-
-                                {/* Custom 3 */}
-                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                                    <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="API & Database Integration" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
-                                    </div>
-                                    <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">API & Database Integration</h3>
-                                        <p className="text-sm text-slate-600 leading-relaxed">
-                                            Menghubungkan website front-end Anda dengan sistem database eksternal atau integrasi layanan pihak ketiga (Third-Party API) sesuai dengan dokumentasi teknis yang dibutuhkan.
-                                        </p>
-                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20konsultasi%20pembuatan%20sistem%20custom." target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-2 rounded-lg text-sm hover:bg-green-600 hover:text-white transition-colors duration-300">
-                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Fitur
-                                        </a>
-                                    </div>
-                                </div>
-
-                                {/* Custom 4 */}
-                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                                    <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Revamp & Optimasi Performa" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
-                                    </div>
-                                    <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Web Revamp & Optimasi Performa</h3>
-                                        <p className="text-sm text-slate-600 leading-relaxed">
-                                            Penulisan ulang (rewrite) kode website lama Anda menggunakan tumpukan teknologi modern. Berfokus penuh pada peningkatan kecepatan loading dan skor Core Web Vitals.
-                                        </p>
-                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20konsultasi%20pembuatan%20sistem%20custom." target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-green-100 text-green-700 font-bold px-4 py-2 rounded-lg text-sm hover:bg-green-600 hover:text-white transition-colors duration-300">
-                                            <span className="material-symbols-outlined text-[16px]">forum</span> Konsultasi Fitur
-                                        </a>
+                                
+                                <div className="hidden lg:block w-72 h-72">
+                                    <div className="relative w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 rounded-[2rem] border border-slate-700 shadow-2xl flex items-center justify-center p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                                        <div className="absolute top-4 left-4 flex gap-1.5">
+                                            <div className="w-3 h-3 rounded-full bg-slate-600"></div>
+                                            <div className="w-3 h-3 rounded-full bg-slate-600"></div>
+                                            <div className="w-3 h-3 rounded-full bg-slate-600"></div>
+                                        </div>
+                                        <span className="material-symbols-outlined text-9xl text-slate-700">developer_mode</span>
                                     </div>
                                 </div>
                             </div>
