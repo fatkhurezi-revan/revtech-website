@@ -63,16 +63,16 @@ function HargaContent() {
                             {/* Hemat */}
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Hemat</h4>
-                                <p className="text-gray-500 text-sm mb-6 font-normal">Cocok untuk landing page atau portofolio personal.</p>
+                                <p className="text-gray-500 text-sm mb-6 font-normal">Solusi cepat untuk landing page UMKM, bisnis jasa, atau portofolio personal.</p>
                                 <div className="mb-6 flex items-baseline flex-wrap gap-1">
                                     <span className="text-lg font-bold text-gray-900">Rp</span>
                                     <span className="text-3xl xl:text-4xl font-extrabold text-gray-900 tracking-tight leading-none">300<span className="text-xl font-bold">Rb</span> - 500<span className="text-xl font-bold">Rb</span></span>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Single Page (Landing Page)</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Desain Template Premium</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Responsif (Mobile Friendly)</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Tombol WhatsApp</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Kustomisasi Template Premium</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Performa Cepat & Mobile Responsive</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Integrasi Tombol WhatsApp</li>
                                 </ul>
                                 <Link href="/portofolio?tab=web" className="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</Link>
                                 <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Hemat%20Web." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Paket Hemat</a>
@@ -83,16 +83,16 @@ function HargaContent() {
                                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-primary text-xs font-bold px-4 py-1 rounded-full shadow-md tracking-wider z-10 border border-blue-100">PALING POPULER</div>
                                 <div className="rounded-[22px] p-8 bg-primary text-white h-full flex flex-col">
                                     <h4 className="text-xl font-bold mb-2 mt-2">Paket Populer</h4>
-                                    <p className="text-blue-100 text-sm mb-6 font-normal">Sempurna untuk profil bisnis dan UMKM.</p>
+                                    <p className="text-blue-100 text-sm mb-6 font-normal">Website multi-halaman profesional untuk profil perusahaan, sekolah, atau instansi.</p>
                                     <div className="mb-6 flex items-baseline flex-wrap gap-1">
                                         <span className="text-lg font-bold text-white">Rp</span>
                                         <span className="text-3xl xl:text-4xl font-extrabold text-white tracking-tight leading-none">700<span className="text-xl font-bold">Rb</span> - 1.2<span className="text-xl font-bold">Jt</span></span>
                                     </div>
                                     <ul className="space-y-4 mb-8 text-blue-50 flex-1">
-                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Multi-halaman (Maks 5 Hal)</li>
-                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Desain Kustom (UI/UX)</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Multi-halaman (Maks 5 Halaman)</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Penyesuaian Desain & Struktur</li>
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Gratis Domain (.com) 1 Tahun</li>
-                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Basic SEO & Integrasi Sosmed</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Basic SEO & Setup Sosmed</li>
                                     </ul>
                                     <Link href="/portofolio?tab=web" className="w-full text-center py-3 rounded-xl bg-blue-600 border border-blue-400 text-white font-semibold hover:bg-blue-800 transition-colors mb-3">Lihat Contoh Desain</Link>
                                     <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Populer%20Web." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-white text-primary font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Populer</a>
@@ -102,7 +102,7 @@ function HargaContent() {
                             {/* Eksklusif */}
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-gray-900/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Eksklusif</h4>
-                                <p className="text-gray-500 text-sm mb-6 font-normal">Website tingkat lanjut dengan fitur kompleks.</p>
+                                <p className="text-gray-500 text-sm mb-6 font-normal">Jasa custom development (Figma to Code) & integrasi sistem web tingkat lanjut.</p>
                                 <div className="mb-6 flex flex-col">
                                     <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1">Mulai</span>
                                     <div className="flex items-baseline gap-1">
@@ -111,12 +111,12 @@ function HargaContent() {
                                     </div>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Unlimited Halaman</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Full Custom Development</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Fitur Khusus (Booking, Blog, dll)</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Advanced SEO & Analytics</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Skalabilitas Halaman Dinamis</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Slicing UI & Custom Koding</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Integrasi Database & API</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Advanced SEO & Optimasi Performa</li>
                                 </ul>
-                                <Link href="/portofolio?tab=web" className="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</Link>
+                                <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20ingin%20Konsultasi%20Spesifikasi%20untuk%20Paket%20Eksklusif." target="_blank" rel="noreferrer" className="w-full block text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Konsultasi Spesifikasi</a>
                                 <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Eksklusif%20Web." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-gray-900 text-white font-bold hover:bg-black hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Paket Eksklusif</a>
                             </div>
                         </div>
