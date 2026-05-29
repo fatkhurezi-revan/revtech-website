@@ -65,7 +65,7 @@ function HargaContent() {
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Hemat</h4>
                                 <p className="text-gray-500 text-sm mb-6 font-normal">Cocok untuk landing page atau portofolio personal.</p>
                                 <div className="mb-6">
-                                    <span className="text-3xl font-extrabold text-gray-900">Rp 300K - 500K</span>
+                                    <span className="text-3xl font-extrabold text-gray-900">Rp 300.000 - Rp 500.000</span>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Single Page (Landing Page)</li>
@@ -84,7 +84,7 @@ function HargaContent() {
                                     <h4 className="text-xl font-bold mb-2 mt-2">Paket Populer</h4>
                                     <p className="text-blue-100 text-sm mb-6 font-normal">Sempurna untuk profil bisnis dan UMKM.</p>
                                     <div className="mb-6">
-                                        <span className="text-3xl font-extrabold">Rp 700K - 1.2M</span>
+                                        <span className="text-3xl font-extrabold">Rp 700.000 - Rp 1.200.000</span>
                                     </div>
                                     <ul className="space-y-4 mb-8 text-blue-50 flex-1">
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Multi-halaman (Maks 5 Hal)</li>
@@ -102,7 +102,7 @@ function HargaContent() {
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Eksklusif</h4>
                                 <p className="text-gray-500 text-sm mb-6 font-normal">Website tingkat lanjut dengan fitur kompleks.</p>
                                 <div className="mb-6">
-                                    <span className="text-3xl font-extrabold text-gray-900">Mulai Rp 1.5M</span>
+                                    <span className="text-3xl font-extrabold text-gray-900">Mulai Rp 1.500.000</span>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Unlimited Halaman</li>
@@ -126,7 +126,7 @@ function HargaContent() {
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Basic</h4>
                                 <p className="text-gray-500 text-sm mb-6 font-normal">Desain simpel, elegan, dan praktis.</p>
                                 <div className="mb-6">
-                                    <span className="text-3xl font-extrabold text-gray-900">Rp 50K - 100K</span>
+                                    <span className="text-3xl font-extrabold text-gray-900">Rp 50.000 - Rp 100.000</span>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> 1 Pilihan Tema Standar</li>
@@ -145,7 +145,7 @@ function HargaContent() {
                                     <h4 className="text-xl font-bold mb-2 mt-2">Paket Elegant</h4>
                                     <p className="text-purple-100 text-sm mb-6 font-normal">Fitur lengkap untuk momen spesial Anda.</p>
                                     <div className="mb-6">
-                                        <span className="text-3xl font-extrabold">Rp 150K - 250K</span>
+                                        <span className="text-3xl font-extrabold">Rp 150.000 - Rp 250.000</span>
                                     </div>
                                     <ul className="space-y-4 mb-8 text-purple-50 flex-1">
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Semua Fitur Basic</li>
@@ -164,7 +164,7 @@ function HargaContent() {
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Custom Premium</h4>
                                 <p className="text-gray-500 text-sm mb-6 font-normal">Desain 100% eksklusif hanya untuk Anda.</p>
                                 <div className="mb-6">
-                                    <span className="text-3xl font-extrabold text-gray-900">Mulai Rp 350K</span>
+                                    <span className="text-3xl font-extrabold text-gray-900">Mulai Rp 350.000</span>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Semua Fitur Elegant</li>

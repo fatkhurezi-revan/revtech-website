@@ -110,12 +110,12 @@ export default function Home() {
                   <div className="flex flex-col md:flex-row justify-around items-center gap-8 mb-8 border-b border-gray-100 pb-8">
                       <div>
                           <p className="text-gray-500 font-medium mb-2">Jasa Web Development</p>
-                          <p className="text-3xl font-extrabold text-gray-900">Mulai <span className="text-primary">Rp 300K</span></p>
+                          <p className="text-3xl font-extrabold text-gray-900">Mulai <span className="text-primary">Rp 300.000</span></p>
                       </div>
                       <div className="hidden md:block w-px h-16 bg-gray-200"></div>
                       <div>
                           <p className="text-gray-500 font-medium mb-2">Jasa Undangan Digital</p>
-                          <p className="text-3xl font-extrabold text-gray-900">Mulai <span className="text-[#8A2BE2]">Rp 50K</span></p>
+                          <p className="text-3xl font-extrabold text-gray-900">Mulai <span className="text-[#8A2BE2]">Rp 50.000</span></p>
                       </div>
                   </div>
                   <Link href="/harga" className="inline-flex items-center gap-2 bg-primary text-white font-bold px-8 py-4 rounded-full hover:bg-blue-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300">

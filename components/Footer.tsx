@@ -59,8 +59,8 @@ export default function Footer() {
             <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <p className="text-gray-400 text-sm">© 2026 RevTech. All rights reserved.</p>
                 <div className="flex gap-6">
-                    <a href="#" className="text-gray-400 hover:text-primary text-sm">Privacy Policy</a>
-                    <a href="#" className="text-gray-400 hover:text-primary text-sm">Terms of Service</a>
+                    <Link href="/privacy" className="text-gray-400 hover:text-primary text-sm">Privacy Policy</Link>
+                    <Link href="/terms" className="text-gray-400 hover:text-primary text-sm">Terms of Service</Link>
                 </div>
             </div>
         </div>
