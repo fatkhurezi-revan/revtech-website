@@ -12,6 +12,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "RevTech - Solusi Digital Profesional",
   description: "Agensi digital modern untuk kebutuhan website dan undangan digital.",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
