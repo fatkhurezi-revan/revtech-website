@@ -77,18 +77,61 @@ function TemplateContent() {
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <TemplateCard 
-                                    title="Minimalist Company Profile" 
-                                    category="Starter Template" 
-                                    image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                    desc="Desain bersih dan langsung pada intinya. Sempurna untuk menampilkan layanan jasa Anda."
-                                />
-                                <TemplateCard 
-                                    title="Creative Agency Landing" 
-                                    category="Starter Template" 
-                                    image="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                                    desc="Layout kreatif dengan fokus pada portofolio dan konversi (Call-to-Action)."
-                                />
+                                {/* Kategori 1 */}
+                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                                    <div className="aspect-video overflow-hidden relative">
+                                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Jasa & Layanan" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                    </div>
+                                    <div className="p-6 md:p-8">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Jasa & Layanan</h3>
+                                        <p className="text-sm text-slate-600 leading-relaxed">
+                                            Desain profesional untuk menawarkan keahlian Anda. Cocok untuk berbagai bidang jasa seperti bengkel, klinik, kontraktor, salon, hingga agensi lokal.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Kategori 2 */}
+                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                                    <div className="aspect-video overflow-hidden relative">
+                                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Kuliner & Resto" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                    </div>
+                                    <div className="p-6 md:p-8">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Kuliner & Resto</h3>
+                                        <p className="text-sm text-slate-600 leading-relaxed">
+                                            Tampilan visual yang menggugah selera untuk menu andalan Anda. Ideal untuk kafe, rumah makan, franchise minuman, atau bisnis katering.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Kategori 3 */}
+                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                                    <div className="aspect-video overflow-hidden relative">
+                                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Profil & Portofolio" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                    </div>
+                                    <div className="p-6 md:p-8">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Profil & Portofolio</h3>
+                                        <p className="text-sm text-slate-600 leading-relaxed">
+                                            Bangun kredibilitas digital yang elegan. Sangat pas digunakan sebagai kartu nama digital untuk sales, agen properti, freelancer, atau tokoh publik.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Kategori 4 */}
+                                <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                                    <div className="aspect-video overflow-hidden relative">
+                                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Katalog Produk" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
+                                    </div>
+                                    <div className="p-6 md:p-8">
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Katalog Produk</h3>
+                                        <p className="text-sm text-slate-600 leading-relaxed">
+                                            Fokus menonjolkan keunggulan barang jualan Anda. Didesain khusus untuk meningkatkan penjualan produk seperti pakaian, kosmetik, herbal, atau gadget.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </section>
 
