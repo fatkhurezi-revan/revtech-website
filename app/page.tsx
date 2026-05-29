@@ -60,49 +60,42 @@ export default function Home() {
                   <div className="relative flex items-center justify-center pt-8 lg:pt-0">
                       <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
                       
-                      {/* Mockup Container Utama */}
-                      <div className="w-full max-w-3xl mx-auto relative pt-4 pb-12 flex flex-col items-center">
+                      {/* Mockup Container Multi-Device */}
+                      <div className="w-full max-w-4xl mx-auto relative pt-8 pb-12 flex flex-col items-center group" style={{ perspective: '2000px' }}>
                           
-                          {/* 1. Kontainer Utama (Melayang di Udara) */}
-                          <div className="relative animate-bounce-slow w-full max-w-2xl drop-shadow-2xl"> 
-                              
-                              {/* 2. Modern Ultra-Thin Laptop CSS Frame (Anti-Bocor 100%) */}
-                              <div className="relative w-full">
-                                  {/* Lid (Bezel Hitam Modern & Tipis) */}
-                                  <div className="relative bg-[#0d0d0d] rounded-t-[1rem] md:rounded-t-[1.5rem] p-[2%] pb-[3%] shadow-[0_0_0_1px_rgba(255,255,255,0.15)_inset,0_10px_25px_rgba(0,0,0,0.5)] aspect-[16/10]">
-                                      
-                                      {/* Micro Webcam (Sangat Kecil & Modern) */}
-                                      <div className="absolute top-[1%] left-1/2 -translate-x-1/2 w-1 h-1 md:w-1.5 md:h-1.5 bg-gray-900 rounded-full flex items-center justify-center shadow-inner">
-                                          <div className="w-[2px] h-[2px] bg-blue-500/20 rounded-full"></div>
-                                      </div>
-
-                                      {/* 3. Area Dalam Layar Kaca (Bezel-less Vibe) */}
-                                      <div className="relative w-full h-full bg-[#050505] rounded-sm md:rounded-[4px] overflow-hidden z-20 shadow-[0_0_8px_rgba(0,0,0,0.9)_inset]">
-                                          {heroImages.map((src, index) => (
-                                              <img 
-                                                  key={index}
-                                                  src={src} 
-                                                  alt={`Slide ${index + 1}`}
-                                                  className={`absolute inset-0 w-full h-full object-cover object-top transition-transform transition-opacity duration-1000 ease-out ${index === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`} 
-                                              />
-                                          ))}
-                                      </div>
-                                      
-                                      {/* Glossy Overlay (Pantulan Kaca Halus) */}
-                                      <div className="absolute inset-0 bg-gradient-to-tr from-white/5 via-transparent to-transparent rounded-t-[1rem] md:rounded-t-[1.5rem] pointer-events-none z-30"></div>
-                                  </div>
-
-                                  {/* Base Laptop (Bagian Bawah Silver Tipis & Elegan) */}
-                                  <div className="relative bg-gradient-to-b from-[#e2e4e9] to-[#a3a8b2] h-[10px] md:h-[14px] w-[104%] -left-[2%] rounded-b-xl md:rounded-b-2xl shadow-xl flex justify-center items-start border-t border-gray-300 z-40">
-                                      {/* Thumb indent (Cekungan Halus) */}
-                                      <div className="w-[12%] h-[40%] bg-[#8b919d] rounded-b-md shadow-inner opacity-80"></div>
-                                  </div>
-                              </div>
-
+                          {/* Glow Aura Latar Belakang */}
+                          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-to-tr from-primary/20 via-purple-500/20 to-blue-400/20 blur-[80px] rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-1000 -z-10"></div>
+                          
+                          {/* Floating Badges (Elemen Interaktif) */}
+                          <div className="absolute top-12 -left-4 md:-left-12 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl shadow-xl border border-white/50 font-bold text-primary text-sm flex items-center gap-2 animate-bounce-slow z-30" style={{ animationDelay: '0ms' }}>
+                              <span className="material-symbols-outlined text-lg">public</span>
+                              Web Company
+                          </div>
+                          <div className="absolute top-1/3 -right-4 md:-right-10 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl shadow-xl border border-white/50 font-bold text-purple-600 text-sm flex items-center gap-2 animate-bounce-slow z-30" style={{ animationDelay: '400ms' }}>
+                              <span className="material-symbols-outlined text-lg">favorite</span>
+                              Undangan Digital
+                          </div>
+                          <div className="absolute bottom-28 -left-2 md:-left-8 bg-gray-900/90 backdrop-blur-md text-white px-4 py-2 rounded-2xl shadow-xl border border-gray-700 font-bold text-sm flex items-center gap-2 animate-bounce-slow z-30" style={{ animationDelay: '800ms' }}>
+                              <span className="material-symbols-outlined text-lg">analytics</span>
+                              Sistem Bisnis
                           </div>
 
-                          {/* 4. Efek Bayangan Lantai Super Realistis (Lebih Gelap & Menyebar) */}
-                          <div className="w-[85%] h-8 bg-black/40 blur-[20px] rounded-[100%] mx-auto mt-6 pointer-events-none transform -translate-y-4 -z-10"></div>
+                          {/* Gambar Utama dengan Efek 3D Hover & Float */}
+                          <div className="relative w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)] transition-all duration-700 ease-out transform group-hover:-translate-y-4 group-hover:scale-[1.02] group-hover:-rotate-1"> 
+                              <img 
+                                  // TODO: Ganti src di bawah ini dengan nama file gambar yang baru Anda upload ke folder public/
+                                  src="/multi-device-mockup.png" 
+                                  className="w-full h-auto object-contain relative z-20" 
+                                  alt="RevTech Multi Device Mockup"
+                                  onError={(e) => {
+                                      // Fallback sementara jika gambar belum diupload
+                                      e.currentTarget.src = "https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80";
+                                  }}
+                              />
+                          </div>
+
+                          {/* Bayangan Lantai Dinamis */}
+                          <div className="w-[85%] h-8 bg-black/20 blur-[25px] rounded-[100%] mx-auto mt-2 pointer-events-none transform -translate-y-4 -z-10 transition-all duration-700 group-hover:bg-black/10 group-hover:w-[70%] group-hover:blur-[30px]"></div>
                       </div>
                   </div>
               </div>
