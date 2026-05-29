@@ -26,7 +26,7 @@ function TemplateContent() {
                 
                 <div className="text-center mb-16">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Katalog Pilihan Template</h1>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto font-normal">Jelajahi berbagai desain template profesional berdasarkan pilihan paket harga yang sesuai dengan kebutuhan dan anggaran Anda.</p>
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto font-normal">Jelajahi berbagai desain template profesional berdasarkan pilihan paket harga dan kategori yang sesuai dengan kebutuhan dan anggaran Anda.</p>
                 </div>
 
                 {/* Tab Switcher */}
@@ -65,7 +65,7 @@ function TemplateContent() {
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-xs uppercase tracking-wider mb-3">Paket Hemat</div>
                                     <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Hemat</h2>
-                                    <p className="text-gray-500 mt-2 font-medium">Template profil bisnis simpel dan elegan, cocok untuk UMKM & Personal.</p>
+                                    <p className="text-gray-500 mt-2 font-medium">Pilihan desain website informatif yang cepat, terjangkau, dan sangat pas untuk merintis identitas digital bisnis Anda.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Harga</p>
@@ -80,11 +80,11 @@ function TemplateContent() {
                                 {/* Kategori 1 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Jasa & Layanan" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Jasa & Layanan" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Jasa & Layanan</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Jasa & Layanan</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Desain profesional untuk menawarkan keahlian Anda. Cocok untuk berbagai bidang jasa seperti bengkel, klinik, kontraktor, salon, hingga agensi lokal.
                                         </p>
@@ -97,11 +97,11 @@ function TemplateContent() {
                                 {/* Kategori 2 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Kuliner & Resto" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kuliner & Resto" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Kuliner & Resto</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kuliner & Resto</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Tampilan visual yang menggugah selera untuk menu andalan Anda. Ideal untuk kafe, rumah makan, warung tenda, franchise minuman, hingga bisnis katering harian.
                                         </p>
@@ -114,11 +114,11 @@ function TemplateContent() {
                                 {/* Kategori 3 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Profil & Portofolio" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Profil & Portofolio" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Profil & Portofolio</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Profil & Portofolio</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Bangun kredibilitas digital yang elegan. Sangat pas digunakan sebagai kartu nama digital untuk sales, agen properti, freelancer, atau tokoh publik.
                                         </p>
@@ -131,11 +131,11 @@ function TemplateContent() {
                                 {/* Kategori 4 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Katalog Produk" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Katalog Produk" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Katalog Produk</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Katalog Produk</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Fokus menonjolkan keunggulan barang jualan Anda. Didesain khusus untuk jualan produk fisik, mulai dari pakaian, kosmetik, hasil bumi, hingga penjualan hewan ternak.
                                         </p>
@@ -154,7 +154,7 @@ function TemplateContent() {
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider mb-3 backdrop-blur-sm">Rekomendasi</div>
                                     <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Populer</h2>
-                                    <p className="text-gray-300 mt-2 font-medium">Template e-commerce dan sistem bisnis dengan fitur interaktif & dinamis.</p>
+                                    <p className="text-gray-300 mt-2 font-medium">Solusi sistem website dinamis dengan fitur interaktif tingkat lanjut untuk memperluas jangkauan pasar digital Anda.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-300 font-bold uppercase tracking-wide mb-1">Harga</p>
@@ -169,11 +169,11 @@ function TemplateContent() {
                                 {/* Kategori 1 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Company Profile" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Company Profile" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Company Profile</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Company Profile</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Desain eksklusif multi-halaman untuk membangun citra profesional bisnis Anda. Dilengkapi halaman Tentang Kami, Galeri Fasilitas, Layanan, dan Klien. Sangat ideal untuk perusahaan manufaktur, pabrik, kontraktor besar, hingga firma hukum.
                                         </p>
@@ -186,11 +186,11 @@ function TemplateContent() {
                                 {/* Kategori 2 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Instansi Publik & Edukasi" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Instansi Publik & Edukasi" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Instansi Publik & Edukasi</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Instansi Publik & Edukasi</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Portal informasi resmi yang terstruktur, transparan, dan mudah diakses publik. Dilengkapi fitur Berita, Pengumuman, Profil Institusi, hingga Layanan Masyarakat/PPDB. Pilihan utama untuk website Desa, Dinas Pemerintahan, Sekolah, dan Yayasan.
                                         </p>
@@ -203,11 +203,11 @@ function TemplateContent() {
                                 {/* Kategori 3 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori E-Commerce & Retail" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-Commerce & Retail" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori E-Commerce & Retail</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">E-Commerce & Retail</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Toko online berskala besar dengan sistem navigasi belanja yang terintegrasi. Dilengkapi fitur keranjang belanja, filter produk, dan halaman detail barang. Cocok untuk distributor, toko grosir, brand fashion, dan bisnis retail.
                                         </p>
@@ -220,11 +220,11 @@ function TemplateContent() {
                                 {/* Kategori 4 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Properti & Pariwisata" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Properti & Pariwisata" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Properti & Pariwisata</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Properti & Pariwisata</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Tampilan visual memukau dan elegan dengan dukungan galeri beresolusi tinggi. Sempurna untuk developer perumahan, penyewaan villa/hotel, agen perjalanan, atau promosi destinasi wisata lokal.
                                         </p>
@@ -242,7 +242,7 @@ function TemplateContent() {
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-700 font-bold text-xs uppercase tracking-wider mb-3">Custom Build</div>
                                     <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Eksklusif</h2>
-                                    <p className="text-gray-500 mt-2 font-medium">Sistem kustomisasi 100% dari nol, UI/UX eksklusif untuk korporat besar.</p>
+                                    <p className="text-gray-500 mt-2 font-medium">Pengembangan sistem skala penuh secara custom dengan antarmuka UI/UX eksklusif yang dirancang khusus untuk korporasi besar.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Mulai</p>
@@ -282,7 +282,7 @@ function TemplateContent() {
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-600 font-bold text-xs uppercase tracking-wider mb-3">Paket Basic</div>
                                     <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Basic</h2>
-                                    <p className="text-gray-500 mt-2 font-medium">Template undangan 1 halaman simpel yang elegan dan informatif.</p>
+                                    <p className="text-gray-500 mt-2 font-medium">Desain undangan satu halaman yang simpel, elegan, dan padat informasi untuk momen bahagia Anda.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Harga</p>
@@ -317,7 +317,7 @@ function TemplateContent() {
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider mb-3 backdrop-blur-sm">Terlaris</div>
                                     <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Elegant</h2>
-                                    <p className="text-gray-200 mt-2 font-medium">Template multi-halaman dengan animasi galeri foto & musik latar (BGM).</p>
+                                    <p className="text-gray-200 mt-2 font-medium">Tema undangan mewah dengan animasi dinamis, galeri foto memukau, dan fitur buku tamu yang interaktif.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-200 font-bold uppercase tracking-wide mb-1">Harga</p>
@@ -353,7 +353,7 @@ function TemplateContent() {
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-200 to-yellow-400 text-yellow-900 font-bold text-xs uppercase tracking-wider mb-3">Premium VIP</div>
                                     <h2 className="text-3xl md:text-4xl font-extrabold text-white">Custom Premium</h2>
-                                    <p className="text-gray-400 mt-2 font-medium">Desain 100% custom eksklusif, buku tamu digital, QR Code kehadiran & filter Instagram.</p>
+                                    <p className="text-gray-400 mt-2 font-medium">Desain undangan tanpa batas dengan eksplorasi tema visual custom, elemen 3D, atau ilustrasi personal yang unik.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
                                     <p className="text-sm text-gray-400 font-bold uppercase tracking-wide mb-1">Mulai</p>
