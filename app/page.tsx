@@ -66,15 +66,8 @@ export default function Home() {
                           {/* 1. Kontainer Utama (Melayang di Udara) */}
                           <div className="relative animate-bounce-slow w-full drop-shadow-2xl"> 
                               
-                              {/* 2. Base Laptop Menghadap Depan (Frame Utama) */}
-                              <img 
-                                src="/macbook-mockup.png" 
-                                className="w-full h-auto object-contain relative z-10" 
-                                alt="Laptop Mockup"
-                              />
-
-                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Pas di Dalam Kaca MacBook) */}
-                              <div className="absolute top-[12.2%] bottom-[18.5%] left-[14.5%] right-[14.5%] z-20 overflow-hidden rounded-[1px]">
+                              {/* 3. Area Dalam Layar Kaca (Berada di BELAKANG bezel bolong - Anti Bocor 100%) */}
+                              <div className="absolute top-[11.5%] bottom-[17.5%] left-[13.5%] right-[13.5%] z-0 overflow-hidden rounded-[2px]">
                                 {/* Elemen animasi berganti gambar template Web & Undangan secara otomatis (Crossfade) */}
                                 <div className="relative w-full h-full bg-black">
                                       {heroImages.map((src, index) => (
@@ -87,6 +80,13 @@ export default function Home() {
                                       ))}
                                 </div>
                               </div>
+
+                              {/* 2. Base Laptop Menghadap Depan (Frame Utama transparan bolong - Berada di DEPAN) */}
+                              <img 
+                                src="/macbook-transparent.png" 
+                                className="w-full h-auto object-contain relative z-10 pointer-events-none" 
+                                alt="Laptop Mockup"
+                              />
 
                           </div>
 
