@@ -169,11 +169,11 @@ function TemplateContent() {
                                 {/* Kategori 1 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Company Profile Korporat" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Company Profile" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
-                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Company Profile Korporat</h3>
+                                        <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">Kategori Company Profile</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Desain eksklusif multi-halaman untuk membangun citra profesional bisnis Anda. Dilengkapi halaman Tentang Kami, Galeri Fasilitas, Layanan, dan Klien. Sangat ideal untuk perusahaan manufaktur, pabrik, kontraktor besar, hingga firma hukum.
                                         </p>
@@ -186,7 +186,7 @@ function TemplateContent() {
                                 {/* Kategori 2 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Instansi Publik & Edukasi" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kategori Instansi Publik & Edukasi" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
