@@ -60,22 +60,22 @@ export default function Home() {
                   <div className="relative flex items-center justify-center pt-8 lg:pt-0">
                       <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
                       
-                      {/* Mockup Laptop Interaktif */}
-                      <div className="w-full max-w-2xl mx-auto drop-shadow-2xl animate-float">
-                          <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-2xl aspect-[16/10] max-w-[600px] w-full">
-                              <div className="rounded-lg overflow-hidden h-full w-full bg-white relative">
-                                  {heroImages.map((src, index) => (
-                                      <img 
-                                          key={index}
-                                          src={src} 
-                                          alt={`Slide ${index + 1}`}
-                                          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
-                                      />
-                                  ))}
-                              </div>
-                          </div>
-                          <div className="relative mx-auto bg-gray-900 dark:bg-gray-700 rounded-b-2xl rounded-t-sm h-[20px] md:h-[24px] max-w-[680px] w-full">
-                              <div className="absolute left-1/2 top-0 -translate-x-1/2 rounded-b-xl w-[80px] h-[6px] md:w-[120px] md:h-[8px] bg-gray-800"></div>
+                      {/* Mockup Laptop Realistis Interaktif */}
+                      <div className="w-full max-w-3xl mx-auto relative drop-shadow-[0_30px_30px_rgba(0,0,0,0.3)]">
+                          {/* Gambar Laptop Asli */}
+                          <img src="/macbook-mockup.png" alt="Macbook Pro" className="w-full h-auto relative z-10" />
+                          
+                          {/* Layar Laptop Overlay */}
+                          {/* Catatan: Persentase ini disesuaikan dengan posisi layar pada gambar mockup */}
+                          <div className="absolute z-20 bg-black overflow-hidden rounded-[1%]" style={{ top: '8.5%', bottom: '15.5%', left: '12%', right: '12%' }}>
+                              {heroImages.map((src, index) => (
+                                  <img 
+                                      key={index}
+                                      src={src} 
+                                      alt={`Slide ${index + 1}`}
+                                      className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
+                                  />
+                              ))}
                           </div>
                       </div>
                   </div>

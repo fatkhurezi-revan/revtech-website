@@ -60,37 +60,11 @@ function PortofolioContent() {
                 {activeTab === 'web' && (
                     <div className="animate-fade-in space-y-24">
                         
-                        {/* Section 1: Hasil Karya Kami */}
+                        {/* Section 1: Eksplorasi Konsep & Template (Katalog Dummy) */}
                         <section>
                             <div className="mb-10 border-b border-gray-200 pb-4">
-                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Hasil Karya Kami</h2>
-                                <p className="text-gray-500 mt-2">Proyek nyata yang telah kami selesaikan untuk klien.</p>
-                            </div>
-
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                                <div className="group relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
-                                    <div className="aspect-video overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Learniverse Mockup" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                                    </div>
-                                    <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100">
-                                        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                            <span className="bg-primary/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Klien Asli</span>
-                                            <h3 className="text-white text-3xl font-bold mb-2">Learniverse Platform</h3>
-                                            <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Platform e-learning untuk bimbingan belajar dengan sistem manajemen kelas.</p>
-                                            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-gray-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                                <span className="material-symbols-outlined text-sm">launch</span> Kunjungi Website
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        {/* Section 2: Eksplorasi Konsep & Template */}
-                        <section>
-                            <div className="mb-10 border-b border-gray-200 pb-4">
-                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Eksplorasi Konsep & Template</h2>
-                                <p className="text-gray-500 mt-2">Desain konsep dan template siap pakai untuk inspirasi bisnis Anda.</p>
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Katalog Konsep & Template</h2>
+                                <p className="text-gray-500 mt-2">Pilih desain konsep dan template siap pakai untuk inspirasi bisnis Anda.</p>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -105,6 +79,32 @@ function PortofolioContent() {
                                             <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Konsep website profil untuk profesional kreatif dengan tampilan modern.</p>
                                             <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-primary text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                                                 <span className="material-symbols-outlined text-sm">visibility</span> Lihat Demo Live
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* Section 2: Hasil Karya Kami / Klien Terkini */}
+                        <section>
+                            <div className="mb-10 border-b border-gray-200 pb-4">
+                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Hasil Karya Kami / Klien Terkini</h2>
+                                <p className="text-gray-500 mt-2">Bukti nyata dari berbagai proyek yang telah kami selesaikan untuk klien.</p>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                                <div className="group relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                                    <div className="aspect-video overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Learniverse Mockup" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                    </div>
+                                    <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100">
+                                        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                            <span className="bg-primary/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Klien Asli</span>
+                                            <h3 className="text-white text-3xl font-bold mb-2">Learniverse Platform</h3>
+                                            <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Platform e-learning untuk bimbingan belajar dengan sistem manajemen kelas.</p>
+                                            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-gray-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                                <span className="material-symbols-outlined text-sm">launch</span> Kunjungi Website
                                             </a>
                                         </div>
                                     </div>
