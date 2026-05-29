@@ -113,14 +113,16 @@ function LayananContent() {
                         <div className="max-w-5xl mx-auto animate-fade-in">
                             <div className="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                                    <div className="order-2 md:order-1 bg-purple-50 rounded-3xl p-8 border border-purple-100 text-center">
-                                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Undangan Preview" className="rounded-2xl shadow-lg mb-6 w-full h-64 object-cover" />
+                                    <div className="order-2 md:order-1 bg-purple-50 rounded-3xl p-8 border border-purple-100 text-center flex flex-col justify-center items-center">
+                                        <div className="relative aspect-[9/16] w-full max-w-[240px] mx-auto rounded-2xl overflow-hidden shadow-lg border-4 border-white mb-6">
+                                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Undangan Preview" className="w-full h-full object-cover" />
+                                        </div>
                                         <p className="text-purple-800 font-semibold text-sm">Desain Elegan untuk Momen Spesial Anda</p>
                                     </div>
                                     
                                     <div className="order-1 md:order-2">
                                         <h2 className="text-3xl font-bold text-gray-900 mb-6">Undangan Interaktif & Elegan</h2>
-                                        <p className="text-gray-600 mb-8 font-normal leading-relaxed">Berikan kesan pertama yang tak terlupakan kepada tamu undangan Anda. Lebih praktis, hemat, dan ramah lingkungan dengan fitur-fitur canggih.</p>
+                                        <p className="text-gray-600 mb-8 font-normal leading-relaxed">Berikan kesan pertama yang tak terlupakan kepada tamu undangan Anda. Lebih praktis, hemat, dan ramah lingkungan dengan beragam pilihan fitur canggih yang dapat disesuaikan dengan paket pilihan Anda.</p>
                                         
                                         <ul className="space-y-4 mb-8">
                                             <li className="flex items-center gap-3 text-sm text-gray-700">
