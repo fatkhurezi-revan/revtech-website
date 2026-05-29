@@ -65,12 +65,11 @@ export default function Home() {
                           
                           {/* Laptop Wrapper dengan Animasi Melayang (Smooth Levitation) */}
                           <div className="relative z-10 animate-levitate drop-shadow-2xl -translate-y-4">
-                              {/* Gambar Laptop Asli (Asus Vivobook) */}
-                              <img src="/asus-vivobook-mockup.png" alt="Laptop Realistis" className="w-full h-auto relative z-10" />
+                              {/* Gambar Laptop (Vector Frame) */}
+                              <img src="/laptop-frame.svg" alt="Laptop Realistis" className="w-full h-auto relative z-10" />
                               
                               {/* Layar Laptop Overlay */}
-                              {/* Catatan: Persentase disesuaikan untuk layar laptop yang menghadap depan lurus */}
-                              <div className="absolute z-20 bg-black overflow-hidden rounded-[1%]" style={{ top: '6%', bottom: '14%', left: '11%', right: '11%' }}>
+                              <div className="absolute z-20 bg-black overflow-hidden rounded-[1%]" style={{ top: '7.33%', bottom: '13.33%', left: '11.4%', right: '11.4%' }}>
                                   {heroImages.map((src, index) => (
                                       <img 
                                           key={index}
