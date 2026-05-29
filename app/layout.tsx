@@ -13,7 +13,14 @@ export const metadata: Metadata = {
   title: "RevTech - Solusi Digital Profesional",
   description: "Agensi digital modern untuk kebutuhan website dan undangan digital.",
   icons: {
-    icon: "/icon.png",
+    icon: [
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
