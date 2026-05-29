@@ -65,11 +65,12 @@ export default function Home() {
                           
                           {/* Laptop Wrapper dengan Animasi Melayang (Smooth Levitation) */}
                           <div className="relative z-10 animate-levitate drop-shadow-2xl -translate-y-4">
-                              {/* Gambar Laptop (Vector Frame) */}
+                              {/* Gambar Laptop */}
                               <img src="/macbook-mockup.png" alt="Laptop Realistis" className="w-full h-auto relative z-10" />
                               
                               {/* Layar Laptop Overlay */}
-                              <div className="absolute z-20 bg-black overflow-hidden rounded-[2%]" style={{ top: '8%', bottom: '15%', left: '12%', right: '12%' }}>
+                              {/* TIPS: Sesuaikan nilai persentase ini agar konten pas di dalam bezel/frame laptop */}
+                              <div className="absolute z-20 bg-black overflow-hidden rounded-[2%]" style={{ top: '11%', bottom: '17%', left: '14%', right: '14%' }}>
                                   {heroImages.map((src, index) => (
                                       <img 
                                           key={index}
