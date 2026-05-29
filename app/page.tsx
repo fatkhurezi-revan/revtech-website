@@ -83,12 +83,11 @@ export default function Home() {
                           {/* Gambar Utama dengan Efek 3D Hover & Float */}
                           <div className="relative w-full drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)] transition-all duration-700 ease-out transform group-hover:-translate-y-4 group-hover:scale-[1.02] group-hover:-rotate-1"> 
                               <img 
-                                  // TODO: Ganti src di bawah ini dengan nama file gambar yang baru Anda upload ke folder public/
-                                  src="/multi-device-mockup.png" 
+                                  src="/assets/mockup-hero-section.png" 
                                   className="w-full h-auto object-contain relative z-20" 
                                   alt="RevTech Multi Device Mockup"
                                   onError={(e) => {
-                                      // Fallback sementara jika gambar belum diupload
+                                      // Fallback sementara jika gambar tidak ditemukan
                                       e.currentTarget.src = "https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80";
                                   }}
                               />
