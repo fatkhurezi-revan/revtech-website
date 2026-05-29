@@ -60,36 +60,36 @@ function LayananContent() {
                     {/* Tab Content: Web Development */}
                     {activeTab === 'web' && (
                         <div className="max-w-5xl mx-auto animate-fade-in">
-                            <div className="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 shadow-xl shadow-gray-200/50">
+                            <div className="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
                                 <div className="max-w-3xl mx-auto">
                                     <div className="text-center">
                                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Website Kustom Premium</h2>
-                                        <p className="text-gray-600 mb-10 leading-relaxed text-lg">Website tidak hanya sekadar online, tetapi harus bisa mendatangkan konversi. Kami merancang arsitektur website yang super cepat, SEO-friendly, dan memukau di semua perangkat.</p>
+                                        <p className="text-gray-600 mb-10 font-normal leading-relaxed text-lg">Website tidak hanya sekadar online, tetapi harus bisa mendatangkan konversi. Kami merancang arsitektur website yang super cepat, SEO-friendly, dan memukau di semua perangkat.</p>
                                     </div>
                                         
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
-                                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
+                                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
                                                 <div className="bg-primary/10 p-3 rounded-xl text-primary shrink-0"><span className="material-symbols-outlined">devices</span></div>
                                                 <div>
                                                     <h4 className="font-bold text-gray-900 mb-1">100% Responsif</h4>
                                                     <p className="text-sm text-gray-500">Tampil sempurna di HP, Tablet, maupun Desktop.</p>
                                                 </div>
                                             </div>
-                                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
+                                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
                                                 <div className="bg-primary/10 p-3 rounded-xl text-primary shrink-0"><span className="material-symbols-outlined">speed</span></div>
                                                 <div>
                                                     <h4 className="font-bold text-gray-900 mb-1">Fast Loading</h4>
                                                     <p className="text-sm text-gray-500">Akses super cepat tanpa loading lama berkat teknologi modern.</p>
                                                 </div>
                                             </div>
-                                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
+                                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
                                                 <div className="bg-primary/10 p-3 rounded-xl text-primary shrink-0"><span className="material-symbols-outlined">chat</span></div>
                                                 <div>
                                                     <h4 className="font-bold text-gray-900 mb-1">Integrasi WhatsApp</h4>
                                                     <p className="text-sm text-gray-500">Tombol obrolan langsung terhubung ke nomor WA bisnis Anda.</p>
                                                 </div>
                                             </div>
-                                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100">
+                                            <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
                                                 <div className="bg-primary/10 p-3 rounded-xl text-primary shrink-0"><span className="material-symbols-outlined">troubleshoot</span></div>
                                                 <div>
                                                     <h4 className="font-bold text-gray-900 mb-1">Basic SEO Setup</h4>
@@ -111,7 +111,7 @@ function LayananContent() {
                     {/* Tab Content: Undangan Digital */}
                     {activeTab === 'undangan' && (
                         <div className="max-w-5xl mx-auto animate-fade-in">
-                            <div className="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 shadow-xl shadow-gray-200/50">
+                            <div className="bg-white border border-gray-100 rounded-[2rem] p-8 md:p-12 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:-translate-y-2 transition-all duration-500">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                                     <div className="order-2 md:order-1 bg-purple-50 rounded-3xl p-8 border border-purple-100 text-center">
                                         <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Undangan Preview" className="rounded-2xl shadow-lg mb-6 w-full h-64 object-cover" />
@@ -120,7 +120,7 @@ function LayananContent() {
                                     
                                     <div className="order-1 md:order-2">
                                         <h2 className="text-3xl font-bold text-gray-900 mb-6">Undangan Interaktif & Elegan</h2>
-                                        <p className="text-gray-600 mb-8 leading-relaxed">Berikan kesan pertama yang tak terlupakan kepada tamu undangan Anda. Lebih praktis, hemat, dan ramah lingkungan dengan fitur-fitur canggih.</p>
+                                        <p className="text-gray-600 mb-8 font-normal leading-relaxed">Berikan kesan pertama yang tak terlupakan kepada tamu undangan Anda. Lebih praktis, hemat, dan ramah lingkungan dengan fitur-fitur canggih.</p>
                                         
                                         <ul className="space-y-4 mb-8">
                                             <li className="flex items-center gap-3 text-sm text-gray-700">
@@ -172,28 +172,28 @@ function LayananContent() {
                         <div className="relative z-10 text-center">
                             <div className="w-20 h-20 mx-auto bg-primary border-4 rounded-full flex items-center justify-center mb-6 text-white text-3xl font-extrabold glow-breathe relative z-10 transition-all duration-300">1</div>
                             <h4 className="font-bold text-gray-900 mb-2">Konsultasi</h4>
-                            <p className="text-sm text-gray-500">Diskusikan kebutuhan, referensi desain, dan target Anda via WhatsApp.</p>
+                            <p className="text-sm text-gray-500 font-normal">Diskusikan kebutuhan, referensi desain, dan target Anda via WhatsApp.</p>
                         </div>
                         
                         {/* Step 2 */}
                         <div className="relative z-10 text-center">
                             <div className="w-20 h-20 mx-auto bg-white border-2 border-primary rounded-full flex items-center justify-center shadow-sm mb-6 text-primary text-3xl font-extrabold relative z-10">2</div>
                             <h4 className="font-bold text-gray-900 mb-2">Kirim Data</h4>
-                            <p className="text-sm text-gray-500">Kirimkan materi seperti teks, foto, logo, dan melakukan pembayaran DP 50%.</p>
+                            <p className="text-sm text-gray-500 font-normal">Kirimkan materi seperti teks, foto, logo, dan melakukan pembayaran DP 50%.</p>
                         </div>
                         
                         {/* Step 3 */}
                         <div className="relative z-10 text-center">
                             <div className="w-20 h-20 mx-auto bg-white border-2 border-primary rounded-full flex items-center justify-center shadow-sm mb-6 text-primary text-3xl font-extrabold relative z-10">3</div>
                             <h4 className="font-bold text-gray-900 mb-2">Koding & Desain</h4>
-                            <p className="text-sm text-gray-500">Tim kami akan mulai merakit dan mendesain pesanan Anda sesuai request.</p>
+                            <p className="text-sm text-gray-500 font-normal">Tim kami akan mulai merakit dan mendesain pesanan Anda sesuai request.</p>
                         </div>
                         
                         {/* Step 4 */}
                         <div className="relative z-10 text-center">
                             <div className="w-20 h-20 mx-auto bg-white border-2 border-primary rounded-full flex items-center justify-center shadow-sm mb-6 text-primary text-3xl font-extrabold relative z-10">4</div>
                             <h4 className="font-bold text-gray-900 mb-2">Review & Online</h4>
-                            <p className="text-sm text-gray-500">Anda mereview hasilnya, pelunasan, lalu website langsung mengudara!</p>
+                            <p className="text-sm text-gray-500 font-normal">Anda mereview hasilnya, pelunasan, lalu website langsung mengudara!</p>
                         </div>
                     </div>
                 </div>

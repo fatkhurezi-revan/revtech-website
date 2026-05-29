@@ -61,9 +61,9 @@ function HargaContent() {
                     <div className="max-w-6xl mx-auto animate-fade-in">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {/* Hemat */}
-                            <div className="glass-card rounded-3xl p-8 bg-white flex flex-col">
+                            <div className="glass-card rounded-3xl p-8 bg-white flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Hemat</h4>
-                                <p className="text-gray-500 text-sm mb-6">Cocok untuk landing page atau portofolio personal.</p>
+                                <p className="text-gray-500 text-sm mb-6 font-normal">Cocok untuk landing page atau portofolio personal.</p>
                                 <div className="mb-6">
                                     <span className="text-3xl font-extrabold text-gray-900">Rp 300K - 500K</span>
                                 </div>
@@ -78,27 +78,29 @@ function HargaContent() {
                             </div>
 
                             {/* Populer */}
-                            <div className="rounded-3xl p-8 bg-primary text-white transform md:-translate-y-4 shadow-2xl shadow-primary/40 relative flex flex-col border-2 border-blue-400 ring-4 ring-primary/20">
-                                <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-white text-primary text-xs font-bold px-4 py-1 rounded-b-lg tracking-wider">PALING POPULER</div>
-                                <h4 className="text-xl font-bold mb-2 mt-4">Paket Populer</h4>
-                                <p className="text-blue-100 text-sm mb-6">Sempurna untuk profil bisnis dan UMKM.</p>
-                                <div className="mb-6">
-                                    <span className="text-3xl font-extrabold">Rp 700K - 1.2M</span>
+                            <div className="rounded-3xl p-[3px] bg-gradient-to-br from-blue-400 via-primary to-indigo-600 transform md:-translate-y-4 hover:-translate-y-6 transition-all duration-500 glow-pulse-blue relative flex flex-col">
+                                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-primary text-xs font-bold px-4 py-1 rounded-full shadow-md tracking-wider z-10 border border-blue-100">PALING POPULER</div>
+                                <div className="rounded-[22px] p-8 bg-primary text-white h-full flex flex-col">
+                                    <h4 className="text-xl font-bold mb-2 mt-2">Paket Populer</h4>
+                                    <p className="text-blue-100 text-sm mb-6 font-normal">Sempurna untuk profil bisnis dan UMKM.</p>
+                                    <div className="mb-6">
+                                        <span className="text-3xl font-extrabold">Rp 700K - 1.2M</span>
+                                    </div>
+                                    <ul className="space-y-4 mb-8 text-blue-50 flex-1">
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Multi-halaman (Maks 5 Hal)</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Desain Kustom (UI/UX)</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Gratis Domain (.com) 1 Tahun</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Basic SEO & Integrasi Sosmed</li>
+                                    </ul>
+                                    <Link href="/portofolio?tab=web" className="w-full text-center py-3 rounded-xl bg-blue-600 border border-blue-400 text-white font-semibold hover:bg-blue-800 transition-colors mb-3">Lihat Contoh Desain</Link>
+                                    <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Populer%20Web." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-white text-primary font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Populer</a>
                                 </div>
-                                <ul className="space-y-4 mb-8 text-blue-50 flex-1">
-                                    <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Multi-halaman (Maks 5 Hal)</li>
-                                    <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Desain Kustom (UI/UX)</li>
-                                    <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Gratis Domain (.com) 1 Tahun</li>
-                                    <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Basic SEO & Integrasi Sosmed</li>
-                                </ul>
-                                <Link href="/portofolio?tab=web" className="w-full text-center py-3 rounded-xl bg-blue-600 border border-blue-400 text-white font-semibold hover:bg-blue-800 transition-colors mb-3">Lihat Contoh Desain</Link>
-                                <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Populer%20Web." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-white text-primary font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Populer</a>
                             </div>
 
                             {/* Eksklusif */}
-                            <div className="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-gray-900/5">
+                            <div className="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-gray-900/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Eksklusif</h4>
-                                <p className="text-gray-500 text-sm mb-6">Website tingkat lanjut dengan fitur kompleks.</p>
+                                <p className="text-gray-500 text-sm mb-6 font-normal">Website tingkat lanjut dengan fitur kompleks.</p>
                                 <div className="mb-6">
                                     <span className="text-3xl font-extrabold text-gray-900">Mulai Rp 1.5M</span>
                                 </div>
@@ -120,9 +122,9 @@ function HargaContent() {
                     <div className="max-w-6xl mx-auto animate-fade-in">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {/* Basic */}
-                            <div className="glass-card rounded-3xl p-8 bg-white flex flex-col">
+                            <div className="glass-card rounded-3xl p-8 bg-white flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Basic</h4>
-                                <p className="text-gray-500 text-sm mb-6">Desain simpel, elegan, dan praktis.</p>
+                                <p className="text-gray-500 text-sm mb-6 font-normal">Desain simpel, elegan, dan praktis.</p>
                                 <div className="mb-6">
                                     <span className="text-3xl font-extrabold text-gray-900">Rp 50K - 100K</span>
                                 </div>
@@ -137,28 +139,30 @@ function HargaContent() {
                             </div>
 
                             {/* Elegant */}
-                            <div className="rounded-3xl p-8 bg-[#8A2BE2] text-white transform md:-translate-y-4 shadow-2xl shadow-[#8A2BE2]/40 relative flex flex-col border-2 border-purple-400 ring-4 ring-[#8A2BE2]/20">
-                                <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-white text-[#8A2BE2] text-xs font-bold px-4 py-1 rounded-b-lg tracking-wider">REKOMENDASI</div>
-                                <h4 className="text-xl font-bold mb-2 mt-4">Paket Elegant</h4>
-                                <p className="text-purple-100 text-sm mb-6">Fitur lengkap untuk momen spesial Anda.</p>
-                                <div className="mb-6">
-                                    <span className="text-3xl font-extrabold">Rp 150K - 250K</span>
+                            <div className="rounded-3xl p-[3px] bg-gradient-to-br from-purple-400 via-[#8A2BE2] to-fuchsia-600 transform md:-translate-y-4 hover:-translate-y-6 transition-all duration-500 glow-pulse-purple relative flex flex-col">
+                                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-[#8A2BE2] text-xs font-bold px-4 py-1 rounded-full shadow-md tracking-wider z-10 border border-purple-100">REKOMENDASI</div>
+                                <div className="rounded-[22px] p-8 bg-[#8A2BE2] text-white h-full flex flex-col">
+                                    <h4 className="text-xl font-bold mb-2 mt-2">Paket Elegant</h4>
+                                    <p className="text-purple-100 text-sm mb-6 font-normal">Fitur lengkap untuk momen spesial Anda.</p>
+                                    <div className="mb-6">
+                                        <span className="text-3xl font-extrabold">Rp 150K - 250K</span>
+                                    </div>
+                                    <ul className="space-y-4 mb-8 text-purple-50 flex-1">
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Semua Fitur Basic</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Tema Premium & Kustom Warna</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Galeri Foto Pre-Wedding (10 Foto)</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Fitur RSVP & Buku Tamu</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Backsound Musik Pilihan</li>
+                                    </ul>
+                                    <Link href="/portofolio?tab=undangan" className="w-full text-center py-3 rounded-xl bg-purple-700 border border-purple-500 text-white font-semibold hover:bg-purple-800 transition-colors mb-3">Lihat Contoh Desain</Link>
+                                    <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Elegant%20Undangan." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-white text-[#8A2BE2] font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Elegant</a>
                                 </div>
-                                <ul className="space-y-4 mb-8 text-purple-50 flex-1">
-                                    <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Semua Fitur Basic</li>
-                                    <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Tema Premium & Kustom Warna</li>
-                                    <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Galeri Foto Pre-Wedding (10 Foto)</li>
-                                    <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Fitur RSVP & Buku Tamu</li>
-                                    <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Backsound Musik Pilihan</li>
-                                </ul>
-                                <Link href="/portofolio?tab=undangan" className="w-full text-center py-3 rounded-xl bg-purple-700 border border-purple-500 text-white font-semibold hover:bg-purple-800 transition-colors mb-3">Lihat Contoh Desain</Link>
-                                <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Elegant%20Undangan." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-white text-[#8A2BE2] font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Elegant</a>
                             </div>
 
                             {/* Custom Premium */}
-                            <div className="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-purple-100">
+                            <div className="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-purple-100 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Custom Premium</h4>
-                                <p className="text-gray-500 text-sm mb-6">Desain 100% eksklusif hanya untuk Anda.</p>
+                                <p className="text-gray-500 text-sm mb-6 font-normal">Desain 100% eksklusif hanya untuk Anda.</p>
                                 <div className="mb-6">
                                     <span className="text-3xl font-extrabold text-gray-900">Mulai Rp 350K</span>
                                 </div>

@@ -23,7 +23,7 @@ function AccordionItem({ title, content }: AccordionItemProps) {
             <div 
                 className={`px-6 bg-gray-50/50 transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-96 opacity-100 pb-5 pt-1' : 'max-h-0 opacity-0'}`}
             >
-                <div className="text-gray-600 text-sm leading-relaxed">
+                <div className="text-gray-600 text-sm leading-relaxed font-normal">
                     {content}
                 </div>
             </div>
@@ -99,7 +99,7 @@ export default function FAQ() {
                 {/* Closing CTA */}
                 <div className="bg-gradient-to-br from-primary to-[#0038b6] rounded-3xl p-10 md:p-12 text-center shadow-xl text-white">
                     <h3 className="text-3xl font-bold mb-4">Masih punya pertanyaan kustom?</h3>
-                    <p className="text-blue-100 mb-8 max-w-lg mx-auto">Kami mengerti setiap proyek itu unik. Jangan ragu untuk berdiskusi santai dengan tim kami secara gratis.</p>
+                    <p className="text-blue-100 mb-8 max-w-lg mx-auto font-normal">Kami mengerti setiap proyek itu unik. Jangan ragu untuk berdiskusi santai dengan tim kami secara gratis.</p>
                     <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20punya%20pertanyaan%20kustom%20terkait%20jasa%20Anda." target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-gray-50 hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                         <span className="material-symbols-outlined">chat</span> Chat WhatsApp Sekarang
                     </a>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaInstagram, FaTiktok, FaWhatsapp } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -13,9 +14,9 @@ export default function Footer() {
                         Agensi digital modern untuk kebutuhan website dan undangan digital.
                     </p>
                     <div className="flex gap-4">
-                        <a href="#" className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-primary"><span className="text-xs font-bold">IG</span></a>
-                        <a href="#" className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-primary"><span className="text-xs font-bold">TK</span></a>
-                        <a href="https://wa.me/6281290018819" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-primary"><span className="text-xs font-bold">WA</span></a>
+                        <a href="https://instagram.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-500"><FaInstagram className="text-xl" /></a>
+                        <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-primary hover:-translate-y-1 hover:shadow-lg transition-all duration-500"><FaTiktok className="text-xl" /></a>
+                        <a href="https://wa.me/6281290018819" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-[#25D366] hover:-translate-y-1 hover:shadow-lg transition-all duration-500"><FaWhatsapp className="text-xl" /></a>
                     </div>
                 </div>
 

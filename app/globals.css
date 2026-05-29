@@ -25,6 +25,14 @@
     0%, 100% { box-shadow: 0 0 10px rgba(0, 82, 255, 0.4); border-color: rgba(0, 82, 255, 0.3); }
     50% { box-shadow: 0 0 25px rgba(0, 82, 255, 0.9); border-color: rgba(0, 82, 255, 0.6); }
   }
+  @keyframes glowPulseBlue {
+    0%, 100% { box-shadow: 0 0 15px rgba(0, 82, 255, 0.4); }
+    50% { box-shadow: 0 0 35px rgba(0, 82, 255, 0.9); }
+  }
+  @keyframes glowPulsePurple {
+    0%, 100% { box-shadow: 0 0 15px rgba(138, 43, 226, 0.4); }
+    50% { box-shadow: 0 0 35px rgba(138, 43, 226, 0.9); }
+  }
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
@@ -58,6 +66,12 @@
   
   .glow-breathe {
     animation: var(--animate-breathe);
+  }
+  .glow-pulse-blue {
+    animation: glowPulseBlue 3s infinite;
+  }
+  .glow-pulse-purple {
+    animation: glowPulsePurple 3s infinite;
   }
 }
 
