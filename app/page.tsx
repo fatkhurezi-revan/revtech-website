@@ -43,7 +43,7 @@ export default function Home() {
                       </h1>
                       
                       <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
-                          Kami membantu personal, UMKM, dan calon pengantin memiliki identitas digital profesional melalui website responsif dan undangan digital elegan.
+                          Kami membantu UMKM, Instansi, dan Perusahaan bertransformasi secara digital melalui pembuatan website responsif dan sistem kustom. Tersedia juga layanan Undangan Digital premium untuk momen spesial Anda.
                       </p>
                       
                       <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -188,7 +188,7 @@ export default function Home() {
               <div className="space-y-4 mb-10">
                   <div className="border border-gray-200 rounded-xl p-6 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
                       <h4 className="font-bold text-gray-900 mb-2">Berapa lama proses pembuatan website?</h4>
-                      <p className="text-gray-600 text-sm font-normal">Umumnya memakan waktu 3-5 hari kerja untuk paket dasar, hingga 1-2 minggu untuk website kustom yang lebih kompleks.</p>
+                      <p className="text-gray-600 text-sm font-normal">Waktu pengerjaan bervariasi menyesuaikan skala proyek Anda. Untuk Paket Hemat (Landing Page), pengerjaan sangat cepat yakni 3-5 hari kerja. Paket Populer (Web Multi-halaman) membutuhkan waktu sekitar 1-2 minggu. Sedangkan untuk Paket Eksklusif (Custom Web Development), estimasi pengerjaan mulai dari 2 hingga 4 minggu tergantung pada tingkat kerumitan fitur dan integrasi sistem.</p>
                   </div>
                   <div className="border border-gray-200 rounded-xl p-6 bg-gray-50 hover:bg-white hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
                       <h4 className="font-bold text-gray-900 mb-2">Apakah saya bisa mengubah desain undangan digital?</h4>
