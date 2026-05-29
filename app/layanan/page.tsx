@@ -179,7 +179,7 @@ function LayananContent() {
                         <div className="relative z-10 text-center">
                             <div className="w-20 h-20 mx-auto bg-white border-2 border-primary rounded-full flex items-center justify-center shadow-sm mb-6 text-primary text-3xl font-extrabold relative z-10">2</div>
                             <h4 className="font-bold text-gray-900 mb-2">Kirim Data</h4>
-                            <p className="text-sm text-gray-500 font-normal">Kirimkan materi (teks, foto, referensi desain/Figma) dan lakukan pembayaran DP 50% untuk memulai antrean.</p>
+                            <p className="text-sm text-gray-500 font-normal">Kirimkan materi (teks, foto, desain) dan lakukan pembayaran DP 50% untuk memulai antrean.</p>
                         </div>
                         
                         {/* Step 3 */}
