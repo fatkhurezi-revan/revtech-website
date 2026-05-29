@@ -250,23 +250,23 @@ function TemplateContent() {
                                     </p>
                                     
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
-                                        <div className="flex items-center gap-3 bg-slate-800/50 p-4 rounded-2xl border border-slate-700/50 backdrop-blur-sm">
-                                            <div className="bg-primary/20 p-2 rounded-xl text-primary flex-shrink-0">
-                                                <span className="material-symbols-outlined text-xl">architecture</span>
+                                        <div className="group flex items-center gap-3 bg-slate-800/50 p-4 rounded-2xl border border-slate-700/50 backdrop-blur-sm hover:bg-slate-800 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(37,99,235,0.15)] transform hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                            <div className="bg-primary/20 p-2 rounded-xl text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_15px_rgba(37,99,235,0.5)]">
+                                                <span className="material-symbols-outlined text-xl transform group-hover:scale-110 transition-transform duration-300">architecture</span>
                                             </div>
-                                            <span className="text-slate-200 font-semibold text-sm">Arsitektur kode modern & terukur</span>
+                                            <span className="text-slate-200 font-semibold text-sm group-hover:text-white transition-colors duration-300">Arsitektur kode modern & terukur</span>
                                         </div>
-                                        <div className="flex items-center gap-3 bg-slate-800/50 p-4 rounded-2xl border border-slate-700/50 backdrop-blur-sm">
-                                            <div className="bg-primary/20 p-2 rounded-xl text-primary flex-shrink-0">
-                                                <span className="material-symbols-outlined text-xl">database</span>
+                                        <div className="group flex items-center gap-3 bg-slate-800/50 p-4 rounded-2xl border border-slate-700/50 backdrop-blur-sm hover:bg-slate-800 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(37,99,235,0.15)] transform hover:-translate-y-1 transition-all duration-300 cursor-default">
+                                            <div className="bg-primary/20 p-2 rounded-xl text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_15px_rgba(37,99,235,0.5)]">
+                                                <span className="material-symbols-outlined text-xl transform group-hover:scale-110 transition-transform duration-300">database</span>
                                             </div>
-                                            <span className="text-slate-200 font-semibold text-sm">Integrasi API & Database khusus</span>
+                                            <span className="text-slate-200 font-semibold text-sm group-hover:text-white transition-colors duration-300">Integrasi API & Database khusus</span>
                                         </div>
-                                        <div className="flex items-center gap-3 bg-slate-800/50 p-4 rounded-2xl border border-slate-700/50 backdrop-blur-sm md:col-span-2">
-                                            <div className="bg-primary/20 p-2 rounded-xl text-primary flex-shrink-0">
-                                                <span className="material-symbols-outlined text-xl">speed</span>
+                                        <div className="group flex items-center gap-3 bg-slate-800/50 p-4 rounded-2xl border border-slate-700/50 backdrop-blur-sm hover:bg-slate-800 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(37,99,235,0.15)] transform hover:-translate-y-1 transition-all duration-300 cursor-default md:col-span-2">
+                                            <div className="bg-primary/20 p-2 rounded-xl text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300 shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_15px_rgba(37,99,235,0.5)]">
+                                                <span className="material-symbols-outlined text-xl transform group-hover:scale-110 transition-transform duration-300">speed</span>
                                             </div>
-                                            <span className="text-slate-200 font-semibold text-sm">Optimasi Core Web Vitals tingkat lanjut</span>
+                                            <span className="text-slate-200 font-semibold text-sm group-hover:text-white transition-colors duration-300">Optimasi Core Web Vitals tingkat lanjut</span>
                                         </div>
                                     </div>
                                     
