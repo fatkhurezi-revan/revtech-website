@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const heroImages = [
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuACbYskflWJ0Mk1rKdZMAyVxFdt1jYFeLf0sxnFIIM3cz4eSYOc3nrHNrNp0VRt_seDlZ-LUhNvP8RdhfY6oPg-ZuZ-N6ePjRJBwUB9fp55xwDgMmpbxgMHXLhNrvsvA2Ykt5z0NKVGxtRQY24IWFNDveTBTd1alR_pv8W7UENXd8nB0vjVqmSPumCO59OZKAjUM_nM0QXsxGwxyDMW8tiPjq0ChKQ51E2HcdgLNHWJLzCFsy2vkW3vUpUN497ROqleN7aK0genRrg",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
 ];
 
