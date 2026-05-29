@@ -73,9 +73,8 @@ export default function Home() {
                                 alt="Laptop Mockup"
                               />
 
-                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Harus Berada di Dalam Frame Hitam) */}
-                              {/* Koordinat ini sudah dihitung presisi untuk macbook-mockup.png agar pas di dalam bezel hitam */}
-                              <div className="absolute top-[12.5%] bottom-[16%] left-[15%] right-[15%] z-20 overflow-hidden rounded-[2%]">
+                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Presisi di Dalam Bezel Hitam Macbook) */}
+                              <div className="absolute top-[11.2%] bottom-[17.5%] left-[14.2%] right-[14.2%] z-20 overflow-hidden rounded-[4px]">
                                 {/* Elemen animasi berganti gambar template Web & Undangan secara otomatis (Crossfade) */}
                                 <div className="relative w-full h-full bg-black">
                                       {heroImages.map((src, index) => (
