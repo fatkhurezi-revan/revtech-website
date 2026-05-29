@@ -136,15 +136,15 @@ function HargaContent() {
                                     <span className="text-lg font-bold text-gray-900">Rp</span>
                                     <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">50<span className="text-2xl font-bold">Rb</span></span>
                                 </div>
-                                <div className="bg-orange-50 border border-orange-100 rounded-xl p-3 mb-6">
-                                    <p className="text-xs font-bold text-orange-800 mb-1">PENTING (Strictly Template):</p>
-                                    <p className="text-xs text-orange-700">Hanya ganti data teks & foto utama, tidak bisa ubah warna/tema/layout.</p>
+                                <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 mb-6">
+                                    <p className="text-xs font-bold text-blue-800 mb-1">Penyesuaian Warna Dasar:</p>
+                                    <p className="text-xs text-blue-700">Bebas pilih warna tema agar senada dengan konsep acara.</p>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Info Mempelai</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Hitung Mundur (Countdown)</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Navigasi Peta (Google Maps)</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Form RSVP Standar</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Info Mempelai & Hitung Mundur</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Peta Lokasi & Form RSVP</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-500"><span className="material-symbols-outlined text-gray-300 text-sm">close</span> Tanpa Galeri Foto</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-500"><span className="material-symbols-outlined text-gray-300 text-sm">close</span> Tanpa Musik Latar</li>
                                 </ul>
                                 <Link href="/portofolio?tab=undangan" className="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</Link>
                                 <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Basic%20Undangan." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl border-2 border-[#8A2BE2] text-[#8A2BE2] font-bold hover:bg-purple-700 hover:text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Paket Basic</a>
@@ -163,13 +163,13 @@ function HargaContent() {
                                     </div>
                                     <div className="bg-purple-800/50 border border-purple-400/30 rounded-xl p-3 mb-6 backdrop-blur-sm">
                                         <p className="text-xs font-bold text-purple-100 mb-1">Minor Customization:</p>
-                                        <p className="text-xs text-purple-200">Bebas ubah warna tema dasar dan pilihan font agar senada dengan konsep acara.</p>
+                                        <p className="text-xs text-purple-200">Penyesuaian warna dasar & pilihan font premium agar senada dengan konsep acara.</p>
                                     </div>
                                     <ul className="space-y-4 mb-8 text-purple-50 flex-1">
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Semua Fitur Basic</li>
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Galeri Foto Prewedding</li>
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Autoplay Musik Latar</li>
-                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Kisah Cinta (Love Story)</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Kisah Cinta & Amplop Digital</li>
                                     </ul>
                                     <Link href="/portofolio?tab=undangan" className="w-full text-center py-3 rounded-xl bg-purple-700 border border-purple-500 text-white font-semibold hover:bg-purple-800 transition-colors mb-3">Lihat Contoh Desain</Link>
                                     <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Premium%20Undangan." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-white text-[#8A2BE2] font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Premium</a>
@@ -194,7 +194,7 @@ function HargaContent() {
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Kustomisasi Penuh</li>
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Integrasi Filter Instagram</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Custom Domain (nama.com)</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Custom Domain</li>
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Broadcast Nama Tamu Otomatis</li>
                                 </ul>
                                 <Link href="/portofolio?tab=undangan" className="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</Link>
