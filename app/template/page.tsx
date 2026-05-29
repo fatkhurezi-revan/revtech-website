@@ -88,6 +88,9 @@ function TemplateContent() {
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Desain profesional untuk menawarkan keahlian Anda. Cocok untuk berbagai bidang jasa seperti bengkel, klinik, kontraktor, salon, hingga agensi lokal.
                                         </p>
+                                        <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
+                                            <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo
+                                        </a>
                                     </div>
                                 </div>
 
@@ -102,6 +105,9 @@ function TemplateContent() {
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Tampilan visual yang menggugah selera untuk menu andalan Anda. Ideal untuk kafe, rumah makan, franchise minuman, atau bisnis katering.
                                         </p>
+                                        <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
+                                            <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo
+                                        </a>
                                     </div>
                                 </div>
 
@@ -116,6 +122,9 @@ function TemplateContent() {
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Bangun kredibilitas digital yang elegan. Sangat pas digunakan sebagai kartu nama digital untuk sales, agen properti, freelancer, atau tokoh publik.
                                         </p>
+                                        <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
+                                            <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo
+                                        </a>
                                     </div>
                                 </div>
 
@@ -130,6 +139,9 @@ function TemplateContent() {
                                         <p className="text-sm text-slate-600 leading-relaxed">
                                             Fokus menonjolkan keunggulan barang jualan Anda. Didesain khusus untuk meningkatkan penjualan produk seperti pakaian, kosmetik, herbal, atau gadget.
                                         </p>
+                                        <a href="#" target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 bg-primary/10 text-primary font-bold px-4 py-2 rounded-lg text-sm hover:bg-primary hover:text-white transition-colors duration-300">
+                                            <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo
+                                        </a>
                                     </div>
                                 </div>
                             </div>
