@@ -31,6 +31,7 @@ export default function Footer() {
                 <div className="md:col-span-2 lg:col-span-2">
                     <h4 className="font-bold text-gray-900 mb-6">Perusahaan</h4>
                     <ul className="space-y-4">
+                        <li><Link href="/template" className="text-gray-500 hover:text-primary text-sm">Template</Link></li>
                         <li><Link href="/portofolio" className="text-gray-500 hover:text-primary text-sm">Portofolio</Link></li>
                         <li><Link href="/harga" className="text-gray-500 hover:text-primary text-sm">Harga</Link></li>
                         <li><Link href="/faq" className="text-gray-500 hover:text-primary text-sm">FAQ</Link></li>
