@@ -68,16 +68,16 @@ export default function Home() {
                               
                               {/* 2. Base Laptop Menghadap Depan (Frame Utama) */}
                               <img 
-                                src="/hp-laptop-mockup.png" 
+                                src="/macbook-mockup.png" 
                                 className="w-full h-auto object-contain relative z-10" 
                                 alt="Laptop Mockup"
                               />
 
                               {/* 3. Area Dalam Layar Kaca (CSS Absolute - Harus Berada di Dalam Frame Hitam) */}
-                              {/* Sesuaikan persentase top, left, width, dan height di bawah ini agar pas di dalam bezel hitam laptop */}
-                              <div className="absolute top-[8%] left-[12%] w-[76%] h-[76%] z-20 overflow-hidden rounded-[2px]">
+                              {/* Koordinat ini sudah dihitung presisi untuk macbook-mockup.png agar pas di dalam bezel hitam */}
+                              <div className="absolute top-[12.5%] bottom-[16%] left-[15%] right-[15%] z-20 overflow-hidden rounded-[2%]">
                                 {/* Elemen animasi berganti gambar template Web & Undangan secara otomatis (Crossfade) */}
-                                <div className="relative w-full h-full bg-white">
+                                <div className="relative w-full h-full bg-black">
                                       {heroImages.map((src, index) => (
                                           <img 
                                               key={index}
