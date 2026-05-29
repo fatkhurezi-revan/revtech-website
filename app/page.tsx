@@ -23,77 +23,122 @@ export default function Home() {
     <>
       <div className="fixed inset-0 z-[-2] bg-[#f8fafc] pointer-events-none"></div>
 
-      {/* Hero Section */}
-      <section className="relative pt-12 pb-20 lg:pt-28 lg:pb-32">
+      {/* Hero Section Baru - Clean & Fresh Idea */}
+      <section className="relative pt-20 pb-28 lg:pt-32 lg:pb-40 overflow-hidden">
+          {/* Background Orbs */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl pointer-events-none z-[-1]">
+              <div className="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-primary/20 rounded-full blur-[100px] animate-blob"></div>
+              <div className="absolute bottom-[10%] left-[20%] w-[350px] h-[350px] bg-purple-500/20 rounded-full blur-[100px] animate-blob" style={{ animationDelay: '2s' }}></div>
+              <div className="absolute top-[40%] left-[50%] w-[300px] h-[300px] bg-blue-400/20 rounded-full blur-[100px] animate-blob" style={{ animationDelay: '4s' }}></div>
+          </div>
+
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                  <div className="space-y-8">
-                      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium text-sm w-fit">
-                          <span className="relative flex h-2 w-2">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
+                  
+                  {/* Bagian Kiri - Teks & CTA */}
+                  <div className="space-y-8 relative z-10">
+                      <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/60 backdrop-blur-md border border-gray-200/50 text-gray-800 font-semibold text-sm w-fit shadow-sm">
+                          <span className="relative flex h-2.5 w-2.5">
                               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
                           </span>
                           Agensi Digital Terpercaya
                       </div>
                       
-                      <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-gray-900">
+                      <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.15] text-gray-900">
                           Wujudkan <br/>
                           Ide Digital <br/>
-                          <span className="text-gradient">Lebih Nyata.</span>
+                          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-600">
+                              Lebih Nyata.
+                          </span>
                       </h1>
                       
-                      <p className="text-lg text-gray-600 max-w-lg leading-relaxed">
+                      <p className="text-lg text-gray-600 max-w-lg leading-relaxed font-medium">
                           Kami membantu personal, UMKM, dan calon pengantin memiliki identitas digital profesional melalui website responsif dan undangan digital elegan.
                       </p>
                       
-                      <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                          <Link href="/layanan" className="bg-primary text-white font-bold px-8 py-4 rounded-full hover:bg-blue-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
-                              Jelajahi Layanan
-                              <span className="material-symbols-outlined">explore</span>
+                      <div className="flex flex-col sm:flex-row gap-4 pt-6">
+                          <Link href="/layanan" className="bg-primary text-white font-bold px-8 py-4 rounded-full hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+                              Mulai Projek Anda
+                              <span className="material-symbols-outlined text-lg">arrow_forward</span>
                           </Link>
-                          <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20untuk%20konsultasi%20gratis." target="_blank" rel="noreferrer" className="bg-white text-gray-800 border-2 border-gray-200 font-bold px-8 py-4 rounded-full hover:bg-gray-50 hover:border-gray-300 hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                          <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20untuk%20konsultasi%20gratis." target="_blank" rel="noreferrer" className="bg-white/80 backdrop-blur-sm text-gray-800 border border-gray-200 font-bold px-8 py-4 rounded-full hover:bg-white hover:border-gray-300 hover:shadow-md transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
                               Konsultasi Gratis
                           </a>
                       </div>
                   </div>
 
-                  <div className="relative flex items-center justify-center pt-8 lg:pt-0">
-                      <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
+                  {/* Bagian Kanan - Glassmorphism Display (Fresh Idea) */}
+                  <div className="relative flex items-center justify-center lg:justify-end pt-8 lg:pt-0">
                       
-                      {/* Mockup Container Utama */}
-                      <div className="w-full max-w-3xl mx-auto relative pt-4 pb-12 flex flex-col items-center">
-                          
-                          {/* 1. Kontainer Utama (Melayang di Udara) */}
-                          <div className="relative animate-bounce-slow w-full drop-shadow-2xl"> 
-                              
-                              {/* 2. Base Laptop Menghadap Depan (Frame Utama) */}
-                              <img 
-                                src="/hp-laptop-mockup.png" 
-                                className="w-full h-auto object-contain relative z-10" 
-                                alt="Laptop Mockup"
-                              />
+                      {/* Decorative Floating Badges */}
+                      <div className="absolute -left-4 sm:-left-8 top-10 bg-white p-3 sm:p-4 rounded-2xl shadow-xl shadow-gray-200/50 z-30 animate-levitate" style={{ animationDelay: '1s' }}>
+                          <div className="flex gap-3 items-center">
+                              <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                  <span className="material-symbols-outlined">rocket_launch</span>
+                              </div>
+                              <div className="hidden sm:block">
+                                  <p className="text-xs text-gray-500 font-bold">Performa</p>
+                                  <p className="text-sm font-extrabold text-gray-900">Super Cepat</p>
+                              </div>
+                          </div>
+                      </div>
 
-                              {/* 3. Area Dalam Layar Kaca (CSS Absolute - Harus Berada di Dalam Frame Hitam) */}
-                              {/* Sesuaikan persentase top, left, width, dan height di bawah ini agar pas di dalam bezel hitam laptop */}
-                              <div className="absolute top-[8%] left-[12%] w-[76%] h-[76%] z-20 overflow-hidden rounded-[2px]">
-                                {/* Elemen animasi berganti gambar template Web & Undangan secara otomatis (Crossfade) */}
-                                <div className="relative w-full h-full bg-white">
-                                      {heroImages.map((src, index) => (
-                                          <img 
-                                              key={index}
-                                              src={src} 
-                                              alt={`Slide ${index + 1}`}
-                                              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
-                                          />
-                                      ))}
-                                </div>
+                      <div className="absolute -right-2 sm:-right-6 bottom-20 bg-white p-3 sm:p-4 rounded-2xl shadow-xl shadow-gray-200/50 z-30 animate-levitate" style={{ animationDelay: '2.5s' }}>
+                          <div className="flex gap-3 items-center">
+                              <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
+                                  <span className="material-symbols-outlined">brush</span>
+                              </div>
+                              <div className="hidden sm:block">
+                                  <p className="text-xs text-gray-500 font-bold">Desain</p>
+                                  <p className="text-sm font-extrabold text-gray-900">Modern & Elegan</p>
+                              </div>
+                          </div>
+                      </div>
+
+                      {/* Main Glass Display Container */}
+                      <div className="relative w-full max-w-md lg:max-w-lg aspect-[4/5] rounded-[2.5rem] bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] p-4 sm:p-6 overflow-hidden group">
+                          
+                          {/* Inner Screen Container */}
+                          <div className="relative w-full h-full rounded-2xl overflow-hidden bg-gray-100 border border-gray-200/50 shadow-inner">
+                              
+                              {/* Top Bar (Mac-like UI dots) */}
+                              <div className="absolute top-0 left-0 w-full h-10 bg-white/80 backdrop-blur-md flex items-center px-4 gap-2 z-30 border-b border-gray-200/50">
+                                  <div className="w-2.5 h-2.5 rounded-full bg-red-400"></div>
+                                  <div className="w-2.5 h-2.5 rounded-full bg-yellow-400"></div>
+                                  <div className="w-2.5 h-2.5 rounded-full bg-green-400"></div>
+                              </div>
+
+                              {/* Auto-Changing Images Carousel */}
+                              <div className="absolute inset-0 pt-10">
+                                  {heroImages.map((src, index) => (
+                                      <img 
+                                          key={index}
+                                          src={src} 
+                                          alt={`Karya ${index + 1}`}
+                                          className={`absolute top-0 left-0 w-full h-full object-cover transition-all duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`} 
+                                      />
+                                  ))}
+                              </div>
+
+                              {/* Inner Bottom Gradient */}
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none z-20"></div>
+                              
+                              {/* Dynamic Content Labels */}
+                              <div className="absolute bottom-6 left-6 right-6 z-30">
+                                  <div className="bg-white/95 backdrop-blur-md p-4 rounded-xl shadow-lg border border-white/20 transform transition-transform duration-500 hover:-translate-y-1">
+                                      <p className="text-xs font-bold text-primary mb-1 uppercase tracking-wider">
+                                          {currentImageIndex === 0 ? "Template Website" : "Undangan Digital"}
+                                      </p>
+                                      <p className="text-gray-900 font-extrabold text-lg line-clamp-1">
+                                          {currentImageIndex === 0 ? "Sistem Bisnis Profesional" : "Desain Elegan Premium"}
+                                      </p>
+                                  </div>
                               </div>
 
                           </div>
-
-                          {/* 4. Efek Bayangan Lantai di Luar Kontainer Melayang (Statis di Bawah) */}
-                          <div className="w-[80%] h-4 bg-slate-900/15 blur-xl rounded-full mx-auto mt-6 pointer-events-none"></div>
                       </div>
+
                   </div>
               </div>
           </div>
