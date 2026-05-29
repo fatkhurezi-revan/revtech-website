@@ -64,29 +64,41 @@ export default function Home() {
                       <div className="w-full max-w-3xl mx-auto relative pt-4 pb-12 flex flex-col items-center">
                           
                           {/* 1. Kontainer Utama (Melayang di Udara) */}
-                          <div className="relative animate-bounce-slow w-full drop-shadow-2xl"> 
+                          <div className="relative animate-bounce-slow w-full max-w-2xl drop-shadow-2xl"> 
                               
-                              {/* 3. Area Dalam Layar Kaca (Berada di BELAKANG bezel bolong - Anti Bocor 100%) */}
-                              <div className="absolute top-[11.5%] bottom-[17.5%] left-[13.5%] right-[13.5%] z-0 overflow-hidden rounded-[2px]">
-                                {/* Elemen animasi berganti gambar template Web & Undangan secara otomatis (Crossfade) */}
-                                <div className="relative w-full h-full bg-black">
-                                      {heroImages.map((src, index) => (
-                                          <img 
-                                              key={index}
-                                              src={src} 
-                                              alt={`Slide ${index + 1}`}
-                                              className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
-                                          />
-                                      ))}
-                                </div>
-                              </div>
+                              {/* 2. MacBook CSS Frame (Anti-Bocor 100%) */}
+                              <div className="relative w-full">
+                                  {/* Lid (Bezel Hitam) */}
+                                  <div className="relative bg-black rounded-t-[1.5rem] md:rounded-t-[2.5rem] p-[3.5%] pb-[6%] shadow-[0_0_0_2px_rgba(255,255,255,0.1)_inset,0_0_20px_rgba(0,0,0,0.5)] aspect-[16/10]">
+                                      
+                                      {/* Webcam */}
+                                      <div className="absolute top-[2%] left-1/2 -translate-x-1/2 w-1.5 h-1.5 md:w-2 md:h-2 bg-gray-800 rounded-full flex items-center justify-center border border-[#333]"></div>
 
-                              {/* 2. Base Laptop Menghadap Depan (Frame Utama transparan bolong - Berada di DEPAN) */}
-                              <img 
-                                src="/macbook-transparent.png" 
-                                className="w-full h-auto object-contain relative z-10 pointer-events-none" 
-                                alt="Laptop Mockup"
-                              />
+                                      {/* Logo MacBook Pro text */}
+                                      <div className="absolute bottom-[2%] left-1/2 -translate-x-1/2 text-[6px] md:text-[9px] text-gray-500 font-sans tracking-widest">MacBook Pro</div>
+
+                                      {/* 3. Area Dalam Layar Kaca (Terkunci Sempurna oleh Bezel HTML) */}
+                                      <div className="relative w-full h-full bg-[#0a0a0a] rounded-sm md:rounded-md overflow-hidden z-20 shadow-[0_0_10px_rgba(0,0,0,0.8)_inset]">
+                                          {heroImages.map((src, index) => (
+                                              <img 
+                                                  key={index}
+                                                  src={src} 
+                                                  alt={`Slide ${index + 1}`}
+                                                  className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
+                                              />
+                                          ))}
+                                      </div>
+                                      
+                                      {/* Glossy Overlay (Efek Pantulan Kaca) */}
+                                      <div className="absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-white/10 to-transparent rounded-t-[1.5rem] md:rounded-t-[2.5rem] pointer-events-none z-30"></div>
+                                  </div>
+
+                                  {/* Base Laptop (Bagian Bawah Silver) */}
+                                  <div className="relative bg-gradient-to-b from-[#e5e7eb] to-[#9ca3af] h-[3%] aspect-[16/0.5] w-[105%] -left-[2.5%] rounded-b-[2rem] shadow-2xl flex justify-center items-start border-t border-gray-300 z-40">
+                                      {/* Thumb indent (Cekungan pembuka layar) */}
+                                      <div className="w-[15%] h-[30%] bg-[#6b7280] rounded-b-md shadow-inner"></div>
+                                  </div>
+                              </div>
 
                           </div>
 
