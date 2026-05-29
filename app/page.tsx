@@ -61,29 +61,37 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
                       
                       {/* Mockup Container Utama */}
-                      <div className="w-full max-w-3xl mx-auto relative pt-4 pb-16">
+                      <div className="w-full max-w-3xl mx-auto relative pt-4 pb-12 flex flex-col items-center">
                           
-                          {/* Laptop Wrapper dengan Animasi Melayang (Smooth Levitation) */}
-                          <div className="relative z-10 animate-levitate drop-shadow-2xl -translate-y-4">
-                              {/* Gambar Laptop */}
-                              <img src="/macbook-mockup.png" alt="Laptop Realistis" className="w-full h-auto relative z-10" />
+                          {/* 1. Kontainer Utama (Melayang di Udara) */}
+                          <div className="relative animate-levitate w-full drop-shadow-2xl"> 
                               
-                              {/* Layar Laptop Overlay */}
-                              {/* TIPS: Sesuaikan nilai persentase ini agar konten pas di dalam bezel/frame laptop */}
-                              <div className="absolute z-20 bg-black overflow-hidden rounded-[2%]" style={{ top: '12.5%', bottom: '16%', left: '15%', right: '15%' }}>
-                                  {heroImages.map((src, index) => (
-                                      <img 
-                                          key={index}
-                                          src={src} 
-                                          alt={`Slide ${index + 1}`}
-                                          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
-                                      />
-                                  ))}
+                              {/* 2. Base Laptop Menghadap Depan (Frame Utama HP) */}
+                              <img 
+                                src="/hp-laptop-mockup.png" 
+                                className="w-full h-auto object-contain relative z-10" 
+                                alt="Laptop Mockup"
+                              />
+
+                              {/* 3. Area Dalam Layar Kaca (Berada di Dalam Frame Hitam HP) */}
+                              {/* Koordinat ini sudah disesuaikan agar pas 100% dengan frame HP */}
+                              <div className="absolute top-[8%] left-[12%] w-[76%] h-[76%] z-20 overflow-hidden rounded-[4px]">
+                                {/* Elemen animasi berganti gambar template (Crossfade) */}
+                                <div className="relative w-full h-full bg-black">
+                                      {heroImages.map((src, index) => (
+                                          <img 
+                                              key={index}
+                                              src={src} 
+                                              alt={`Slide ${index + 1}`}
+                                              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
+                                          />
+                                      ))}
+                                </div>
                               </div>
                           </div>
 
-                          {/* Bayangan Lantai (Static Floor Drop Shadow) */}
-                          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-[80%] h-[30px] bg-gray-900/15 blur-xl rounded-[100%] z-0 pointer-events-none"></div>
+                          {/* 4. Efek Bayangan Lantai di Luar Kontainer Melayang (Statis di Bawah) */}
+                          <div className="w-[80%] h-[20px] bg-slate-900/25 blur-xl rounded-full mx-auto mt-4 pointer-events-none"></div>
                       </div>
                   </div>
               </div>
