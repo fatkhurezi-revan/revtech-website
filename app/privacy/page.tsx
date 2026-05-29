@@ -46,6 +46,20 @@ export default function PrivacyPolicy() {
                                 RevTech berhak untuk memperbarui Kebijakan Privasi ini kapan saja. Perubahan akan segera berlaku setelah kami mempublikasikannya di halaman ini. Anda disarankan untuk memeriksa halaman ini secara berkala.
                             </p>
                         </section>
+
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">6. Kerahasiaan Data Proyek (Non-Disclosure)</h2>
+                            <p>
+                                Khusus untuk layanan Custom Web Development yang melibatkan sistem internal (seperti ERP, HRIS, dll), kami menjamin kerahasiaan penuh atas segala data bisnis, logika operasional, maupun basis data yang kami akses selama proses pengembangan dan pengujian. Kami bersedia menandatangani Perjanjian Kerahasiaan (NDA - Non-Disclosure Agreement) secara terpisah apabila diwajibkan oleh pihak klien.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2 className="text-xl font-bold text-gray-900 mb-4">7. Penggunaan untuk Portofolio</h2>
+                            <p>
+                                Kecuali diatur lain dalam perjanjian kerahasiaan (NDA) yang disepakati bersama, kami berhak menampilkan tangkapan layar (screenshot), tautan, dan deskripsi singkat dari proyek yang telah selesai ke dalam halaman Portofolio atau materi promosi RevTech sebagai bentuk unjuk kerja agensi.
+                            </p>
+                        </section>
                     </div>
                 </div>
             </div>
