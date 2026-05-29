@@ -257,7 +257,7 @@ function TemplateContent() {
                                 {/* Custom 1 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Slicing UI to Code" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Slicing UI to Code" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
@@ -274,7 +274,7 @@ function TemplateContent() {
                                 {/* Custom 2 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Custom Web Development" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Custom Web Development" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
@@ -291,7 +291,7 @@ function TemplateContent() {
                                 {/* Custom 3 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="API & Database Integration" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="API & Database Integration" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
@@ -308,7 +308,7 @@ function TemplateContent() {
                                 {/* Custom 4 */}
                                 <div className="bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
                                     <div className="aspect-video overflow-hidden relative">
-                                        <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Revamp & Optimasi Performa" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Revamp & Optimasi Performa" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                         <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
                                     </div>
                                     <div className="p-6 md:p-8">
