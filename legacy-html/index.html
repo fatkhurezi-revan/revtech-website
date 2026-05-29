@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>RevTech - Agensi Digital Profesional untuk Website & Undangan Digital</title>
+    <meta name="description" content="RevTech adalah agensi digital yang berfokus pada pembuatan website responsif dan undangan digital modern untuk personal, UMKM, dan pernikahan.">
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0052ff",
+                    },
+                    fontFamily: {
+                        "sans": ["Hanken Grotesk", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'grid-pattern': 'linear-gradient(to right, #F1F5F9 1px, transparent 1px), linear-gradient(to bottom, #F1F5F9 1px, transparent 1px)',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'blob': 'blob 7s infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #111c2d;
+        }
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: theme('backgroundImage.grid-pattern');
+            mask-image: linear-gradient(to bottom, transparent, black, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(0, 82, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            box-shadow: 0 20px 40px 0 rgba(0, 82, 255, 0.1);
+            border-color: theme('colors.primary' / 30%);
+            transform: translateY(-8px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, theme('colors.primary'), #8A2BE2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, theme('colors.primary'), #0038b6);
+        }
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="antialiased relative font-sans selection:bg-primary/20 selection:text-primary">
+
+    <div class="fixed inset-0 z-[-2] bg-[#f8fafc] pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img alt="RevTech Logo" class="h-14 sm:h-16 md:h-[4.5rem] w-auto mix-blend-multiply transition-transform group-hover:scale-105 object-contain" src="assets/logo.png">
+            </a>
+
+            <div class="hidden md:flex items-center space-x-1 bg-white/50 px-4 py-2 rounded-full border border-white/60 shadow-sm">
+                <a class="text-sm font-semibold text-primary px-4 py-2 rounded-full bg-primary/10 transition-all" href="index.html">Beranda</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="layanan.html">Layanan</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="harga.html">Harga</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="portofolio.html">Portofolio</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="faq.html">FAQ</a>
+            </div>
+
+            <div class="hidden md:flex">
+                <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20ingin%20berkonsultasi." target="_blank" class="relative group inline-flex items-center justify-center">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-primary to-[#8A2BE2] rounded-full blur opacity-40 group-hover:opacity-70 transition duration-300"></div>
+                    <button class="relative bg-primary text-white font-bold text-sm px-6 py-2.5 rounded-full hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                        Hubungi Kami
+                        <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </button>
+                </a>
+            </div>
+
+            <button class="md:hidden text-gray-700 p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="overflow-hidden">
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-8">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium text-sm w-fit">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            Agensi Digital Terpercaya
+                        </div>
+                        
+                        <h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-gray-900">
+                            Wujudkan <br/>
+                            Ide Digital <br/>
+                            <span class="text-gradient">Lebih Nyata.</span>
+                        </h1>
+                        
+                        <p class="text-lg text-gray-600 max-w-lg leading-relaxed">
+                            Kami membantu personal, UMKM, dan calon pengantin memiliki identitas digital profesional melalui website responsif dan undangan digital elegan.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <a href="layanan.html" class="bg-primary text-white font-bold px-8 py-4 rounded-full hover:bg-blue-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                                Jelajahi Layanan
+                                <span class="material-symbols-outlined">explore</span>
+                            </a>
+                            <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20untuk%20konsultasi%20gratis." target="_blank" class="bg-white text-gray-800 border-2 border-gray-200 font-bold px-8 py-4 rounded-full hover:bg-gray-50 hover:border-gray-300 hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                                Konsultasi Gratis
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative lg:h-[600px] flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
+                        <img alt="Modern Web Development" class="relative z-10 w-full h-auto object-cover rounded-2xl shadow-2xl animate-float border border-white/50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACbYskflWJ0Mk1rKdZMAyVxFdt1jYFeLf0sxnFIIM3cz4eSYOc3nrHNrNp0VRt_seDlZ-LUhNvP8RdhfY6oPg-ZuZ-N6ePjRJBwUB9fp55xwDgMmpbxgMHXLhNrvsvA2Ykt5z0NKVGxtRQY24IWFNDveTBTd1alR_pv8W7UENXd8nB0vjVqmSPumCO59OZKAjUM_nM0QXsxGwxyDMW8tiPjq0ChKQ51E2HcdgLNHWJLzCFsy2vkW3vUpUN497ROqleN7aK0genRrg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layanan Singkat -->
+        <section class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-3">Layanan Kami</h2>
+                    <h3 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Solusi Digital RevTech</h3>
+                    <p class="text-lg text-gray-600">Pendekatan komprehensif untuk kebutuhan digital Anda, dirancang dengan fokus pada performa dan estetika.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    <div class="glass-card rounded-[2rem] p-8 lg:p-12 group relative overflow-hidden flex flex-col h-full">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-20 -mt-20 transition-all duration-500 group-hover:bg-primary/20"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center mb-8 text-primary group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
+                                <span class="material-symbols-outlined text-3xl">web</span>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900 mb-4">Pengembangan Web</h4>
+                            <p class="text-gray-600 mb-8 leading-relaxed">
+                                Situs web kustom yang responsif, cepat, dan dioptimalkan untuk SEO. Kami membangun platform profesional yang mendorong konversi.
+                            </p>
+                        </div>
+                        <div class="relative z-10 mt-auto pt-4">
+                            <a href="layanan.html?tab=web" class="inline-flex items-center gap-2 border-2 border-primary text-primary font-bold px-6 py-3 rounded-xl hover:bg-primary hover:text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 w-full justify-center">
+                                Pesan Jasa Web <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="glass-card rounded-[2rem] p-8 lg:p-12 group relative overflow-hidden flex flex-col h-full">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-[#8A2BE2]/5 rounded-full blur-3xl -mr-20 -mt-20 transition-all duration-500 group-hover:bg-[#8A2BE2]/20"></div>
+                        <div class="relative z-10 flex-1">
+                            <div class="w-16 h-16 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center mb-8 text-[#8A2BE2] group-hover:scale-110 group-hover:-rotate-3 transition-transform duration-300">
+                                <span class="material-symbols-outlined text-3xl">favorite</span>
+                            </div>
+                            <h4 class="text-2xl font-bold text-gray-900 mb-4">Undangan Digital</h4>
+                            <p class="text-gray-600 mb-8 leading-relaxed">
+                                Undangan digital modern, elegan, dan interaktif. Ramah lingkungan dengan fitur RSVP terintegrasi dan desain yang disesuaikan sepenuhnya.
+                            </p>
+                        </div>
+                        <div class="relative z-10 mt-auto pt-4">
+                            <a href="layanan.html?tab=undangan" class="inline-flex items-center gap-2 border-2 border-[#8A2BE2] text-[#8A2BE2] font-bold px-6 py-3 rounded-xl hover:bg-purple-700 hover:text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 w-full justify-center">
+                                Pesan Undangan <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Harga Singkat -->
+        <section class="py-24 bg-primary/5">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-primary font-semibold tracking-wide uppercase text-sm mb-3">Paket Harga</h2>
+                    <h3 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Investasi Transparan</h3>
+                    <p class="text-lg text-gray-600">Pilihan paket fleksibel mulai dari undangan digital hingga website bisnis kompleks.</p>
+                </div>
+                
+                <div class="glass-card rounded-[2rem] p-8 md:p-12 text-center bg-white/80 max-w-4xl mx-auto">
+                    <div class="flex flex-col md:flex-row justify-around items-center gap-8 mb-8 border-b border-gray-100 pb-8">
+                        <div>
+                            <p class="text-gray-500 font-medium mb-2">Jasa Web Development</p>
+                            <p class="text-3xl font-extrabold text-gray-900">Mulai <span class="text-primary">Rp 300K</span></p>
+                        </div>
+                        <div class="hidden md:block w-px h-16 bg-gray-200"></div>
+                        <div>
+                            <p class="text-gray-500 font-medium mb-2">Jasa Undangan Digital</p>
+                            <p class="text-3xl font-extrabold text-gray-900">Mulai <span class="text-[#8A2BE2]">Rp 50K</span></p>
+                        </div>
+                    </div>
+                    <a href="harga.html" class="inline-flex items-center gap-2 bg-primary text-white font-bold px-8 py-4 rounded-full hover:bg-blue-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        Lihat Paket Lengkap <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Singkat -->
+        <section class="py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Paling Sering Ditanyakan</h2>
+                </div>
+                
+                <div class="space-y-4 mb-10">
+                    <div class="border border-gray-200 rounded-xl p-6 bg-gray-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-gray-900 mb-2">Berapa lama proses pembuatan website?</h4>
+                        <p class="text-gray-600 text-sm">Umumnya memakan waktu 3-5 hari kerja untuk paket dasar, hingga 1-2 minggu untuk website kustom yang lebih kompleks.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-6 bg-gray-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-gray-900 mb-2">Apakah saya bisa mengubah desain undangan digital?</h4>
+                        <p class="text-gray-600 text-sm">Ya! Tema, warna, foto, font, dan musik bisa disesuaikan sepenuhnya sesuai dengan selera Anda.</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-6 bg-gray-50 hover:bg-white hover:shadow-md transition-all">
+                        <h4 class="font-bold text-gray-900 mb-2">Bagaimana sistem pembayarannya?</h4>
+                        <p class="text-gray-600 text-sm">Pembayaran dilakukan dengan sistem DP 50% di awal dan pelunasan 50% setelah proyek selesai.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <a href="faq.html" class="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
+                        Lihat Semua FAQ <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-32 relative">
+            <div class="max-w-5xl mx-auto px-6 lg:px-8 relative z-10">
+                <div class="glass-card rounded-[3rem] p-10 md:p-20 text-center relative overflow-hidden bg-white/60">
+                    <div class="absolute top-0 left-0 w-full h-2 bg-gradient-primary"></div>
+                    <div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+                    
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 relative z-10">
+                        Siap Memulai Proyek Anda?
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto relative z-10">
+                        Jangan biarkan ide Anda hanya menjadi rencana. Mari berkolaborasi dan bangun ekosistem digital yang memukau.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20ingin%20berdiskusi%20tentang%20proyek%20digital%20saya." target="_blank" class="bg-primary text-white font-bold px-8 py-4 rounded-full hover:bg-blue-700 hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+                            <span class="material-symbols-outlined">chat</span> Diskusikan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-10">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 mb-16">
+                
+                <div class="md:col-span-4 lg:col-span-5 flex flex-col space-y-6">
+                    <img src="assets/logo.png" alt="RevTech Logo" class="h-20 sm:h-24 md:h-28 w-auto mix-blend-multiply object-contain self-start">
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+                        Agensi digital modern untuk kebutuhan website dan undangan digital.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-primary"><span class="text-xs font-bold">IG</span></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-primary"><span class="text-xs font-bold">TK</span></a>
+                        <a href="https://wa.me/6281290018819" target="_blank" class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 hover:text-primary"><span class="text-xs font-bold">WA</span></a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 lg:col-span-3 flex flex-col space-y-6">
+                    <h3 class="text-gray-900 font-bold text-lg">Layanan</h3>
+                    <ul class="space-y-4">
+                        <li><a href="layanan.html?tab=web" class="text-gray-500 hover:text-primary text-sm">Website Bisnis</a></li>
+                        <li><a href="layanan.html?tab=undangan" class="text-gray-500 hover:text-primary text-sm">Undangan Digital</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:col-span-4 lg:col-span-4 flex flex-col space-y-6">
+                    <h3 class="text-gray-900 font-bold text-lg">Kontak</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="mailto:revtech.indonesia@gmail.com" class="flex items-start space-x-3 text-gray-500 hover:text-primary text-sm">
+                                <span class="material-symbols-outlined text-[20px]">mail</span> revtech.indonesia@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-start space-x-3 text-gray-500 text-sm">
+                                <span class="material-symbols-outlined text-[20px]">location_on</span> Sukabumi, Indonesia
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-100 text-center">
+                <p class="text-gray-400 text-sm">© 2026 RevTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm');
+                nav.classList.replace('py-4', 'py-2');
+            } else {
+                nav.classList.remove('shadow-sm');
+                nav.classList.replace('py-2', 'py-4');
+            }
+        });
+    </script>
+</body>
+</html>

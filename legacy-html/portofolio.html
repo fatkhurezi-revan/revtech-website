@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Portofolio Karyaku - RevTech</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { "primary": "#0052ff" },
+                    fontFamily: { "sans": ["Hanken Grotesk", "sans-serif"] },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #ffffff; color: #111c2d; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .portfolio-card {
+            transition: all 0.5s ease;
+        }
+        .portfolio-card:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        .portfolio-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+            opacity: 0.8;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body class="antialiased relative font-sans selection:bg-primary/20 selection:text-primary">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img alt="RevTech Logo" class="h-14 sm:h-16 md:h-[4.5rem] w-auto mix-blend-multiply transition-transform group-hover:scale-105 object-contain" src="assets/logo.png">
+            </a>
+
+            <div class="hidden md:flex items-center space-x-1 bg-white/50 px-4 py-2 rounded-full border border-white/60 shadow-sm">
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="index.html">Beranda</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="layanan.html">Layanan</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="harga.html">Harga</a>
+                <a class="text-sm font-semibold text-primary px-4 py-2 rounded-full bg-primary/10 transition-all" href="portofolio.html">Portofolio</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="faq.html">FAQ</a>
+            </div>
+
+            <div class="hidden md:flex">
+                <a href="https://wa.me/6281290018819" target="_blank" class="relative group inline-flex items-center justify-center">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-primary to-[#8A2BE2] rounded-full blur opacity-40 group-hover:opacity-70 transition duration-300"></div>
+                    <button class="relative bg-primary text-white font-bold text-sm px-6 py-2.5 rounded-full hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                        Hubungi Kami
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 bg-gray-50/50 min-h-screen">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Karya Kami</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Kami bangga dapat membantu berbagai bisnis dan personal mewujudkan identitas digital mereka.</p>
+            </div>
+
+            <!-- Tab Switcher -->
+            <div class="flex justify-center mb-16">
+                <div class="bg-gray-100/80 p-1.5 rounded-2xl inline-flex relative shadow-inner backdrop-blur-sm border border-gray-200/50">
+                    <button class="tab-btn active px-8 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2" data-target="tab-web">
+                        <span class="material-symbols-outlined text-lg">web</span> Web Development
+                    </button>
+                    <button class="tab-btn text-gray-500 hover:text-gray-900 hover:bg-gray-200/50 px-8 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2" data-target="tab-undangan">
+                        <span class="material-symbols-outlined text-lg">favorite</span> Undangan Digital
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content: Web Development -->
+            <div id="tab-web" class="tab-content active">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    
+                    <!-- Proyek 1: Learniverse -->
+                    <div class="portfolio-card group relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-white">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Learniverse Mockup" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="portfolio-overlay absolute inset-0 flex flex-col justify-end p-8">
+                            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="bg-primary/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Platform Edukasi</span>
+                                <h3 class="text-white text-3xl font-bold mb-2">Learniverse Website</h3>
+                                <p class="text-gray-300 text-sm mb-6 max-w-md">Asisten akademis AI dengan fitur integrasi chatbot dan manajemen kelas interaktif.</p>
+                                <a href="#" target="_blank" class="inline-flex items-center gap-2 bg-white text-gray-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                    <span class="material-symbols-outlined">launch</span> Kunjungi Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyek 2: Personal Digital Hub -->
+                    <div class="portfolio-card group relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-white">
+                        <div class="aspect-video overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Digital Hub Mockup" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="portfolio-overlay absolute inset-0 flex flex-col justify-end p-8">
+                            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="bg-green-500/20 text-green-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Portofolio Personal</span>
+                                <h3 class="text-white text-3xl font-bold mb-2">Personal Digital Hub</h3>
+                                <p class="text-gray-300 text-sm mb-6 max-w-md">Website profil untuk profesional kreatif, menampilkan karya, resume, dan form kontak terintegrasi.</p>
+                                <a href="#" target="_blank" class="inline-flex items-center gap-2 bg-white text-gray-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                    <span class="material-symbols-outlined">launch</span> Kunjungi Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Tab Content: Undangan Digital -->
+            <div id="tab-undangan" class="tab-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    
+                    <!-- Tema Elegant Modern -->
+                    <div class="portfolio-card group relative rounded-3xl overflow-hidden shadow-lg border border-purple-100 bg-white">
+                        <!-- Mockup HP Ratio (9:16) approximately -->
+                        <div class="aspect-[4/5] overflow-hidden bg-purple-50">
+                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant Modern Mockup" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="portfolio-overlay absolute inset-0 flex flex-col justify-end p-8">
+                            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="bg-[#8A2BE2]/20 text-purple-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Tema Undangan</span>
+                                <h3 class="text-white text-3xl font-bold mb-2">Elegant Modern</h3>
+                                <p class="text-gray-300 text-sm mb-6 max-w-md">Desain mewah dengan nuansa gelap (dark mode), tipografi elegan, dan efek partikel emas interaktif.</p>
+                                <a href="#" target="_blank" class="inline-flex items-center gap-2 bg-[#8A2BE2] text-white font-bold px-6 py-3 rounded-xl hover:bg-purple-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                    <span class="material-symbols-outlined">visibility</span> Lihat Demo Undangan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tema Rustic Minimalist -->
+                    <div class="portfolio-card group relative rounded-3xl overflow-hidden shadow-lg border border-amber-100 bg-white">
+                        <div class="aspect-[4/5] overflow-hidden bg-amber-50">
+                            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rustic Minimalist Mockup" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="portfolio-overlay absolute inset-0 flex flex-col justify-end p-8">
+                            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                                <span class="bg-amber-500/20 text-amber-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Tema Undangan</span>
+                                <h3 class="text-white text-3xl font-bold mb-2">Rustic Minimalist</h3>
+                                <p class="text-gray-300 text-sm mb-6 max-w-md">Konsep bumi (earth tone) dengan ornamen daun kering, warna hangat, dan tipografi kaligrafi natural.</p>
+                                <a href="#" target="_blank" class="inline-flex items-center gap-2 bg-[#8A2BE2] text-white font-bold px-6 py-3 rounded-xl hover:bg-purple-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                    <span class="material-symbols-outlined">visibility</span> Lihat Demo Undangan
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm">© 2026 RevTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tab Switcher Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const activeTabParam = urlParams.get('tab');
+
+            function activateTab(tabId) {
+                tabBtns.forEach(btn => {
+                    btn.classList.remove('active', 'bg-primary', 'text-white', 'shadow-md', 'bg-[#8A2BE2]', 'text-gray-700', 'hover:bg-white', 'hover:text-primary', 'hover:shadow-sm', 'bg-gray-200/50', 'text-gray-500', 'hover:text-gray-900');
+                    // set as inactive
+                    btn.classList.add('text-gray-500', 'hover:text-gray-900', 'hover:bg-gray-200/50');
+                });
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                const targetBtn = document.querySelector(`[data-target="${tabId}"]`);
+                const targetContent = document.getElementById(tabId);
+                
+                if(targetBtn && targetContent) {
+                    // remove inactive classes
+                    targetBtn.classList.remove('text-gray-500', 'hover:text-gray-900', 'hover:bg-gray-200/50');
+                    
+                    if(tabId === 'tab-undangan') {
+                        targetBtn.classList.add('active', 'bg-[#8A2BE2]', 'text-white', 'shadow-md');
+                    } else {
+                        targetBtn.classList.add('active', 'bg-primary', 'text-white', 'shadow-md');
+                    }
+                    targetContent.classList.add('active');
+                }
+            }
+
+            if (activeTabParam && (activeTabParam === 'web' || activeTabParam === 'undangan')) {
+                activateTab('tab-' + activeTabParam);
+            } else {
+                activateTab('tab-web'); // Explicitly initialize the default tab
+            }
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.getAttribute('data-target');
+                    activateTab(target);
+                    const newUrl = new URL(window.location);
+                    newUrl.searchParams.set('tab', target.replace('tab-', ''));
+                    window.history.pushState({}, '', newUrl);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

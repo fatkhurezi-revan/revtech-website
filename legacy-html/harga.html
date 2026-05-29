@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Harga Paket - RevTech</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { "primary": "#0052ff" },
+                    fontFamily: { "sans": ["Hanken Grotesk", "sans-serif"] },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #ffffff; color: #111c2d; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; animation: fadeIn 0.4s ease-out; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            box-shadow: 0 20px 40px 0 rgba(0, 82, 255, 0.1);
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="antialiased relative font-sans selection:bg-primary/20 selection:text-primary">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <img alt="RevTech Logo" class="h-14 sm:h-16 md:h-[4.5rem] w-auto mix-blend-multiply transition-transform group-hover:scale-105 object-contain" src="assets/logo.png">
+            </a>
+
+            <div class="hidden md:flex items-center space-x-1 bg-white/50 px-4 py-2 rounded-full border border-white/60 shadow-sm">
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="index.html">Beranda</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="layanan.html">Layanan</a>
+                <a class="text-sm font-semibold text-primary px-4 py-2 rounded-full bg-primary/10 transition-all" href="harga.html">Harga</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="portofolio.html">Portofolio</a>
+                <a class="text-sm font-medium text-gray-600 hover:text-primary hover:bg-primary/5 px-4 py-2 rounded-full transition-all" href="faq.html">FAQ</a>
+            </div>
+
+            <div class="hidden md:flex">
+                <a href="https://wa.me/6281290018819" target="_blank" class="relative group inline-flex items-center justify-center">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-primary to-[#8A2BE2] rounded-full blur opacity-40 group-hover:opacity-70 transition duration-300"></div>
+                    <button class="relative bg-primary text-white font-bold text-sm px-6 py-2.5 rounded-full hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                        Hubungi Kami
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 bg-gray-50/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Investasi Digital Anda</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Kami transparan dengan harga kami. Pilih paket yang paling sesuai dengan kebutuhan dan skala bisnis Anda.</p>
+            </div>
+
+            <!-- Tab Switcher -->
+            <div class="flex justify-center mb-12">
+                <div class="bg-gray-100/80 p-1.5 rounded-2xl inline-flex relative shadow-inner backdrop-blur-sm border border-gray-200/50">
+                    <button class="tab-btn active px-8 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2" data-target="tab-web">
+                        <span class="material-symbols-outlined text-lg">web</span> Paket Website
+                    </button>
+                    <button class="tab-btn text-gray-500 hover:text-gray-900 hover:bg-gray-200/50 px-8 py-3 rounded-xl font-bold text-sm transition-all duration-300 flex items-center gap-2" data-target="tab-undangan">
+                        <span class="material-symbols-outlined text-lg">favorite</span> Paket Undangan
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content: Web Development -->
+            <div id="tab-web" class="tab-content active">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Hemat -->
+                    <div class="glass-card rounded-3xl p-8 bg-white flex flex-col">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Paket Hemat</h4>
+                        <p class="text-gray-500 text-sm mb-6">Cocok untuk landing page atau portofolio personal.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-gray-900">Rp 300K - 500K</span>
+                        </div>
+                        <ul class="space-y-4 mb-8 flex-1">
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-primary text-sm">done</span> Single Page (Landing Page)</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-primary text-sm">done</span> Desain Template Premium</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-primary text-sm">done</span> Responsif (Mobile Friendly)</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-primary text-sm">done</span> Tombol WhatsApp</li>
+                        </ul>
+                        <a href="portofolio.html?tab=web" class="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</a>
+                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Hemat%20Web." target="_blank" class="w-full text-center py-3 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Paket Hemat</a>
+                    </div>
+
+                    <!-- Populer -->
+                    <div class="glass-card rounded-3xl p-8 bg-primary text-white transform md:-translate-y-4 shadow-xl shadow-primary/30 relative flex flex-col">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-white text-primary text-xs font-bold px-4 py-1 rounded-b-lg tracking-wider">PALING POPULER</div>
+                        <h4 class="text-xl font-bold mb-2 mt-4">Paket Populer</h4>
+                        <p class="text-blue-100 text-sm mb-6">Sempurna untuk profil bisnis dan UMKM.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold">Rp 700K - 1.2M</span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-blue-50 flex-1">
+                            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-white text-sm">done</span> Multi-halaman (Maks 5 Hal)</li>
+                            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-white text-sm">done</span> Desain Kustom (UI/UX)</li>
+                            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-white text-sm">done</span> Gratis Domain (.com) 1 Tahun</li>
+                            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-white text-sm">done</span> Basic SEO & Integrasi Sosmed</li>
+                        </ul>
+                        <a href="portofolio.html?tab=web" class="w-full text-center py-3 rounded-xl bg-blue-600 border border-blue-400 text-white font-semibold hover:bg-blue-800 transition-colors mb-3">Lihat Contoh Desain</a>
+                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Populer%20Web." target="_blank" class="w-full text-center py-3 rounded-xl bg-white text-primary font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Populer</a>
+                    </div>
+
+                    <!-- Eksklusif -->
+                    <div class="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-gray-900/5">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Paket Eksklusif</h4>
+                        <p class="text-gray-500 text-sm mb-6">Website tingkat lanjut dengan fitur kompleks.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-gray-900">Mulai Rp 1.5M</span>
+                        </div>
+                        <ul class="space-y-4 mb-8 flex-1">
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-primary text-sm">done</span> Unlimited Halaman</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-primary text-sm">done</span> Full Custom Development</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-primary text-sm">done</span> Fitur Khusus (Booking, Blog, dll)</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-primary text-sm">done</span> Advanced SEO & Analytics</li>
+                        </ul>
+                        <a href="portofolio.html?tab=web" class="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</a>
+                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Eksklusif%20Web." target="_blank" class="w-full text-center py-3 rounded-xl bg-gray-900 text-white font-bold hover:bg-black hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Paket Eksklusif</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Undangan Digital -->
+            <div id="tab-undangan" class="tab-content">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Basic -->
+                    <div class="glass-card rounded-3xl p-8 bg-white flex flex-col">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Paket Basic</h4>
+                        <p class="text-gray-500 text-sm mb-6">Desain simpel, elegan, dan praktis.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-gray-900">Rp 50K - 100K</span>
+                        </div>
+                        <ul class="space-y-4 mb-8 flex-1">
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> 1 Pilihan Tema Standar</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Info Acara & Mempelai</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Link Google Maps</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-gray-300 text-sm">close</span> Tanpa Galeri Foto</li>
+                        </ul>
+                        <a href="portofolio.html?tab=undangan" class="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</a>
+                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Basic%20Undangan." target="_blank" class="w-full text-center py-3 rounded-xl border-2 border-[#8A2BE2] text-[#8A2BE2] font-bold hover:bg-purple-700 hover:text-white hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Paket Basic</a>
+                    </div>
+
+                    <!-- Elegant -->
+                    <div class="glass-card rounded-3xl p-8 bg-[#8A2BE2] text-white transform md:-translate-y-4 shadow-xl shadow-[#8A2BE2]/30 relative flex flex-col">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 bg-white text-[#8A2BE2] text-xs font-bold px-4 py-1 rounded-b-lg tracking-wider">REKOMENDASI</div>
+                        <h4 class="text-xl font-bold mb-2 mt-4">Paket Elegant</h4>
+                        <p class="text-purple-100 text-sm mb-6">Fitur lengkap untuk momen spesial Anda.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold">Rp 150K - 250K</span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-purple-50 flex-1">
+                            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-white text-sm">done</span> Semua Fitur Basic</li>
+                            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-white text-sm">done</span> Tema Premium & Kustom Warna</li>
+                            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-white text-sm">done</span> Galeri Foto Pre-Wedding (10 Foto)</li>
+                            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-white text-sm">done</span> Fitur RSVP & Buku Tamu</li>
+                            <li class="flex items-center gap-3 text-sm"><span class="material-symbols-outlined text-white text-sm">done</span> Backsound Musik Pilihan</li>
+                        </ul>
+                        <a href="portofolio.html?tab=undangan" class="w-full text-center py-3 rounded-xl bg-purple-700 border border-purple-500 text-white font-semibold hover:bg-purple-800 transition-colors mb-3">Lihat Contoh Desain</a>
+                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Elegant%20Undangan." target="_blank" class="w-full text-center py-3 rounded-xl bg-white text-[#8A2BE2] font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Elegant</a>
+                    </div>
+
+                    <!-- Custom Premium -->
+                    <div class="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-purple-100">
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">Custom Premium</h4>
+                        <p class="text-gray-500 text-sm mb-6">Desain 100% eksklusif hanya untuk Anda.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-gray-900">Mulai Rp 350K</span>
+                        </div>
+                        <ul class="space-y-4 mb-8 flex-1">
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Semua Fitur Elegant</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Desain Layout 100% Custom</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Integrasi Video / Live Streaming</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700"><span class="material-symbols-outlined text-[#8A2BE2] text-sm">done</span> Custom Nama & Filter Filter IG</li>
+                        </ul>
+                        <a href="portofolio.html?tab=undangan" class="w-full text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Lihat Contoh Desain</a>
+                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Custom%20Premium%20Undangan." target="_blank" class="w-full text-center py-3 rounded-xl bg-gray-900 text-white font-bold hover:bg-black hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Custom Premium</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Payment System Info -->
+    <section class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">Sistem Pembayaran yang Aman</h3>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <div class="bg-gray-50 p-6 rounded-2xl w-full sm:w-1/2 border border-gray-100">
+                    <div class="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="material-symbols-outlined font-bold">payments</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900 text-lg mb-2">DP 50% di Awal</h4>
+                    <p class="text-sm text-gray-600">Sebagai tanda jadi dan komitmen sebelum pengerjaan proyek dimulai.</p>
+                </div>
+                <div class="hidden sm:block text-gray-300">
+                    <span class="material-symbols-outlined text-4xl">arrow_forward</span>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl w-full sm:w-1/2 border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="material-symbols-outlined font-bold">task_alt</span>
+                    </div>
+                    <h4 class="font-bold text-gray-900 text-lg mb-2">Pelunasan 50%</h4>
+                    <p class="text-sm text-gray-600">Dibayarkan setelah website/undangan selesai direview dan siap online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm">© 2026 RevTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tab Switcher Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            const urlParams = new URLSearchParams(window.location.search);
+            const activeTabParam = urlParams.get('tab');
+
+            function activateTab(tabId) {
+                tabBtns.forEach(btn => {
+                    btn.classList.remove('active', 'bg-primary', 'text-white', 'shadow-md', 'bg-[#8A2BE2]', 'text-gray-700', 'hover:bg-white', 'hover:text-primary', 'hover:shadow-sm', 'bg-gray-200/50', 'text-gray-500', 'hover:text-gray-900');
+                    // set as inactive
+                    btn.classList.add('text-gray-500', 'hover:text-gray-900', 'hover:bg-gray-200/50');
+                });
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                const targetBtn = document.querySelector(`[data-target="${tabId}"]`);
+                const targetContent = document.getElementById(tabId);
+                
+                if(targetBtn && targetContent) {
+                    // remove inactive classes
+                    targetBtn.classList.remove('text-gray-500', 'hover:text-gray-900', 'hover:bg-gray-200/50');
+                    
+                    if(tabId === 'tab-undangan') {
+                        targetBtn.classList.add('active', 'bg-[#8A2BE2]', 'text-white', 'shadow-md');
+                    } else {
+                        targetBtn.classList.add('active', 'bg-primary', 'text-white', 'shadow-md');
+                    }
+                    targetContent.classList.add('active');
+                }
+            }
+
+            if (activeTabParam && (activeTabParam === 'web' || activeTabParam === 'undangan')) {
+                activateTab('tab-' + activeTabParam);
+            } else {
+                activateTab('tab-web'); // Explicitly initialize the default tab
+            }
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const target = btn.getAttribute('data-target');
+                    activateTab(target);
+                    const newUrl = new URL(window.location);
+                    newUrl.searchParams.set('tab', target.replace('tab-', ''));
+                    window.history.pushState({}, '', newUrl);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
