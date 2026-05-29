@@ -282,13 +282,8 @@ function TemplateContent() {
 // Komponen Reusable untuk Kartu Template
 function TemplateCard({ title, category, image, desc, dark = false, isMobile = false }: { title: string, category: string, image: string, desc: string, dark?: boolean, isMobile?: boolean }) {
     return (
-        <div className={`group relative overflow-hidden shadow-md border ${dark ? 'border-white/10 bg-black/20' : 'border-gray-100 bg-gray-50'} transition-all duration-500 hover:shadow-xl hover:-translate-y-1 ${isMobile ? 'rounded-[2rem] max-w-[280px] mx-auto w-full border-[4px]' : 'rounded-3xl w-full'}`}>
-            <div className={`${isMobile ? 'aspect-[9/16]' : 'aspect-video'} overflow-hidden relative`}>
-                {isMobile && (
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[40%] h-5 bg-black rounded-b-2xl z-20 shadow-sm flex items-center justify-center">
-                        <div className="w-12 h-1 bg-gray-800 rounded-full"></div>
-                    </div>
-                )}
+        <div className={`group relative rounded-3xl overflow-hidden shadow-md border ${dark ? 'border-white/10 bg-black/20' : 'border-gray-100 bg-gray-50'} transition-all duration-500 hover:shadow-xl hover:-translate-y-1 w-full`}>
+            <div className={`${isMobile ? 'aspect-[3/4]' : 'aspect-video'} overflow-hidden relative`}>
                 <img src={image} alt={title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
             </div>
             <div className={`absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t ${dark ? 'from-black/95 via-black/50' : 'from-black/90 via-black/40'} to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100`}>
