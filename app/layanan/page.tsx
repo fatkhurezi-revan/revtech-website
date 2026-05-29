@@ -186,7 +186,7 @@ function LayananContent() {
                         <div className="relative z-10 text-center">
                             <div className="w-20 h-20 mx-auto bg-white border-2 border-primary rounded-full flex items-center justify-center shadow-sm mb-6 text-primary text-3xl font-extrabold relative z-10">3</div>
                             <h4 className="font-bold text-gray-900 mb-2">Proses Development</h4>
-                            <p className="text-sm text-gray-500 font-normal">Kami mengeksekusi penulisan kode dan merakit website Anda secara pixel-perfect sesuai dengan spesifikasi yang disepakati.</p>
+                            <p className="text-sm text-gray-500 font-normal">Kami menulis kode dan merakit website Anda sesuai spesifikasi yang disepakati.</p>
                         </div>
                         
                         {/* Step 4 */}
