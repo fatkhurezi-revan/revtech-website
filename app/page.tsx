@@ -60,23 +60,30 @@ export default function Home() {
                   <div className="relative flex items-center justify-center pt-8 lg:pt-0">
                       <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
                       
-                      {/* Mockup Laptop Realistis Interaktif */}
-                      <div className="w-full max-w-3xl mx-auto relative drop-shadow-[0_30px_30px_rgba(0,0,0,0.3)]">
-                          {/* Gambar Laptop Asli */}
-                          <img src="/macbook-mockup.png" alt="Macbook Pro" className="w-full h-auto relative z-10" />
+                      {/* Mockup Container Utama */}
+                      <div className="w-full max-w-3xl mx-auto relative pt-4 pb-12">
                           
-                          {/* Layar Laptop Overlay */}
-                          {/* Catatan: Persentase ini disesuaikan dengan posisi layar pada gambar mockup */}
-                          <div className="absolute z-20 bg-black overflow-hidden rounded-[1%]" style={{ top: '8.5%', bottom: '15.5%', left: '12%', right: '12%' }}>
-                              {heroImages.map((src, index) => (
-                                  <img 
-                                      key={index}
-                                      src={src} 
-                                      alt={`Slide ${index + 1}`}
-                                      className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
-                                  />
-                              ))}
+                          {/* Laptop Wrapper dengan Animasi Melayang */}
+                          <div className="relative z-10 animate-float drop-shadow-2xl">
+                              {/* Gambar Laptop Asli (HP/Windows Style) */}
+                              <img src="/hp-laptop-mockup.png" alt="Laptop Realistis" className="w-full h-auto relative z-10" />
+                              
+                              {/* Layar Laptop Overlay */}
+                              {/* Catatan: Persentase ini disesuaikan dengan area layar pada mockup laptop Anda */}
+                              <div className="absolute z-20 bg-black overflow-hidden rounded-[2%]" style={{ top: '8%', bottom: '16%', left: '12%', right: '12%' }}>
+                                  {heroImages.map((src, index) => (
+                                      <img 
+                                          key={index}
+                                          src={src} 
+                                          alt={`Slide ${index + 1}`}
+                                          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === currentImageIndex ? 'opacity-100' : 'opacity-0'}`} 
+                                      />
+                                  ))}
+                              </div>
                           </div>
+
+                          {/* Bayangan Lantai (Static Floor Drop Shadow) */}
+                          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[70%] h-[20px] bg-gray-900/30 blur-2xl rounded-[100%] z-0"></div>
                       </div>
                   </div>
               </div>
