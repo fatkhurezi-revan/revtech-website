@@ -64,12 +64,15 @@ function TemplateContent() {
                             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-100">
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-xs uppercase tracking-wider mb-3">Paket Hemat</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Starter</h2>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Hemat</h2>
                                     <p className="text-gray-500 mt-2 font-medium">Template profil bisnis simpel dan elegan, cocok untuk UMKM & Personal.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Mulai Dari</p>
-                                    <p className="text-3xl font-extrabold text-primary">Rp 300k<span className="text-base text-gray-400 font-medium">/projek</span></p>
+                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Harga</p>
+                                    <div className="flex items-baseline md:justify-end gap-1">
+                                        <span className="text-lg font-bold text-gray-900">Rp</span>
+                                        <span className="text-3xl font-extrabold text-primary tracking-tight leading-none">300<span className="text-xl font-bold">Rb</span> - 500<span className="text-xl font-bold">Rb</span></span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -95,12 +98,15 @@ function TemplateContent() {
                             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-white/10 relative z-10">
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider mb-3 backdrop-blur-sm">Rekomendasi</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Bisnis Pro</h2>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Populer</h2>
                                     <p className="text-gray-300 mt-2 font-medium">Template e-commerce dan sistem bisnis dengan fitur interaktif & dinamis.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-300 font-bold uppercase tracking-wide">Mulai Dari</p>
-                                    <p className="text-3xl font-extrabold text-white">Rp 1.5M<span className="text-base text-gray-400 font-medium">/projek</span></p>
+                                    <p className="text-sm text-gray-300 font-bold uppercase tracking-wide mb-1">Harga</p>
+                                    <div className="flex items-baseline md:justify-end gap-1">
+                                        <span className="text-lg font-bold text-white">Rp</span>
+                                        <span className="text-3xl font-extrabold text-white tracking-tight leading-none">700<span className="text-xl font-bold">Rb</span> - 1.2<span className="text-xl font-bold">Juta</span></span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -127,12 +133,15 @@ function TemplateContent() {
                             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-100">
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-700 font-bold text-xs uppercase tracking-wider mb-3">Custom Build</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Enterprise</h2>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Eksklusif</h2>
                                     <p className="text-gray-500 mt-2 font-medium">Sistem kustomisasi 100% dari nol, UI/UX eksklusif untuk korporat besar.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Hubungi Kami</p>
-                                    <p className="text-3xl font-extrabold text-gray-900">Custom</p>
+                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Mulai</p>
+                                    <div className="flex items-baseline md:justify-end gap-1">
+                                        <span className="text-lg font-bold text-gray-900">Rp</span>
+                                        <span className="text-3xl font-extrabold text-gray-900 tracking-tight leading-none">1.5<span className="text-2xl font-bold">Juta</span></span>
+                                    </div>
                                 </div>
                             </div>
 
@@ -164,12 +173,15 @@ function TemplateContent() {
                             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-100">
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-600 font-bold text-xs uppercase tracking-wider mb-3">Paket Basic</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Silver</h2>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Basic</h2>
                                     <p className="text-gray-500 mt-2 font-medium">Template undangan 1 halaman simpel yang elegan dan informatif.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Harga</p>
-                                    <p className="text-3xl font-extrabold text-[#8A2BE2]">Rp 50k</p>
+                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide mb-1">Harga</p>
+                                    <div className="flex items-baseline md:justify-end gap-1">
+                                        <span className="text-lg font-bold text-gray-900">Rp</span>
+                                        <span className="text-3xl font-extrabold text-[#8A2BE2] tracking-tight leading-none">50<span className="text-xl font-bold">Rb</span> - 100<span className="text-xl font-bold">Rb</span></span>
+                                    </div>
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -194,12 +206,15 @@ function TemplateContent() {
                             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-white/10 relative z-10">
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider mb-3 backdrop-blur-sm">Terlaris</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Gold</h2>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Elegant</h2>
                                     <p className="text-gray-200 mt-2 font-medium">Template multi-halaman dengan animasi galeri foto & musik latar (BGM).</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-200 font-bold uppercase tracking-wide">Harga</p>
-                                    <p className="text-3xl font-extrabold text-white">Rp 100k</p>
+                                    <p className="text-sm text-gray-200 font-bold uppercase tracking-wide mb-1">Harga</p>
+                                    <div className="flex items-baseline md:justify-end gap-1">
+                                        <span className="text-lg font-bold text-white">Rp</span>
+                                        <span className="text-3xl font-extrabold text-white tracking-tight leading-none">150<span className="text-xl font-bold">Rb</span> - 250<span className="text-xl font-bold">Rb</span></span>
+                                    </div>
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
@@ -225,12 +240,15 @@ function TemplateContent() {
                             <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-800">
                                 <div>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-200 to-yellow-400 text-yellow-900 font-bold text-xs uppercase tracking-wider mb-3">Premium VIP</div>
-                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Platinum</h2>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Custom Premium</h2>
                                     <p className="text-gray-400 mt-2 font-medium">Desain 100% custom eksklusif, buku tamu digital, QR Code kehadiran & filter Instagram.</p>
                                 </div>
                                 <div className="mt-4 md:mt-0 text-left md:text-right">
-                                    <p className="text-sm text-gray-400 font-bold uppercase tracking-wide">Mulai Dari</p>
-                                    <p className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500">Rp 150k</p>
+                                    <p className="text-sm text-gray-400 font-bold uppercase tracking-wide mb-1">Mulai</p>
+                                    <div className="flex items-baseline md:justify-end gap-1">
+                                        <span className="text-lg font-bold text-white">Rp</span>
+                                        <span className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500 tracking-tight leading-none">350<span className="text-xl font-bold">Ribu</span></span>
+                                    </div>
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 gap-8">
