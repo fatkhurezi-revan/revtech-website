@@ -26,7 +26,7 @@ function TemplateContent() {
                 
                 <div className="text-center mb-16">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Katalog Pilihan Template</h1>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto font-normal">Pilih dari berbagai desain template profesional dan modern yang siap digunakan untuk kebutuhan digital Anda.</p>
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto font-normal">Jelajahi berbagai desain template profesional berdasarkan pilihan paket harga yang sesuai dengan kebutuhan dan anggaran Anda.</p>
                 </div>
 
                 {/* Tab Switcher */}
@@ -57,99 +57,230 @@ function TemplateContent() {
 
                 {/* Tab Content: Web Development */}
                 {activeTab === 'web' && (
-                    <div className="animate-fade-in space-y-24">
-                        <section>
-                            <div className="mb-10 border-b border-gray-200 pb-4">
-                                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">Katalog Konsep & Template</h2>
-                                <p className="text-gray-500 mt-2">Pilih desain konsep dan template siap pakai untuk inspirasi bisnis Anda.</p>
+                    <div className="animate-fade-in space-y-20">
+                        
+                        {/* Paket Starter */}
+                        <section className="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-sm border border-gray-100">
+                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-100">
+                                <div>
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-xs uppercase tracking-wider mb-3">Paket Hemat</div>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Starter</h2>
+                                    <p className="text-gray-500 mt-2 font-medium">Template profil bisnis simpel dan elegan, cocok untuk UMKM & Personal.</p>
+                                </div>
+                                <div className="mt-4 md:mt-0 text-left md:text-right">
+                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Mulai Dari</p>
+                                    <p className="text-3xl font-extrabold text-primary">Rp 1.5M<span className="text-base text-gray-400 font-medium">/projek</span></p>
+                                </div>
                             </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                                <div className="group relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-white transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
-                                    <div className="aspect-video overflow-hidden">
-                                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Digital Hub Mockup" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <TemplateCard 
+                                    title="Minimalist Company Profile" 
+                                    category="Starter Template" 
+                                    image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    desc="Desain bersih dan langsung pada intinya. Sempurna untuk menampilkan layanan jasa Anda."
+                                />
+                                <TemplateCard 
+                                    title="Creative Agency Landing" 
+                                    category="Starter Template" 
+                                    image="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    desc="Layout kreatif dengan fokus pada portofolio dan konversi (Call-to-Action)."
+                                />
+                            </div>
+                        </section>
+
+                        {/* Paket Bisnis */}
+                        <section className="bg-gradient-to-br from-slate-900 to-primary p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden text-white">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-white/10 relative z-10">
+                                <div>
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider mb-3 backdrop-blur-sm">Rekomendasi</div>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Bisnis Pro</h2>
+                                    <p className="text-gray-300 mt-2 font-medium">Template e-commerce dan sistem bisnis dengan fitur interaktif & dinamis.</p>
+                                </div>
+                                <div className="mt-4 md:mt-0 text-left md:text-right">
+                                    <p className="text-sm text-gray-300 font-bold uppercase tracking-wide">Mulai Dari</p>
+                                    <p className="text-3xl font-extrabold text-white">Rp 3.5M<span className="text-base text-gray-400 font-medium">/projek</span></p>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+                                <TemplateCard 
+                                    title="Modern E-Commerce" 
+                                    category="Bisnis Template" 
+                                    image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    desc="Katalog produk dinamis dengan integrasi keranjang belanja dan checkout WhatsApp."
+                                    dark
+                                />
+                                <TemplateCard 
+                                    title="Corporate Dashboard" 
+                                    category="Bisnis Template" 
+                                    image="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    desc="Tampilan dashboard profesional untuk manajemen data internal perusahaan."
+                                    dark
+                                />
+                            </div>
+                        </section>
+
+                        {/* Paket Enterprise */}
+                        <section className="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-sm border border-gray-100">
+                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-100">
+                                <div>
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-700 font-bold text-xs uppercase tracking-wider mb-3">Custom Build</div>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Enterprise</h2>
+                                    <p className="text-gray-500 mt-2 font-medium">Sistem kustomisasi 100% dari nol, UI/UX eksklusif untuk korporat besar.</p>
+                                </div>
+                                <div className="mt-4 md:mt-0 text-left md:text-right">
+                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Hubungi Kami</p>
+                                    <p className="text-3xl font-extrabold text-gray-900">Custom</p>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 gap-8">
+                                <div className="group relative rounded-3xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50 transition-all duration-500 hover:shadow-2xl">
+                                    <div className="aspect-[21/9] overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Enterprise Template" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
                                     </div>
-                                    <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100">
-                                        <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                                            <span className="bg-gray-500/50 text-gray-100 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Template Profil</span>
-                                            <h3 className="text-white text-3xl font-bold mb-2">Creative Portfolio</h3>
-                                            <p className="text-gray-300 text-sm mb-6 max-w-md font-normal">Konsep website profil untuk profesional kreatif dengan tampilan modern.</p>
-                                            <a href="#" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 bg-primary text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                                <span className="material-symbols-outlined text-sm">visibility</span> Lihat Demo Live
-                                            </a>
-                                        </div>
+                                    <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-90">
+                                        <h3 className="text-white text-3xl font-bold mb-2">Exclusive Custom Platform</h3>
+                                        <p className="text-gray-300 text-sm mb-6 max-w-2xl font-normal">Karena tingkat kompleksitas tinggi, klien pada paket ini akan mendapatkan desain antarmuka eksklusif yang dirancang khusus oleh UI/UX designer kami, bukan menggunakan template.</p>
+                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20dengan%20Paket%20Enterprise." target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-2 bg-white text-gray-900 font-bold px-6 py-3 rounded-xl hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
+                                            Konsultasi Custom Project
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </section>
+
                     </div>
                 )}
 
                 {/* Tab Content: Undangan Digital */}
                 {activeTab === 'undangan' && (
-                    <div className="animate-fade-in space-y-24">
-                        <section>
-                            <div className="mb-10 text-center">
-                                <h2 className="text-3xl font-bold text-gray-900 mb-4">Katalog Contoh Template</h2>
-                                <p className="text-gray-500">Pilih tema undangan yang paling sesuai dengan gaya acara Anda.</p>
+                    <div className="animate-fade-in space-y-20">
+                        
+                        {/* Paket Silver */}
+                        <section className="bg-white p-8 md:p-10 rounded-[2.5rem] shadow-sm border border-gray-100">
+                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-100">
+                                <div>
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 text-gray-600 font-bold text-xs uppercase tracking-wider mb-3">Paket Basic</div>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Paket Silver</h2>
+                                    <p className="text-gray-500 mt-2 font-medium">Template undangan 1 halaman simpel yang elegan dan informatif.</p>
+                                </div>
+                                <div className="mt-4 md:mt-0 text-left md:text-right">
+                                    <p className="text-sm text-gray-500 font-bold uppercase tracking-wide">Harga</p>
+                                    <p className="text-3xl font-extrabold text-[#8A2BE2]">Rp 150k</p>
+                                </div>
                             </div>
-
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-                                
-                                {/* Tema Elegant */}
-                                <div className="flex flex-col items-center">
-                                    <div className="relative w-[280px] h-[580px] bg-gray-900 rounded-[3rem] p-3 shadow-2xl border-4 border-gray-800 transform hover:-translate-y-4 transition-transform duration-500">
-                                        <div className="absolute top-0 inset-x-0 h-6 bg-gray-900 rounded-t-[2.5rem] z-20 flex justify-center">
-                                            <div className="w-20 h-4 bg-black rounded-b-xl mt-1"></div>
-                                        </div>
-                                        <div className="w-full h-full bg-purple-900 rounded-[2rem] overflow-hidden relative group">
-                                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant Theme" className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-1000" />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                                                <div className="text-center">
-                                                    <h3 className="text-white text-2xl font-serif font-bold mb-1">Romeo & Juliet</h3>
-                                                    <p className="text-purple-200 text-xs tracking-widest uppercase">Tema Elegant</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" className="mt-8 bg-[#8A2BE2] text-white font-bold px-8 py-3 rounded-full hover:bg-purple-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                        Lihat Demo
-                                    </a>
-                                </div>
-
-                                {/* Tema Rustic */}
-                                <div className="flex flex-col items-center">
-                                    <div className="relative w-[280px] h-[580px] bg-gray-900 rounded-[3rem] p-3 shadow-2xl border-4 border-gray-800 transform hover:-translate-y-4 transition-transform duration-500">
-                                        <div className="absolute top-0 inset-x-0 h-6 bg-gray-900 rounded-t-[2.5rem] z-20 flex justify-center">
-                                            <div className="w-20 h-4 bg-black rounded-b-xl mt-1"></div>
-                                        </div>
-                                        <div className="w-full h-full bg-amber-900 rounded-[2rem] overflow-hidden relative group">
-                                            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Rustic Theme" className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-1000" />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                                                <div className="text-center">
-                                                    <h3 className="text-white text-2xl font-serif font-bold mb-1">Andi & Rina</h3>
-                                                    <p className="text-amber-200 text-xs tracking-widest uppercase">Tema Rustic</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" className="mt-8 bg-[#8A2BE2] text-white font-bold px-8 py-3 rounded-full hover:bg-purple-700 hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                                        Lihat Demo
-                                    </a>
-                                </div>
-
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <TemplateCard 
+                                    title="Classic White" 
+                                    category="Silver Template" 
+                                    image="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    desc="Desain bersih berlatar putih dengan tipografi klasik yang romantis."
+                                />
+                                <TemplateCard 
+                                    title="Rustic Brown" 
+                                    category="Silver Template" 
+                                    image="https://images.unsplash.com/photo-1505932794465-147d1f1bce20?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    desc="Nuansa bumi (earth tone) yang hangat untuk tema pernikahan rustic."
+                                />
                             </div>
                         </section>
+
+                        {/* Paket Gold */}
+                        <section className="bg-gradient-to-br from-purple-900 to-[#8A2BE2] p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden text-white">
+                            <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/2"></div>
+                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-white/10 relative z-10">
+                                <div>
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white font-bold text-xs uppercase tracking-wider mb-3 backdrop-blur-sm">Terlaris</div>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Gold</h2>
+                                    <p className="text-gray-200 mt-2 font-medium">Template multi-halaman dengan animasi galeri foto & musik latar (BGM).</p>
+                                </div>
+                                <div className="mt-4 md:mt-0 text-left md:text-right">
+                                    <p className="text-sm text-gray-200 font-bold uppercase tracking-wide">Harga</p>
+                                    <p className="text-3xl font-extrabold text-white">Rp 250k</p>
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+                                <TemplateCard 
+                                    title="Luxury Gold" 
+                                    category="Gold Template" 
+                                    image="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    desc="Sentuhan warna emas dengan animasi kelopak bunga jatuh yang mewah."
+                                    dark
+                                />
+                                <TemplateCard 
+                                    title="Floral Watercolor" 
+                                    category="Gold Template" 
+                                    image="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                    desc="Elemen cat air bunga yang mekar perlahan saat halaman digulir."
+                                    dark
+                                />
+                            </div>
+                        </section>
+
+                        {/* Paket Platinum */}
+                        <section className="bg-[#111] p-8 md:p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden text-white border border-gray-800">
+                            <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 pb-6 border-b border-gray-800">
+                                <div>
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-200 to-yellow-400 text-yellow-900 font-bold text-xs uppercase tracking-wider mb-3">Premium VIP</div>
+                                    <h2 className="text-3xl md:text-4xl font-extrabold text-white">Paket Platinum</h2>
+                                    <p className="text-gray-400 mt-2 font-medium">Desain 100% custom eksklusif, buku tamu digital, QR Code kehadiran & filter Instagram.</p>
+                                </div>
+                                <div className="mt-4 md:mt-0 text-left md:text-right">
+                                    <p className="text-sm text-gray-400 font-bold uppercase tracking-wide">Mulai Dari</p>
+                                    <p className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-500">Rp 500k</p>
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-1 gap-8">
+                                <div className="group relative rounded-3xl overflow-hidden shadow-lg bg-gray-900 transition-all duration-500 hover:shadow-[0_0_30px_rgba(251,191,36,0.15)] border border-gray-800">
+                                    <div className="aspect-[21/9] overflow-hidden">
+                                        <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Platinum Template" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80" />
+                                    </div>
+                                    <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-t from-black/95 via-black/60 to-transparent">
+                                        <h3 className="text-white text-3xl font-bold mb-2">Bespoke Wedding Experience</h3>
+                                        <p className="text-gray-300 text-sm mb-6 max-w-2xl font-normal">Tidak ada batasan template. Kami akan merancang undangan digital yang merepresentasikan tema spesifik pernikahan Anda, lengkap dengan aset visual custom 3D atau ilustrasi.</p>
+                                        <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20tertarik%20dengan%20Paket%20Platinum%20Undangan." target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-2 bg-gradient-to-r from-amber-200 to-yellow-500 text-yellow-900 font-bold px-6 py-3 rounded-xl hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                                            Konsultasi Tema Custom
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
                     </div>
                 )}
+
             </div>
         </div>
     );
 }
 
-export default function Template() {
+// Komponen Reusable untuk Kartu Template
+function TemplateCard({ title, category, image, desc, dark = false }: { title: string, category: string, image: string, desc: string, dark?: boolean }) {
     return (
-        <Suspense fallback={<div className="min-h-screen bg-gray-50/50"></div>}>
+        <div className={`group relative rounded-3xl overflow-hidden shadow-md border ${dark ? 'border-white/10 bg-black/20' : 'border-gray-100 bg-gray-50'} transition-all duration-500 hover:shadow-xl hover:-translate-y-1`}>
+            <div className="aspect-video overflow-hidden">
+                <img src={image} alt={title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+            </div>
+            <div className={`absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t ${dark ? 'from-black/95 via-black/50' : 'from-black/90 via-black/40'} to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-100`}>
+                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <span className="bg-white/20 backdrop-blur-sm text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-2 inline-block border border-white/20">{category}</span>
+                    <h3 className="text-white text-2xl font-bold mb-1">{title}</h3>
+                    <p className="text-gray-300 text-xs mb-4 line-clamp-2">{desc}</p>
+                    <a href="#" className={`inline-flex items-center gap-2 text-white font-bold px-4 py-2 rounded-lg text-sm transition-all duration-300 backdrop-blur-md ${dark ? 'bg-white/10 hover:bg-white/20 border border-white/20' : 'bg-primary/80 hover:bg-primary border border-primary/50'}`}>
+                        <span className="material-symbols-outlined text-[16px]">visibility</span> Lihat Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default function TemplatePage() {
+    return (
+        <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div></div>}>
             <TemplateContent />
         </Suspense>
     );
