@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        <div className={`md:hidden absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 transition-all duration-300 ease-in-out ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible h-0 overflow-hidden'}`}>
+        <div className={`md:hidden absolute top-20 left-0 w-full bg-white shadow-2xl border-t border-gray-100 transition-all duration-300 origin-top ${isMobileMenuOpen ? 'opacity-100 scale-y-100 visible' : 'opacity-0 scale-y-0 invisible'}`}>
             <div className="flex flex-col p-4 space-y-2">
                 <Link className={getMobileLinkClass('/')} href="/" onClick={() => setIsMobileMenuOpen(false)}>Beranda</Link>
                 <Link className={getMobileLinkClass('/layanan')} href="/layanan" onClick={() => setIsMobileMenuOpen(false)}>Layanan</Link>

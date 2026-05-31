@@ -26,7 +26,7 @@ function HargaContent() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Investasi Digital Anda</h1>
+                    <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Investasi Digital Anda</h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">Kami transparan dengan harga kami. Pilih paket yang paling sesuai dengan kebutuhan dan skala bisnis Anda.</p>
                 </div>
 
@@ -66,7 +66,7 @@ function HargaContent() {
                                 <p className="text-gray-500 text-sm mb-6 font-normal">Solusi cepat untuk landing page UMKM, bisnis jasa, atau portofolio personal.</p>
                                 <div className="mb-6 flex items-baseline flex-wrap gap-1">
                                     <span className="text-lg font-bold text-gray-900">Rp</span>
-                                    <span className="text-3xl xl:text-4xl font-extrabold text-gray-900 tracking-tight leading-none">300<span className="text-xl font-bold">Rb</span> - 500<span className="text-xl font-bold">Rb</span></span>
+                                    <span className="text-2xl sm:text-3xl xl:text-4xl font-extrabold text-gray-900 tracking-tight leading-none">300<span className="text-lg sm:text-xl font-bold">Rb</span> - 500<span className="text-lg sm:text-xl font-bold">Rb</span></span>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
                                     <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Single Page (Landing Page)</li>
@@ -86,7 +86,7 @@ function HargaContent() {
                                     <p className="text-blue-100 text-sm mb-6 font-normal">Website multi-halaman profesional untuk profil perusahaan, sekolah, atau instansi.</p>
                                     <div className="mb-6 flex items-baseline flex-wrap gap-1">
                                         <span className="text-lg font-bold text-white">Rp</span>
-                                        <span className="text-3xl xl:text-4xl font-extrabold text-white tracking-tight leading-none">700<span className="text-xl font-bold">Rb</span> - 1.2<span className="text-xl font-bold">Jt</span></span>
+                                        <span className="text-2xl sm:text-3xl xl:text-4xl font-extrabold text-white tracking-tight leading-none">700<span className="text-lg sm:text-xl font-bold">Rb</span> - 1.2<span className="text-lg sm:text-xl font-bold">Jt</span></span>
                                     </div>
                                     <ul className="space-y-4 mb-8 text-blue-50 flex-1">
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Multi-halaman (Maks 5 Halaman)</li>
@@ -107,7 +107,7 @@ function HargaContent() {
                                     <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1">Mulai</span>
                                     <div className="flex items-baseline gap-1">
                                         <span className="text-lg font-bold text-gray-900">Rp</span>
-                                        <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">1.5<span className="text-2xl font-bold">Jt</span></span>
+                                        <span className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight leading-none">1.5<span className="text-xl sm:text-2xl font-bold">Jt</span></span>
                                     </div>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
@@ -134,7 +134,7 @@ function HargaContent() {
                                 <div className="mb-6 flex items-baseline flex-wrap gap-1">
                                     <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1 w-full">Mulai</span>
                                     <span className="text-lg font-bold text-gray-900">Rp</span>
-                                    <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">50<span className="text-2xl font-bold">Rb</span></span>
+                                    <span className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight leading-none">50<span className="text-xl sm:text-2xl font-bold">Rb</span></span>
                                 </div>
                                 <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 mb-6">
                                     <p className="text-xs font-bold text-blue-800 mb-1">Penyesuaian Warna Dasar:</p>
@@ -159,7 +159,7 @@ function HargaContent() {
                                     <div className="mb-6 flex items-baseline flex-wrap gap-1">
                                         <span className="text-sm font-bold text-purple-200 uppercase tracking-widest mb-1 w-full">Mulai</span>
                                         <span className="text-lg font-bold text-white">Rp</span>
-                                        <span className="text-4xl font-extrabold text-white tracking-tight leading-none">100<span className="text-2xl font-bold">Rb</span></span>
+                                        <span className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-none">100<span className="text-xl sm:text-2xl font-bold">Rb</span></span>
                                     </div>
                                     <div className="bg-purple-800/50 border border-purple-400/30 rounded-xl p-3 mb-6 backdrop-blur-sm">
                                         <p className="text-xs font-bold text-purple-100 mb-1">Minor Customization:</p>
@@ -184,7 +184,7 @@ function HargaContent() {
                                     <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1">Mulai</span>
                                     <div className="flex items-baseline gap-1">
                                         <span className="text-lg font-bold text-gray-900">Rp</span>
-                                        <span className="text-4xl font-extrabold text-gray-900 tracking-tight leading-none">250<span className="text-2xl font-bold">Rb</span></span>
+                                        <span className="text-3xl sm:text-4xl font-extrabold text-gray-900 tracking-tight leading-none">250<span className="text-xl sm:text-2xl font-bold">Rb</span></span>
                                     </div>
                                 </div>
                                 <div className="bg-green-50 border border-green-100 rounded-xl p-3 mb-6">

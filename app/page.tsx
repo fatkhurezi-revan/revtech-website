@@ -36,7 +36,7 @@ export default function Home() {
                           Agensi Digital Terpercaya
                       </div>
                       
-                      <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-gray-900">
+                      <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] text-gray-900">
                           Wujudkan <br/>
                           Ide Digital <br/>
                           <span className="text-gradient">Lebih Nyata.</span>
@@ -67,16 +67,16 @@ export default function Home() {
                           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-to-tr from-primary/20 via-purple-500/20 to-blue-400/20 blur-[80px] rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-1000 -z-10"></div>
                           
                           {/* Floating Badges (Elemen Interaktif) */}
-                          <div className="absolute top-12 -left-4 md:-left-12 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl shadow-xl border border-white/50 font-bold text-primary text-sm flex items-center gap-2 animate-bounce-slow z-30" style={{ animationDelay: '0ms' }}>
-                              <span className="material-symbols-outlined text-lg">public</span>
+                          <div className="absolute top-4 left-0 md:top-12 md:-left-12 bg-white/90 backdrop-blur-md px-3 py-1.5 md:px-4 md:py-2 rounded-2xl shadow-xl border border-white/50 font-bold text-primary text-xs md:text-sm flex items-center gap-1 md:gap-2 animate-bounce-slow z-30 scale-90 md:scale-100 origin-top-left" style={{ animationDelay: '0ms' }}>
+                              <span className="material-symbols-outlined text-base md:text-lg">public</span>
                               Web Company
                           </div>
-                          <div className="absolute top-1/3 -right-4 md:-right-10 bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl shadow-xl border border-white/50 font-bold text-purple-600 text-sm flex items-center gap-2 animate-bounce-slow z-30" style={{ animationDelay: '400ms' }}>
-                              <span className="material-symbols-outlined text-lg">favorite</span>
+                          <div className="absolute top-1/4 right-0 md:top-1/3 md:-right-10 bg-white/90 backdrop-blur-md px-3 py-1.5 md:px-4 md:py-2 rounded-2xl shadow-xl border border-white/50 font-bold text-purple-600 text-xs md:text-sm flex items-center gap-1 md:gap-2 animate-bounce-slow z-30 scale-90 md:scale-100 origin-top-right" style={{ animationDelay: '400ms' }}>
+                              <span className="material-symbols-outlined text-base md:text-lg">favorite</span>
                               Undangan Digital
                           </div>
-                          <div className="absolute bottom-28 -left-2 md:-left-8 bg-gray-900/90 backdrop-blur-md text-white px-4 py-2 rounded-2xl shadow-xl border border-gray-700 font-bold text-sm flex items-center gap-2 animate-bounce-slow z-30" style={{ animationDelay: '800ms' }}>
-                              <span className="material-symbols-outlined text-lg">analytics</span>
+                          <div className="absolute bottom-16 left-2 md:bottom-28 md:-left-8 bg-gray-900/90 backdrop-blur-md text-white px-3 py-1.5 md:px-4 md:py-2 rounded-2xl shadow-xl border border-gray-700 font-bold text-xs md:text-sm flex items-center gap-1 md:gap-2 animate-bounce-slow z-30 scale-90 md:scale-100 origin-bottom-left" style={{ animationDelay: '800ms' }}>
+                              <span className="material-symbols-outlined text-base md:text-lg">analytics</span>
                               Sistem Bisnis
                           </div>
 
@@ -219,7 +219,7 @@ export default function Home() {
                   <div className="absolute top-0 left-0 w-full h-2 bg-gradient-primary"></div>
                   <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
                   
-                  <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 relative z-10">
+                  <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 relative z-10">
                       Siap Memulai Proyek Anda?
                   </h2>
                   <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto relative z-10">

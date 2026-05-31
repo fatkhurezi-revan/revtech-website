@@ -26,7 +26,7 @@ function PortofolioContent() {
             <div className="max-w-7xl mx-auto px-6 lg:px-8">
                 
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">Karya Kami</h1>
+                    <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4">Karya Kami</h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto font-normal">Kami bangga dapat membantu berbagai bisnis dan personal mewujudkan identitas digital mereka.</p>
                 </div>
 
