@@ -92,7 +92,7 @@ function LayananContent() {
                                             <div className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 hover:-translate-y-1 hover:shadow-md transition-all duration-300">
                                                 <div className="bg-primary/10 p-3 rounded-xl text-primary shrink-0"><span className="material-symbols-outlined">troubleshoot</span></div>
                                                 <div>
-                                                    <h4 className="font-bold text-gray-900 mb-1">Basic SEO Setup</h4>
+                                                    <h4 className="font-bold text-gray-900 mb-1">Struktur Web SEO-Friendly</h4>
                                                     <p className="text-sm text-gray-500">Optimasi kata kunci agar mudah ditemukan di pencarian Google.</p>
                                                 </div>
                                             </div>

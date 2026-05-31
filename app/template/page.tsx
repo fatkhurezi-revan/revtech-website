@@ -337,7 +337,7 @@ function TemplateContent() {
                                         <div className="bg-blue-500/20 p-2 rounded-lg flex items-center justify-center">
                                             <span className="material-symbols-outlined text-blue-400 text-lg">shield_locked</span>
                                         </div>
-                                        <span className="text-sm font-bold text-slate-100 pr-2">Enterprise Security</span>
+                                        <span className="text-sm font-bold text-slate-100 pr-2">Sertifikat Keamanan HTTPS</span>
                                     </div>
                                 </div>
                             </div>

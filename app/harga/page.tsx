@@ -92,7 +92,7 @@ function HargaContent() {
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Multi-halaman (Maks 5 Halaman)</li>
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Penyesuaian Desain & Struktur</li>
                                         <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Gratis Domain (.com) 1 Tahun</li>
-                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Basic SEO & Setup Sosmed</li>
+                                        <li className="flex items-center gap-3 text-sm"><span className="material-symbols-outlined text-white text-sm">done</span> Struktur Web SEO-Friendly</li>
                                     </ul>
                                     <Link href="/portofolio?tab=web" className="w-full text-center py-3 rounded-xl bg-blue-600 border border-blue-400 text-white font-semibold hover:bg-blue-800 transition-colors mb-3">Lihat Contoh Desain</Link>
                                     <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Populer%20Web." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-white text-primary font-bold hover:bg-gray-100 hover:shadow-xl transform hover:scale-105 transition-all duration-300">Pesan Paket Populer</a>
