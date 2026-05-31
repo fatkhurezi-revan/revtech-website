@@ -102,7 +102,7 @@ function HargaContent() {
                             {/* Eksklusif */}
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col border-2 border-gray-900/5 hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Eksklusif</h4>
-                                <p className="text-gray-500 text-sm mb-6 font-normal">Jasa custom development (Figma to Code) & integrasi sistem web tingkat lanjut.</p>
+                                <p className="text-gray-500 text-sm mb-6 font-normal">Jasa pembuatan website kustom dari nol (Slicing Figma to Web) untuk tampilan yang 100% sesuai dengan referensi Anda.</p>
                                 <div className="mb-6 flex flex-col">
                                     <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-1">Mulai</span>
                                     <div className="flex items-baseline gap-1">
@@ -111,10 +111,10 @@ function HargaContent() {
                                     </div>
                                 </div>
                                 <ul className="space-y-4 mb-8 flex-1">
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Skalabilitas Halaman Dinamis</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Slicing UI & Custom Koding</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Integrasi Database & API</li>
-                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Advanced SEO & Optimasi Performa</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Desain Bebas Kustomisasi</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Slicing UI Pixel-Perfect</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Animasi Web Interaktif</li>
+                                    <li className="flex items-center gap-3 text-sm text-gray-700"><span className="material-symbols-outlined text-primary text-sm">done</span> Optimasi Performa Tinggi</li>
                                 </ul>
                                 <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20ingin%20Konsultasi%20Spesifikasi%20untuk%20Paket%20Eksklusif." target="_blank" rel="noreferrer" className="w-full block text-center py-3 rounded-xl bg-gray-50 text-gray-700 font-semibold hover:bg-gray-100 transition-colors mb-3">Konsultasi Spesifikasi</a>
                                 <a href="https://wa.me/6281290018819?text=Halo%20RevTech,%20saya%20mau%20pesan%20Paket%20Eksklusif%20Web." target="_blank" rel="noreferrer" className="w-full text-center py-3 rounded-xl bg-gray-900 text-white font-bold hover:bg-black hover:shadow-lg transform hover:scale-105 transition-all duration-300">Pesan Paket Eksklusif</a>

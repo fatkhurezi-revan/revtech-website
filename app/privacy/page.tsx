@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
                         <section>
                             <h2 className="text-xl font-bold text-gray-900 mb-4">6. Kerahasiaan Data Proyek (Non-Disclosure)</h2>
                             <p>
-                                Khusus untuk layanan Custom Web Development yang melibatkan sistem internal (seperti ERP, HRIS, dll), kami menjamin kerahasiaan penuh atas segala data bisnis, logika operasional, maupun basis data yang kami akses selama proses pengembangan dan pengujian. Kami bersedia menandatangani Perjanjian Kerahasiaan (NDA - Non-Disclosure Agreement) secara terpisah apabila diwajibkan oleh pihak klien.
+                                Khusus untuk pengerjaan proyek kustom, kami menjamin kerahasiaan penuh atas segala materi bisnis, referensi desain, maupun data internal klien yang kami akses selama proses pengerjaan. Kami bersedia menandatangani Perjanjian Kerahasiaan (NDA) secara terpisah apabila diwajibkan oleh pihak klien.
                             </p>
                         </section>
 

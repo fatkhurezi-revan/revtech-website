@@ -254,7 +254,7 @@ function TemplateContent() {
                                     </div>
                                     <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Layanan Custom Web Development</h2>
                                     <p className="text-slate-300 mb-10 font-normal leading-relaxed text-lg">
-                                        Paket Eksklusif tidak menggunakan template siap pakai. Ini adalah layanan pengembangan website kustom dari nol (Slicing Design to Code) yang dirancang khusus untuk kebutuhan bisnis tingkat lanjut Anda. Ideal untuk Sistem Informasi (ERP/HRIS), E-Commerce kompleks, dan Portal Berita berkinerja tinggi.
+                                        Paket Eksklusif tidak menggunakan template siap pakai. Ini adalah layanan pembuatan website kustom (Slicing Design to Web) yang dirancang khusus mengikuti referensi desain atau keinginan Anda. Sangat cocok untuk Company Profile premium, Landing Page interaktif, atau portofolio bisnis yang ingin tampil unik dan berbeda dari yang lain.
                                     </p>
                                     
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
