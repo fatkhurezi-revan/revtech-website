@@ -166,9 +166,9 @@ function LayananContent() {
                         <p className="text-gray-600">Proses simpel, transparan, dan anti-ribet.</p>
                     </div>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
                         {/* Line connector for desktop */}
-                        <div className="hidden md:block absolute top-10 left-12 right-12 h-0.5 bg-gray-200 z-0"></div>
+                        <div className="hidden lg:block absolute top-10 left-12 right-12 h-0.5 bg-gray-200 z-0"></div>
                         
                         {/* Step 1 */}
                         <div className="relative z-10 text-center">

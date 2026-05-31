@@ -59,7 +59,7 @@ function HargaContent() {
                 {/* Tab Content: Web Development */}
                 {activeTab === 'web' && (
                     <div className="max-w-6xl mx-auto animate-fade-in">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                             {/* Hemat */}
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Hemat</h4>
@@ -126,7 +126,7 @@ function HargaContent() {
                 {/* Tab Content: Undangan Digital */}
                 {activeTab === 'undangan' && (
                     <div className="max-w-6xl mx-auto animate-fade-in">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                             {/* Basic */}
                             <div className="glass-card rounded-3xl p-8 bg-white flex flex-col hover:-translate-y-2 hover:shadow-xl transition-all duration-500">
                                 <h4 className="text-xl font-bold text-gray-900 mb-2">Paket Basic <span className="text-sm text-gray-500 font-normal">(Entry Level)</span></h4>
